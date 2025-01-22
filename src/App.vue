@@ -2,17 +2,16 @@
   <div class="font-sans">
     <Header />
     <main>
-      <About />
-      <Projects />
-      <Footer />
+      <router-view />
     </main>
+    <Footer />
   </div>
 </template>
 
 <script setup lang="ts">
 import Header from './components/Header.vue';
-import About from './components/About.vue';
-import Projects from './components/Projects.vue';
+import About from './views/About.vue';
+import Projects from './views/Projects.vue';
 import Footer from './components/Footer.vue';
 </script>
 
