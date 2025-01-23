@@ -18,5 +18,4 @@ export default {
 </script>
 
 <style scoped>
-/* Estilos básicos do Header */
 </style>

@@ -18,5 +18,4 @@ export default {
 </script>
 
 <style scoped>
-/* Estilos específicos da página de contato */
 </style>

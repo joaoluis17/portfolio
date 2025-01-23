@@ -14,5 +14,4 @@ export default {
 </script>
 
 <style scoped>
-/* Estilos específicos da seção Sobre Mim */
 </style>

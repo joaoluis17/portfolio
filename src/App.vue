@@ -3,6 +3,8 @@
     <Header />
     <main>
       <router-view />
+      <About />
+      <Projects />
     </main>
     <Footer />
   </div>
@@ -16,7 +18,6 @@ import Footer from './components/Footer.vue';
 </script>
 
 <style>
-/* Adicione estilos gerais ou use o Tailwind */
 body {
   margin: 0;
   font-family: 'Inter', sans-serif;
