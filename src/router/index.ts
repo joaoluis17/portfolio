@@ -1,18 +1,12 @@
 import { createRouter, createWebHistory } from 'vue-router';
-import Home from '../views/Home.vue'; // Certifique-se de que este caminho está correto
-import Contact from '../views/Contact.vue';
+import Home from '@/views/Home.vue';
+import About from '@/views/About.vue';
+import Projects from '@/views/Projects.vue';
+import Contact from '@/views/Contact.vue';
 
 const routes = [
-  {
-    path: '/',
-    name: 'Home',
-    component: Home,
-  },
-  {
-    path: '/contact',
-    name: 'Contact',
-    component: Contact,
-  },
+  { path: '/', component: Home },
+  { path: '/contact', component: Contact },
 ];
 
 const router = createRouter({

@@ -1,25 +1,32 @@
 <template>
-  <div class="font-sans w-full">
-    <Header />
+  <div class="font-sans app-container max-w-5xl">
     <main>
       <router-view />
-      <About />
-      <Projects />
     </main>
-    <Footer />
   </div>
 </template>
 
 <script setup lang="ts">
-import Header from './components/Header.vue';
-import About from './views/About.vue';
-import Projects from './views/Projects.vue';
-import Footer from './components/Footer.vue';
+
 </script>
 
 <style>
 body {
   margin: 0;
   font-family: 'Inter', sans-serif;
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0 auto;
+}
+
+main {
+  width: 100%;
+  text-align: center;
 }
 </style>
