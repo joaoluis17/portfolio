@@ -1,8 +1,8 @@
 <template>
   <section id="contact" class="p-8 bg-gray-100 items-start text-left">
-    <h2 class="text-3xl font-bold mb-4">Contato</h2>
-    <p class="my-12">Entre em contato comigo:</p>
-    <form @submit.prevent="handleSubmit" class="flex flex-col space-y-4 max-w-md items-start">
+    <h2 class="text-3xl text-center font-bold mb-4">Contato</h2>
+    <p class="my-12 text-center">Entre em contato comigo:</p>
+    <form @submit.prevent="handleSubmit" class="flex flex-col space-y-4 max-w-md">
       <input
           type="text"
           v-model="form.name"
@@ -31,16 +31,15 @@
       ></textarea>
       <button
           type="submit"
-          class="bg-blue-500 text-white py-2 px-16 rounded hover:bg-blue-700"
+          class="bg-blue-500 text-white py-2 rounded hover:bg-blue-700"
       >
         Enviar
       </button>
     </form>
 
-    <!-- Botão Voltar -->
     <button
         @click="$router.back()"
-        class="mt-6 bg-green-200 text-gray-800 py-2 px-4 rounded hover:bg-green-300 self-start"
+        class="mt-6 bg-green-200 text-gray-800 py-2 px-8 rounded hover:bg-green-300 self-start"
     >
       Voltar
     </button>
