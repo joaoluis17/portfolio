@@ -1,7 +1,6 @@
 <template>
-  <section id="contact" class="p-8 bg-gray-100 items-start text-left">
+  <section id="contact" class="p-8 m-4 bg-gray-100 items-start text-left">
     <h2 class="text-3xl text-center font-bold mb-4">Contato</h2>
-    <p class="my-12 text-center">Entre em contato comigo:</p>
     <form @submit.prevent="handleSubmit" class="flex flex-col space-y-4 max-w-md">
       <input
           type="text"
@@ -21,6 +20,7 @@
           type="tel"
           v-model="form.phone"
           placeholder="Seu Telefone/WhatsApp (opcional)"
+          @input="validatePhoneInput"
           class="p-2 border rounded w-full"
       />
       <textarea
@@ -35,6 +35,9 @@
       >
         Enviar
       </button>
+      <label v-if="successMessage" class="flex items-center gap-2 px-4 py-2 bg-green-200 text-green-700 rounded-full shadow-sm text-sm mt-2"> {{ successMessage }} </label>
+      <label v-if="deniedMessage" class="flex items-center gap-2 px-4 py-2 bg-red-200 text-red-700 rounded-full shadow-sm text-sm mt-2"> {{ deniedMessage }} </label>
+      <label v-if="errors.phone" class="text-sm text-red-500 mt-2"> {{ errors.phone }} </label>
     </form>
 
     <button
@@ -57,15 +60,72 @@ export default {
         phone: '',
         message: '',
       },
+      successMessage: '',
+      deniedMessage: '',
+      errors: {
+        phone: null,
+      },
     };
   },
   methods: {
-    handleSubmit() {
-      const { name, email, phone, message } = this.form;
-      console.log('Dados enviados:', { name, email, phone, message });
+    async handleSubmit() {
+      const {name, email, phone, message} = this.form;
 
-      alert('Formulário enviado com sucesso!');
+      // Resetando mensagens de erro
+      this.errors.phone = null;
+      this.successMessage = '';
+      this.deniedMessage = '';
+
+      // Validação de telefone
+      if (phone.length > 0 && phone.length < 10) {
+        this.errors.phone = "O telefone deve ter 10 ou 11 dígitos.";
+        this.deniedMessage = "Por favor, corrija os erros antes de enviar o formulário.";
+        return;
+      }
+
+      try {
+        // Fazendo a requisição para o backend
+        const response = await fetch('http://localhost:3000/send-email', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify({name, email, phone, message}),
+        });
+
+        if (response.ok) {
+          this.successMessage = 'Sua mensagem foi enviada com sucesso!';
+          console.log('E-mail enviado:', {name, email, phone, message});
+
+          // Resetando formulário
+          this.form = {
+            name: '',
+            email: '',
+            phone: '',
+            message: '',
+          };
+
+          setTimeout(() => {
+            this.successMessage = '';
+          }, 5000);
+        } else {
+          this.deniedMessage = 'Ocorreu um erro ao enviar sua mensagem. Tente novamente mais tarde.';
+        }
+      } catch (error) {
+        console.error('Erro ao enviar e-mail:', error);
+        this.deniedMessage = 'Ocorreu um erro inesperado. Por favor, tente novamente.';
+      }
     },
-  },
-};
+
+    validatePhoneInput(event) {
+      const input = event.target.value;
+
+      // Remove todos os caracteres que não são números
+      const numericInput = input.replace(/\D/g, '');
+
+      // Limita o campo a no máximo 11 caracteres
+      this.form.phone = numericInput.slice(0, 11);
+    },
+  }
+}
 </script>
