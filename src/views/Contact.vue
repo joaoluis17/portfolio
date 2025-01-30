@@ -71,12 +71,10 @@ export default {
     async handleSubmit() {
       const {name, email, phone, message} = this.form;
 
-      // Resetando mensagens de erro
       this.errors.phone = null;
       this.successMessage = '';
       this.deniedMessage = '';
 
-      // Validação de telefone
       if (phone.length > 0 && phone.length < 10) {
         this.errors.phone = "O telefone deve ter 10 ou 11 dígitos.";
         this.deniedMessage = "Por favor, corrija os erros antes de enviar o formulário.";
@@ -84,20 +82,20 @@ export default {
       }
 
       try {
-        // Fazendo a requisição para o backend
+        const requestBody = { name, email, phone: phone || "Não informado", message };
+
         const response = await fetch('http://localhost:3000/send-email', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
           },
-          body: JSON.stringify({name, email, phone, message}),
+          body: JSON.stringify(requestBody),
         });
 
         if (response.ok) {
           this.successMessage = 'Sua mensagem foi enviada com sucesso!';
           console.log('E-mail enviado:', {name, email, phone, message});
 
-          // Resetando formulário
           this.form = {
             name: '',
             email: '',
@@ -120,10 +118,8 @@ export default {
     validatePhoneInput(event) {
       const input = event.target.value;
 
-      // Remove todos os caracteres que não são números
       const numericInput = input.replace(/\D/g, '');
 
-      // Limita o campo a no máximo 11 caracteres
       this.form.phone = numericInput.slice(0, 11);
     },
   }
