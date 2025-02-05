@@ -8,7 +8,7 @@
       <p className="text-lg text-gray-600">Desenvolvedor web Front-End & Gestor de Projetos</p>
       <p className="text-sm text-gray-400">(Vue JS | Laravel | Scrum | Kanban) - Brasil</p>
 
-      <div class="grid grid-cols-4 gap-4 mt-4">
+      <div class="flex flex-wrap gap-4 mt-4">
         <label class="badge flex items-center gap-2 px-4 py-2 bg-green-200 text-green-700 rounded-full shadow-sm">
           <img src="@/assets/front-icon.svg" class="w-5 h-5">
           <span>Front-End Developer</span>
