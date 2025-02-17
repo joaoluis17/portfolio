@@ -7,7 +7,7 @@ import dotenv from 'dotenv';
 const app = express();
 const PORT = process.env.PORT || 3000;
 
-app.use(cors());
+app.use(cors({ origin: 'https://joao-luis-prado.netlify.app/' }));
 app.use(express.json());
 
 dotenv.config();

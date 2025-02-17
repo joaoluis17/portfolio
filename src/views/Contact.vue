@@ -84,7 +84,7 @@ export default {
       try {
         const requestBody = { name, email, phone: phone || "Não informado", message };
 
-        const response = await fetch('http://localhost:3000/send-email', {
+        const response = await fetch('https://joao-luis-prado.netlify.app/send-email', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
