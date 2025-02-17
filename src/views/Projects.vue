@@ -8,7 +8,7 @@
             :key="index"
             class="project-item bg-gray-200 p-6 rounded shadow hover:shadow-lg transition-shadow w-64"
         >
-            <h3 class="text-xl font-bold mb-2">{{ project.title }}</h3>
+            <h3 class="text-xl text-gray-600 font-bold mb-2">{{ project.title }}</h3>
             <p class="text-gray-600">{{ project.description }}</p>
             <button 
             @click="showProjectDetails(index)" 
@@ -20,8 +20,8 @@
         </div>
 
         <div v-if="selectedProject !== null" class="project-details mt-8">
-            <h3 class="text-2xl font-bold mb-4">{{ projects[selectedProject].title }}</h3>
-            <p class="text-lg">{{ projects[selectedProject].fullDescription }}</p>
+            <h3 class="text-2xl text-gray-600 dark:text-gray-200 font-bold mb-4">{{ projects[selectedProject].title }}</h3>
+            <p class="text-lg text-gray-600 dark:text-gray-200">{{ projects[selectedProject].fullDescription }}</p>
         <a 
             :href="projects[selectedProject].link"
             target="_blank"
