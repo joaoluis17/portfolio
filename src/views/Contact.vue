@@ -1,6 +1,6 @@
 <template>
   <section id="contact" class="p-8 m-4 bg-gray-100 items-start text-left">
-    <h2 class="text-3xl text-center font-bold mb-4">Contato</h2>
+    <h2 class="text-3xl text-center text-gray-600 font-bold mb-4">Contato</h2>
     <form @submit.prevent="handleSubmit" class="flex flex-col space-y-4 max-w-md">
       <input
           type="text"
@@ -31,7 +31,7 @@
       ></textarea>
       <button
           type="submit"
-          class="bg-blue-500 text-white py-2 rounded hover:bg-blue-700"
+          class="bg-blue-400 text-white py-2 rounded hover:bg-blue-700"
       >
         Enviar
       </button>

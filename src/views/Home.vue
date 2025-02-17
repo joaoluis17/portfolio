@@ -1,12 +1,12 @@
 <template>
   <section class="w-full inline-flex px-12">
-    <div id="home" class="p-8 bg-white flex flex-col items-start">
+    <div id="home" class="p-8 flex flex-col items-start">
       <div class="avatar-background rounded-full overflow-hidden w-32 h-32 mb-4">
         <img src="../assets/profile-photo.jpg" height="1599" width="899" alt="Avatar-Photo"/>
       </div>
-      <h1 className="text-4xl text-gray-700 font-bold mb-2">João Luis Prado</h1>
-      <p className="text-lg text-gray-600">Desenvolvedor web Front-End & Gestor de Projetos</p>
-      <p className="text-sm text-gray-400">(Vue JS | Laravel | Scrum | Kanban) - Brasil</p>
+      <h1 className="text-4xl text-gray-600 dark:text-gray-200 font-bold mb-2">João Luis Prado</h1>
+      <p className="text-lg text-gray-600 dark:text-gray-200">Desenvolvedor web Front-End & Gestor de Projetos</p>
+      <p className="text-sm text-gray-400 dark:text-gray-50">(Vue JS | Laravel | Scrum | Kanban) - Brasil</p>
 
       <div class="flex flex-wrap gap-4 mt-4">
         <label class="badge flex items-center gap-2 px-4 py-2 bg-green-200 text-green-700 rounded-full shadow-sm">
@@ -91,49 +91,44 @@
         </label>
       </div>
     </div>
-    <router-link to="/contact" class="mt-12">
-      <button class="bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-700 whitespace-nowrap">
-        Entre em Contato
-      </button>
-    </router-link>
   </section>
+  
+  <About />
 
-  <section id="about" class="w-full px-20 items-start text-left">
-    <h2 class="text-3xl text-gray-700 font-bold my-12">Sobre Mim</h2>
-    <p class="text-lg text-gray-700">
-      Sou Desenvolvedor Front-End especializado em criar interfaces intuitivas e funcionais, com experiência em frameworks como Vue JS e Laravel. Tenho habilidades em metodologias ágeis, como Scrum e Kanban, garantindo uma gestão eficiente de projetos. Além disso, domino ferramentas de controle de versão como Git e GitHub, bem como conceitos de design responsivo e boas práticas de usabilidade. Estou sempre buscando aprimorar minhas competências para entregar soluções modernas e de alto impacto.    </p>
-    <p class="text-lg text-gray-700">Vamos conversar? Me envie uma mensagem!</p>
-  </section>
+  <Projects />
 
-  <section id="projects" class="px-20 mx-auto items-start text-left">
-    <h2 class="text-3xl text-gray-700 font-bold my-12">Resume</h2>
-    <div class="mb-12">
-      <div class="bg-gray-200 p-6 rounded shadow hover:shadow-lg transition-shadow">
-        <h3 class="text-xl font-bold mb-2">Desenvolvedor Web Front-End/Scrum Master Júnior</h3>
-        <p class="text-gray-600">04/2021 - Presente</p>
-      </div>
-      <div class="bg-gray-200 p-6 rounded shadow hover:shadow-lg transition-shadow">
-        <h3 class="text-xl font-bold mb-2">Expert em Interação</h3>
-        <p class="text-gray-600">02/2021 - 04/2021</p>
-      </div><div class="bg-gray-200 p-6 rounded shadow hover:shadow-lg transition-shadow">
-      <h3 class="text-xl font-bold mb-2">Profissional de Eventos Autônomo</h3>
-      <p class="text-gray-600">05/2015 - 10/2019</p>
-    </div>
-      <div class="bg-gray-200 p-6 rounded shadow hover:shadow-lg transition-shadow">
-        <h3 class="text-xl font-bold mb-2">Auxiliar Administrativo</h3>
-        <p class="text-gray-600">01/2016 - 06/2016</p>
-      </div>
-    </div>
-  </section>
+  <Resume />
+
+  <ContactButton />
+
+  <ThemeButton />
+
 </template>
 
 <script>
+import ContactButton from '../components/ContactButton.vue';
+import ThemeButton from '../components/ThemeButton.vue';
+import About from './About.vue';
+import Projects from './Projects.vue';
+import Resume from './Resume.vue';
+
 export default {
   name: 'Home',
+  components: {
+    About,
+    Projects,
+    Resume,
+    ContactButton,
+    ThemeButton
+  }
 };
 </script>
 
 <style scoped>
+html {
+  scroll-behavior: smooth;
+}
+
 .avatar-background {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
