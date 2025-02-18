@@ -13,6 +13,7 @@
     "build-storybook": "storybook build"
   },
   "dependencies": {
+    "@vitejs/plugin-vue-jsx": "^4.1.1",
     "@vueuse/core": "^12.7.0",
     "body-parser": "^1.20.3",
     "cors": "^2.8.5",
@@ -20,6 +21,7 @@
     "emailjs-com": "^3.2.0",
     "express": "^4.21.2",
     "nodemailer": "^6.10.0",
+    "rollup": "^4.34.8",
     "vue": "^3.5.13",
     "vue-router": "^4.5.0"
   },
@@ -37,6 +39,7 @@
     "@types/jsdom": "^21.1.7",
     "@types/node": "^22.10.7",
     "@types/nodemailer": "^6.4.17",
+    "@types/vue": "^2.0.0",
     "@vitejs/plugin-vue": "^5.2.1",
     "@vue/test-utils": "^2.4.6",
     "@vue/tsconfig": "^0.7.0",
@@ -47,7 +50,7 @@
     "storybook": "^8.5.1",
     "tailwindcss": "^3.4.17",
     "typescript": "~5.7.3",
-    "vite": "^6.0.11",
+    "vite": "^6.1.0",
     "vite-plugin-vue-devtools": "^7.7.0",
     "vitest": "^3.0.2",
     "vue-svg-loader": "^0.16.0",

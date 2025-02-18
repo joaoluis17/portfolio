@@ -46,6 +46,11 @@
     >
       Voltar
     </button>
+
+    
+      <p class="text-lg text-gray-600 mt-4">Caso tenha problemas para enviar a sua mensagem, entre em contato comigo no e-mail 
+        <strong class="underline hover:text-gray-800"><a href="mailto:jluispprado@hotmail.com">jluispprado@hotmail.com</a></strong>.
+      </p>
   </section>
 </template>
 
