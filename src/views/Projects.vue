@@ -25,10 +25,10 @@
           class="project-details mt-8 p-6 bg-gray-100 rounded shadow-lg"
           @click="closeProjectDetails"
       >
-          <h3 class="text-2xl text-gray-600 dark:text-gray-200 font-bold mb-4">
+          <h3 class="text-2xl text-gray-600 font-bold mb-4">
               {{ projects[selectedProject].title }}
           </h3>
-          <p class="text-lg text-gray-600 dark:text-gray-200">
+          <p class="text-lg text-gray-600">
               {{ projects[selectedProject].fullDescription }}
           </p>
           <a 
@@ -60,6 +60,12 @@ data() {
         description: 'Nesse projeto, criei um site pessoal para divulgar meus trabalhos na área da música',
         fullDescription: 'Essa landing page, criada em Vue JS, com layout totalmente responsivo e com diversas telas integradas no arquivo principal.',
         link: 'https://github.com/joaoluis17/music-portfolio',
+      },
+      {
+        title: 'Helpick',
+        description: 'Comunidade online para músicos',
+        fullDescription: 'A ideia desse site é uma comunidade musical, onde os usuários poderão tirar dúvidas e conhecer outros músicos para melhorar seu networking e criar amizades. Este é meu primeiro projeto Full-Stack em Laravel, Tailwind CSS e MySQL, além de usar Alpine e JavaScript para a lógica de algumas mini-funções do site. Tive auxílio do João Fernando (ocorvu) nesse projeto, onde ele me ajudou a criar alguns componentes do fórum. Nele temos um site com alguns painéis (Fórum, Blog e Produtos), além de ter cadastro de usuários e outras funções. Criei também, as landing pages responsivas usando JavaScript e Tailwind CSS.',
+        link: 'https://github.com/joaoluis17/helpick',
       },
     ],
   };
