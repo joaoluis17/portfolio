@@ -31,13 +31,23 @@
           <p class="text-lg text-gray-600">
               {{ projects[selectedProject].fullDescription }}
           </p>
-          <a 
+          <div class="mt-4">
+            <a 
               :href="projects[selectedProject].link"
               target="_blank"
+              class="text-blue-400 hover:text-blue-700 mr-4"
+            >
+                Ver no GitHub
+            </a>
+            <a 
+              v-if="projects[selectedProject].linkSite" 
+              :href="projects[selectedProject].linkSite"
+              target="_blank"
               class="text-blue-400 hover:text-blue-700"
-          >
-              Ver no GitHub
-          </a>
+            >
+                Link do Site
+            </a>
+          </div>
       </div>
   </section>
 </template>
@@ -52,7 +62,7 @@ data() {
       {
         title: 'Conversor',
         description: 'Esse é um projeto de conversor universal criado junto com o João Fernando (ocorvu)',
-        fullDescription: 'Criamos esse projeto com o intuito de estudarmos o Front-End. Nele, temos um conversor de texto com as seguintes opções: Maiúsculo, Minúsculo, Capitalizar, MaIuScUlO, mInUsCuLo, Inverso, Reverso e Copiar texto. Além de um conversor de medidas, com as opções: km, hm, dam, m, dm, cm, mm',
+        fullDescription: 'Criamos esse projeto com o intuito de estudarmos o Front-End. Nele, temos um conversor de texto com as seguintes opções: Maiúsculo, Minúsculo, Capitalizar, MaIuScUlO, mInUsCuLo, Inverso, Reverso e Copiar texto. Além de um conversor de medidas, com as opções: km, hm, dam, m, dm, cm, mm.',
         link: 'https://github.com/ocorvu/conversor.git',
       },
       {
@@ -60,6 +70,7 @@ data() {
         description: 'Nesse projeto, criei um site pessoal para divulgar meus trabalhos na área da música',
         fullDescription: 'Essa landing page, criada em Vue JS, com layout totalmente responsivo e com diversas telas integradas no arquivo principal.',
         link: 'https://github.com/joaoluis17/music-portfolio',
+        linkSite: 'https://john-prado.netlify.app/',
       },
       {
         title: 'Helpick',
