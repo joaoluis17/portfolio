@@ -1,8 +1,16 @@
 <template>
   <div class="relative w-full">
     <div class="absolute top-0 right-0 flex space-x-4 p-4 mt-4">
-      <a href="https://github.com/joaoluis17"><img src="../assets/github-logo.svg" class="w-10 h-10 hover:w-16 hover:h-16" alt="GitHub Logo"/></a>
-      <a href="https://www.linkedin.com/in/joao-luis-prado/"><img src="../assets/linkedin-logo.svg" class="w-10 h-10 hover:w-16 hover:h-16" alt="LinkedIn Logo"/></a>
+        <a href="https://github.com/joaoluis17">
+          <div class="bg-gray-50 rounded-xl border-gray-150 p-0">
+            <img src="../assets/github-logo.svg" class="w-10 h-10 hover:w-16 hover:h-16" alt="GitHub Logo"/>
+          </div>
+        </a>
+        <a href="https://www.linkedin.com/in/joao-luis-prado/">
+          <div class="bg-gray-50 rounded-xl border-gray-150 p-0">
+            <img src="../assets/linkedin-logo.svg" class="w-10 h-10 hover:w-16 hover:h-16" alt="LinkedIn Logo"/>
+          </div>
+        </a>
     </div>
     <section class="w-full flex flex-row px-12 items-center gap-6">
       <div id="home" class="p-8 flex flex-col items-start">
@@ -109,9 +117,12 @@
 
   <ThemeButton />
 
+  <BackToUpButton />
+
 </template>
 
 <script>
+import BackToUpButton from '../components/BackToUpButton.vue';
 import ContactButton from '../components/ContactButton.vue';
 import ThemeButton from '../components/ThemeButton.vue';
 import About from './About.vue';
@@ -125,7 +136,8 @@ export default {
     Projects,
     Resume,
     ContactButton,
-    ThemeButton
+    ThemeButton,
+    BackToUpButton
   }
 };
 </script>

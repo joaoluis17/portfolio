@@ -1,8 +1,8 @@
 <template>
   <Header />
-  <section class="bg-bg-gray-50 dark:bg-gray-900">
+  <section class="bg-gray-50 dark:bg-gray-900">
     <div class="font-roboto-flex app-container max-w-5xl">
-      <main>
+      <main class="pt-16">
         <router-view />
       </main>
     </div>

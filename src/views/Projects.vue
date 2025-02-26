@@ -60,17 +60,17 @@ data() {
     selectedProject: null,
     projects: [
       {
-        title: 'Conversor',
-        description: 'Esse é um projeto de conversor universal criado junto com o João Fernando (ocorvu)',
-        fullDescription: 'Criamos esse projeto com o intuito de estudarmos o Front-End. Nele, temos um conversor de texto com as seguintes opções: Maiúsculo, Minúsculo, Capitalizar, MaIuScUlO, mInUsCuLo, Inverso, Reverso e Copiar texto. Além de um conversor de medidas, com as opções: km, hm, dam, m, dm, cm, mm.',
-        link: 'https://github.com/ocorvu/conversor.git',
-      },
-      {
         title: 'Site Pessoal',
         description: 'Nesse projeto, criei um site pessoal para divulgar meus trabalhos na área da música',
         fullDescription: 'Essa landing page, criada em Vue JS, com layout totalmente responsivo e com diversas telas integradas no arquivo principal.',
         link: 'https://github.com/joaoluis17/music-portfolio',
         linkSite: 'https://john-prado.netlify.app/',
+      },
+      {
+        title: 'Conversor',
+        description: 'Esse é um projeto de conversor universal criado junto com o João Fernando (ocorvu)',
+        fullDescription: 'Criamos esse projeto com o intuito de estudarmos o Front-End. Nele, temos um conversor de texto com as seguintes opções: Maiúsculo, Minúsculo, Capitalizar, MaIuScUlO, mInUsCuLo, Inverso, Reverso e Copiar texto. Além de um conversor de medidas, com as opções: km, hm, dam, m, dm, cm, mm.',
+        link: 'https://github.com/ocorvu/conversor.git',
       },
       {
         title: 'Helpick',
