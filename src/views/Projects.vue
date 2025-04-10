@@ -67,10 +67,11 @@ data() {
         linkSite: 'https://john-prado.netlify.app/',
       },
       {
-        title: 'Conversor',
-        description: 'Esse é um projeto de conversor universal criado junto com o João Fernando (ocorvu)',
-        fullDescription: 'Criamos esse projeto com o intuito de estudarmos o Front-End. Nele, temos um conversor de texto com as seguintes opções: Maiúsculo, Minúsculo, Capitalizar, MaIuScUlO, mInUsCuLo, Inverso, Reverso e Copiar texto. Além de um conversor de medidas, com as opções: km, hm, dam, m, dm, cm, mm.',
+        title: 'Conversor Universal',
+        description: 'Esse é um projeto de conversor universal que saiu de outro projeto anterior, em parceria com o João Fernando (OCorvu).',
+        fullDescription: 'Criamos o primeiro projeto com o intuito de estudarmos o Front-End. Nele, criamos dois conversores: Conversor de Texto com as seguintes opções: Maiúsculo, Minúsculo, Capitalizar, MaIuScUlO, mInUsCuLo, Inverso, Reverso e Copiar texto. E um conversor de medidas, com as opções: km, hm, dam, m, dm, cm, mm. Eu segui com esse projeto, criando outro repositório do zero mas, usando esse como base. Além desses dois conversores já citados, criei também um conversor de Moedas, onde simultaneamente, você pode converter as seguintes moedas: Real "R$"; Peso Argentino "ARS"; Dólar EUA "$"; Dólar Canadense "CAD"; Euro "€"; Libra Esterlina "£"; Franco Suíço "CHF"; Rublo Russo "RUB"; Iene "JP¥"; Renminbi (China) "元/¥"; Won Sul-Coreano "₩" e; Dólar Australiano "AU$" . Esse é um projeto com HTML5, Tailwind CSS e Vanilla JavaScript.',
         link: 'https://github.com/ocorvu/conversor.git',
+        linkSite: 'https://conversor-universal.netlify.app/',
       },
       {
         title: 'Helpick',
