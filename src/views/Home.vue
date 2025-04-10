@@ -2,12 +2,12 @@
   <div class="relative w-full">
     <div class="absolute top-0 right-0 flex space-x-4 p-4 mt-4">
         <a href="https://github.com/joaoluis17">
-          <div class="bg-gray-50 rounded-xl border-gray-150 p-0">
+          <div class="rounded-xl border-gray-150 p-0">
             <img src="../assets/github-logo.svg" class="w-10 h-10 hover:w-16 hover:h-16" alt="GitHub Logo"/>
           </div>
         </a>
         <a href="https://www.linkedin.com/in/joao-luis-prado/">
-          <div class="bg-gray-50 rounded-xl border-gray-150 p-0">
+          <div class="rounded-xl border-gray-150 p-0">
             <img src="../assets/linkedin-logo.svg" class="w-10 h-10 hover:w-16 hover:h-16" alt="LinkedIn Logo"/>
           </div>
         </a>

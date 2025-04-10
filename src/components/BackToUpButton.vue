@@ -2,7 +2,7 @@
     <button 
       v-if="isVisible"
       @click="scrollToTop" 
-      class="fixed bottom-4 right-4 p-3 bg-blue-500 text-white rounded-full shadow-lg hover:bg-blue-400 focus:outline-none"
+      class="fixed bottom-4 right-4 p-3 bg-green-300 text-white rounded-full shadow-lg hover:bg-green-700 focus:outline-none"
     >
       Topo ↑
     </button>
