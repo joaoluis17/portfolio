@@ -48,15 +48,34 @@ Object.defineProperty(exports, "__esModule", { value: true });
 var __VLS_ctx = {};
 var __VLS_components;
 var __VLS_directives;
-__VLS_asFunctionalElement(__VLS_intrinsicElements.footer, __VLS_intrinsicElements.footer)(__assign({ class: ("bg-gray-900 dark:bg-black bg text-white dark:text-gray-50 p-4") }));
-__VLS_asFunctionalElement(__VLS_intrinsicElements.section, __VLS_intrinsicElements.section)(__assign({ class: ("flex flex-col justify-around items-center mt-4 px-12") }));
+__VLS_asFunctionalElement(__VLS_intrinsicElements.footer, __VLS_intrinsicElements.footer)(__assign({ class: "bg-gray-900 dark:bg-black bg text-white dark:text-gray-50 p-4" }));
+__VLS_asFunctionalElement(__VLS_intrinsicElements.section, __VLS_intrinsicElements.section)(__assign({ class: "flex flex-col justify-around items-center mt-4 px-12" }));
 __VLS_asFunctionalElement(__VLS_intrinsicElements.p, __VLS_intrinsicElements.p)({});
 (new Date().getFullYear());
-__VLS_asFunctionalElement(__VLS_intrinsicElements.div, __VLS_intrinsicElements.div)(__assign({ class: ("flex space-x-4 mt-4 flex-row ") }));
-__VLS_asFunctionalElement(__VLS_intrinsicElements.a, __VLS_intrinsicElements.a)(__assign({ href: ("https://github.com/joaoluis17"), target: ("_blank") }, { class: ("hover:text-blue-400") }));
-__VLS_asFunctionalElement(__VLS_intrinsicElements.a, __VLS_intrinsicElements.a)(__assign({ href: ("https://www.linkedin.com/in/joao-luis-prado/"), target: ("_blank") }, { class: ("hover:text-blue-400") }));
-['bg-gray-900', 'dark:bg-black', 'bg', 'text-white', 'dark:text-gray-50', 'p-4', 'flex', 'flex-col', 'justify-around', 'items-center', 'mt-4', 'px-12', 'flex', 'space-x-4', 'mt-4', 'flex-row', 'hover:text-blue-400', 'hover:text-blue-400',];
-var __VLS_special;
+__VLS_asFunctionalElement(__VLS_intrinsicElements.div, __VLS_intrinsicElements.div)(__assign({ class: "flex space-x-4 mt-4 flex-row " }));
+__VLS_asFunctionalElement(__VLS_intrinsicElements.a, __VLS_intrinsicElements.a)(__assign({ href: "https://github.com/joaoluis17", target: "_blank" }, { class: "text-lg hover:text-blue-400" }));
+__VLS_asFunctionalElement(__VLS_intrinsicElements.a, __VLS_intrinsicElements.a)(__assign({ href: "https://www.linkedin.com/in/joao-luis-prado/", target: "_blank" }, { class: "text-lg hover:text-blue-400" }));
+/** @type {__VLS_StyleScopedClasses['bg-gray-900']} */ ;
+/** @type {__VLS_StyleScopedClasses['dark:bg-black']} */ ;
+/** @type {__VLS_StyleScopedClasses['bg']} */ ;
+/** @type {__VLS_StyleScopedClasses['text-white']} */ ;
+/** @type {__VLS_StyleScopedClasses['dark:text-gray-50']} */ ;
+/** @type {__VLS_StyleScopedClasses['p-4']} */ ;
+/** @type {__VLS_StyleScopedClasses['flex']} */ ;
+/** @type {__VLS_StyleScopedClasses['flex-col']} */ ;
+/** @type {__VLS_StyleScopedClasses['justify-around']} */ ;
+/** @type {__VLS_StyleScopedClasses['items-center']} */ ;
+/** @type {__VLS_StyleScopedClasses['mt-4']} */ ;
+/** @type {__VLS_StyleScopedClasses['px-12']} */ ;
+/** @type {__VLS_StyleScopedClasses['flex']} */ ;
+/** @type {__VLS_StyleScopedClasses['space-x-4']} */ ;
+/** @type {__VLS_StyleScopedClasses['mt-4']} */ ;
+/** @type {__VLS_StyleScopedClasses['flex-row']} */ ;
+/** @type {__VLS_StyleScopedClasses['text-lg']} */ ;
+/** @type {__VLS_StyleScopedClasses['hover:text-blue-400']} */ ;
+/** @type {__VLS_StyleScopedClasses['text-lg']} */ ;
+/** @type {__VLS_StyleScopedClasses['hover:text-blue-400']} */ ;
+var __VLS_dollars;
 var __VLS_self = (await Promise.resolve().then(function () { return __importStar(require('vue')); })).defineComponent({
     setup: function () {
         return {};
@@ -66,6 +85,5 @@ exports.default = (await Promise.resolve().then(function () { return __importSta
     setup: function () {
         return {};
     },
-    __typeEl: {},
 });
 ; /* PartiallyEnd: #4569/main.vue */

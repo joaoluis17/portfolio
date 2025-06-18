@@ -44,44 +44,35 @@ var __importStar = (this && this.__importStar) || (function () {
     };
 })();
 Object.defineProperty(exports, "__esModule", { value: true });
-var core_1 = require("@vueuse/core");
 exports.default = (await Promise.resolve().then(function () { return __importStar(require('vue')); })).defineComponent({
-    name: "ThemeButton",
-    setup: function () {
-        var isDark = (0, core_1.useDark)();
-        var toggleDark = (0, core_1.useToggle)(isDark);
-        return { toggleDark: toggleDark };
-    },
+    name: "BackToUpButton",
     data: function () {
         return {
-            adjustedBottom: 80, // Posição inicial
+            isVisible: false,
         };
     },
     mounted: function () {
-        this.updateButtonPosition();
-        window.addEventListener("resize", this.updateButtonPosition);
+        window.addEventListener('scroll', this.checkScrollPosition);
     },
-    beforeUnmount: function () {
-        window.removeEventListener("resize", this.updateButtonPosition);
+    destroyed: function () {
+        window.removeEventListener('scroll', this.checkScrollPosition);
     },
     methods: {
-        updateButtonPosition: function () {
-            var footer = document.querySelector("footer");
-            if (footer && window.innerWidth < 1024) {
-                var footerTop = footer.getBoundingClientRect().top;
-                var windowHeight = window.innerHeight;
-                if (footerTop < windowHeight - 30) { // Se o footer está visível
-                    this.adjustedBottom = windowHeight - footerTop + 50;
-                }
-                else {
-                    this.adjustedBottom = 100; // Posição padrão
-                }
+        checkScrollPosition: function () {
+            if (window.scrollY > 300) {
+                this.isVisible = true;
             }
             else {
-                this.adjustedBottom = 80;
+                this.isVisible = false;
             }
-        }
-    }
+        },
+        scrollToTop: function () {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth',
+            });
+        },
+    },
 });
 ; /* PartiallyEnd: #3632/script.vue */
 var __VLS_ctx = {};
@@ -89,24 +80,18 @@ var __VLS_components;
 var __VLS_directives;
 // CSS variable injection 
 // CSS variable injection end 
-__VLS_asFunctionalElement(__VLS_intrinsicElements.button, __VLS_intrinsicElements.button)(__assign(__assign({ onClick: function () {
-        var _a = [];
-        for (var _i = 0; _i < arguments.length; _i++) {
-            _a[_i] = arguments[_i];
-        }
-        var $event = _a[0];
-        __VLS_ctx.toggleDark();
-    } }, { class: "theme-button bg-blue-400 dark:bg-green-300 text-white dark:text-gray-800 py-2 px-4 rounded dark:hover:bg-green-700 hover:bg-blue-700 whitespace-nowrap" }), { style: ({ bottom: __VLS_ctx.adjustedBottom + 'px' }) }));
-/** @type {__VLS_StyleScopedClasses['theme-button']} */ ;
-/** @type {__VLS_StyleScopedClasses['bg-blue-400']} */ ;
-/** @type {__VLS_StyleScopedClasses['dark:bg-green-300']} */ ;
+if (__VLS_ctx.isVisible) {
+    __VLS_asFunctionalElement(__VLS_intrinsicElements.button, __VLS_intrinsicElements.button)(__assign({ onClick: (__VLS_ctx.scrollToTop) }, { class: "fixed bottom-4 right-4 p-3 bg-green-300 text-white rounded-full shadow-lg hover:bg-green-700 focus:outline-none" }));
+}
+/** @type {__VLS_StyleScopedClasses['fixed']} */ ;
+/** @type {__VLS_StyleScopedClasses['bottom-4']} */ ;
+/** @type {__VLS_StyleScopedClasses['right-4']} */ ;
+/** @type {__VLS_StyleScopedClasses['p-3']} */ ;
+/** @type {__VLS_StyleScopedClasses['bg-green-300']} */ ;
 /** @type {__VLS_StyleScopedClasses['text-white']} */ ;
-/** @type {__VLS_StyleScopedClasses['dark:text-gray-800']} */ ;
-/** @type {__VLS_StyleScopedClasses['py-2']} */ ;
-/** @type {__VLS_StyleScopedClasses['px-4']} */ ;
-/** @type {__VLS_StyleScopedClasses['rounded']} */ ;
-/** @type {__VLS_StyleScopedClasses['dark:hover:bg-green-700']} */ ;
-/** @type {__VLS_StyleScopedClasses['hover:bg-blue-700']} */ ;
-/** @type {__VLS_StyleScopedClasses['whitespace-nowrap']} */ ;
+/** @type {__VLS_StyleScopedClasses['rounded-full']} */ ;
+/** @type {__VLS_StyleScopedClasses['shadow-lg']} */ ;
+/** @type {__VLS_StyleScopedClasses['hover:bg-green-700']} */ ;
+/** @type {__VLS_StyleScopedClasses['focus:outline-none']} */ ;
 var __VLS_dollars;
 var __VLS_self;

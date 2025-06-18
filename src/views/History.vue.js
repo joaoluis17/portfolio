@@ -45,44 +45,32 @@ var __importStar = (this && this.__importStar) || (function () {
 })();
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.default = (await Promise.resolve().then(function () { return __importStar(require('vue')); })).defineComponent({
-    name: 'About'
+    name: 'History',
 }); /* PartiallyEnd: #3632/script.vue */
 var __VLS_ctx = {};
 var __VLS_components;
 var __VLS_directives;
-__VLS_asFunctionalElement(__VLS_intrinsicElements.section, __VLS_intrinsicElements.section)(__assign({ id: "about" }, { class: "w-full px-20 items-start text-left" }));
-__VLS_asFunctionalElement(__VLS_intrinsicElements.h2, __VLS_intrinsicElements.h2)(__assign({ class: "text-3xl text-gray-600 dark:text-gray-200 font-bold my-12" }));
-__VLS_asFunctionalElement(__VLS_intrinsicElements.p, __VLS_intrinsicElements.p)(__assign({ class: "text-lg text-gray-600 dark:text-gray-200" }));
-__VLS_asFunctionalElement(__VLS_intrinsicElements.p, __VLS_intrinsicElements.p)(__assign({ class: "text-lg text-gray-600 dark:text-gray-200" }));
-__VLS_asFunctionalElement(__VLS_intrinsicElements.p, __VLS_intrinsicElements.p)(__assign({ class: "text-lg text-gray-600 dark:text-gray-200 my-4" }));
-__VLS_asFunctionalElement(__VLS_intrinsicElements.a, __VLS_intrinsicElements.a)(__assign({ href: "https://www.linkedin.com/in/joao-luis-prado/" }, { class: "bg-blue-400 hover:bg-blue-700 text-gray-200 rounded-full py-2 px-4 border border-gray-200" }));
-__VLS_asFunctionalElement(__VLS_intrinsicElements.button, __VLS_intrinsicElements.button)({});
+__VLS_asFunctionalElement(__VLS_intrinsicElements.section, __VLS_intrinsicElements.section)(__assign({ class: "w-full px-8 py-16 text-left" }));
+__VLS_asFunctionalElement(__VLS_intrinsicElements.h2, __VLS_intrinsicElements.h2)(__assign({ class: "text-3xl text-gray-600 dark:text-gray-200 font-bold mb-6" }));
+__VLS_asFunctionalElement(__VLS_intrinsicElements.p, __VLS_intrinsicElements.p)(__assign({ class: "text-gray-600 dark:text-gray-300 mb-4" }));
+__VLS_asFunctionalElement(__VLS_intrinsicElements.p, __VLS_intrinsicElements.p)(__assign({ class: "text-gray-600 dark:text-gray-300 mb-4" }));
+__VLS_asFunctionalElement(__VLS_intrinsicElements.p, __VLS_intrinsicElements.p)(__assign({ class: "text-gray-600 dark:text-gray-300" }));
 /** @type {__VLS_StyleScopedClasses['w-full']} */ ;
-/** @type {__VLS_StyleScopedClasses['px-20']} */ ;
-/** @type {__VLS_StyleScopedClasses['items-start']} */ ;
+/** @type {__VLS_StyleScopedClasses['px-8']} */ ;
+/** @type {__VLS_StyleScopedClasses['py-16']} */ ;
 /** @type {__VLS_StyleScopedClasses['text-left']} */ ;
 /** @type {__VLS_StyleScopedClasses['text-3xl']} */ ;
 /** @type {__VLS_StyleScopedClasses['text-gray-600']} */ ;
 /** @type {__VLS_StyleScopedClasses['dark:text-gray-200']} */ ;
 /** @type {__VLS_StyleScopedClasses['font-bold']} */ ;
-/** @type {__VLS_StyleScopedClasses['my-12']} */ ;
-/** @type {__VLS_StyleScopedClasses['text-lg']} */ ;
+/** @type {__VLS_StyleScopedClasses['mb-6']} */ ;
 /** @type {__VLS_StyleScopedClasses['text-gray-600']} */ ;
-/** @type {__VLS_StyleScopedClasses['dark:text-gray-200']} */ ;
-/** @type {__VLS_StyleScopedClasses['text-lg']} */ ;
+/** @type {__VLS_StyleScopedClasses['dark:text-gray-300']} */ ;
+/** @type {__VLS_StyleScopedClasses['mb-4']} */ ;
 /** @type {__VLS_StyleScopedClasses['text-gray-600']} */ ;
-/** @type {__VLS_StyleScopedClasses['dark:text-gray-200']} */ ;
-/** @type {__VLS_StyleScopedClasses['text-lg']} */ ;
+/** @type {__VLS_StyleScopedClasses['dark:text-gray-300']} */ ;
+/** @type {__VLS_StyleScopedClasses['mb-4']} */ ;
 /** @type {__VLS_StyleScopedClasses['text-gray-600']} */ ;
-/** @type {__VLS_StyleScopedClasses['dark:text-gray-200']} */ ;
-/** @type {__VLS_StyleScopedClasses['my-4']} */ ;
-/** @type {__VLS_StyleScopedClasses['bg-blue-400']} */ ;
-/** @type {__VLS_StyleScopedClasses['hover:bg-blue-700']} */ ;
-/** @type {__VLS_StyleScopedClasses['text-gray-200']} */ ;
-/** @type {__VLS_StyleScopedClasses['rounded-full']} */ ;
-/** @type {__VLS_StyleScopedClasses['py-2']} */ ;
-/** @type {__VLS_StyleScopedClasses['px-4']} */ ;
-/** @type {__VLS_StyleScopedClasses['border']} */ ;
-/** @type {__VLS_StyleScopedClasses['border-gray-200']} */ ;
+/** @type {__VLS_StyleScopedClasses['dark:text-gray-300']} */ ;
 var __VLS_dollars;
 var __VLS_self;

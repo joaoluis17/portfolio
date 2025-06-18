@@ -19,13 +19,9 @@
         </div>
         <h1 className="text-4xl text-gray-600 dark:text-gray-200 font-bold mb-2">João Luis Prado</h1>
         <p className="text-lg text-gray-600 dark:text-gray-200">Desenvolvedor web Front-End & Gestor de Projetos</p>
-        <p className="text-sm text-gray-400 dark:text-gray-50">(Vue JS | Laravel | Scrum | Kanban) - Brasil</p>
+        <p className="text-sm text-gray-400 dark:text-gray-50">(JavaScript | Vue JS | PHP | Laravel | Scrum | Kanban) - Brasil</p>
 
         <div class="flex flex-wrap gap-4 mt-4">
-          <label class="badge flex items-center gap-2 px-4 py-2 bg-green-200 text-green-700 rounded-full shadow-sm">
-            <img src="@/assets/front-icon.svg" class="w-5 h-5">
-            <span>Front-End Developer</span>
-          </label>
           <label class="badge flex items-center gap-2 px-4 py-2 bg-green-200 text-green-700 rounded-full shadow-sm">
             <img src="@/assets/html-icon.svg" class="w-5 h-5">
             <span>HTML5</span>
@@ -51,6 +47,10 @@
             <span>Vue JS</span>
           </label>
           <label class="badge flex items-center gap-2 px-4 py-2 bg-green-200 text-green-700 rounded-full shadow-sm">
+            <img src="@/assets/alpine-icon.svg" class="w-5 h-5">
+            <span>Alpine JS</span>
+          </label>
+          <label class="badge flex items-center gap-2 px-4 py-2 bg-green-200 text-green-700 rounded-full shadow-sm">
             <img src="@/assets/php-icon.svg" class="w-5 h-5">
             <span>PHP</span>
           </label>
@@ -63,16 +63,16 @@
             <span>Filament PHP</span>
           </label>
           <label class="badge flex items-center gap-2 px-4 py-2 bg-green-200 text-green-700 rounded-full shadow-sm">
+            <img src="@/assets/python-icon.svg" class="w-5 h-5">
+            <span>Python</span>
+          </label>
+          <label class="badge flex items-center gap-2 px-4 py-2 bg-green-200 text-green-700 rounded-full shadow-sm">
             <img src="@/assets/wordpress-icon.svg" class="w-5 h-5">
             <span>WordPress</span>
           </label>
           <label class="badge flex items-center gap-2 px-4 py-2 bg-green-200 text-green-700 rounded-full shadow-sm">
             <img src="@/assets/mysql-icon.svg" class="w-5 h-5">
             <span>MySQL</span>
-          </label>
-          <label class="badge flex items-center gap-2 px-4 py-2 bg-blue-200 text-blue-700 rounded-full shadow-sm">
-            <img src="@/assets/scrum-master-icon.svg" class="w-5 h-5">
-            <span>Agile Master</span>
           </label>
           <label class="badge flex items-center gap-2 px-4 py-2 bg-blue-200 text-blue-700 rounded-full shadow-sm">
             <img src="@/assets/scrum-icon.svg" class="w-5 h-5">
@@ -87,10 +87,6 @@
             <span>Lean</span>
           </label>
           <label class="badge flex items-center gap-2 px-4 py-2 bg-blue-200 text-blue-700 rounded-full shadow-sm">
-            <img src="@/assets/gestao-icon.svg" class="w-5 h-5">
-            <span>Gestão</span>
-          </label>
-          <label class="badge flex items-center gap-2 px-4 py-2 bg-blue-200 text-blue-700 rounded-full shadow-sm">
             <img src="@/assets/github-icon.svg" class="w-5 h-5">
             <span>GitHub</span>
           </label>
@@ -99,8 +95,40 @@
             <span>Miro</span>
           </label>
           <label class="badge flex items-center gap-2 px-4 py-2 bg-blue-200 text-blue-700 rounded-full shadow-sm">
+            <img src="@/assets/trello-icon.svg" class="w-5 h-5">
+            <span>Trello</span>
+          </label>
+          <label class="badge flex items-center gap-2 px-4 py-2 bg-blue-200 text-blue-700 rounded-full shadow-sm">
             <img src="@/assets/excel-icon.svg" class="w-5 h-5">
             <span>Excel</span>
+          </label>
+          <label class="badge flex items-center gap-2 px-4 py-2 bg-blue-200 text-blue-700 rounded-full shadow-sm">
+            <img src="@/assets/word-icon.svg" class="w-5 h-5">
+            <span>Word</span>
+          </label>
+          <label class="badge flex items-center gap-2 px-4 py-2 bg-slate-200 text-slate-700 rounded-full shadow-sm">
+            <img src="@/assets/gestao-icon.svg" class="w-5 h-5">
+            <span>Gestão Ágil</span>
+          </label>
+          <label class="badge flex items-center gap-2 px-4 py-2 bg-slate-200 text-slate-700 rounded-full shadow-sm">
+            <img src="@/assets/adaptation-icon.svg" class="w-5 h-5">
+            <span>Adaptação</span>
+          </label>
+          <label class="badge flex items-center gap-2 px-4 py-2 bg-slate-200 text-slate-700 rounded-full shadow-sm">
+            <img src="@/assets/communication-icon.svg" class="w-5 h-5">
+            <span>Comunicação</span>
+          </label>
+          <label class="badge flex items-center gap-2 px-4 py-2 bg-slate-200 text-slate-700 rounded-full shadow-sm">
+            <img src="@/assets/problems-icon.svg" class="w-5 h-5">
+            <span>Resolução de Problemas</span>
+          </label>
+          <label class="badge flex items-center gap-2 px-4 py-2 bg-slate-200 text-slate-700 rounded-full shadow-sm">
+            <img src="@/assets/think-icon.svg" class="w-5 h-5">
+            <span>Pensamento Crítico</span>
+          </label>
+          <label class="badge flex items-center gap-2 px-4 py-2 bg-slate-200 text-slate-700 rounded-full shadow-sm">
+            <img src="@/assets/work-icon.svg" class="w-5 h-5">
+            <span>Trabalho em Equipe</span>
           </label>
         </div>
       </div>
@@ -111,7 +139,14 @@
 
   <Projects />
 
-  <Resume />
+  <section id="historico-experiencias" class="flex flex-col lg:flex-row gap-8 items-start">
+    <div class="w-full lg:w-1/2">
+      <History />
+    </div>
+    <div class="w-full lg:w-1/2">
+      <Resume />
+    </div>
+  </section>
 
   <ContactButton />
 
@@ -128,6 +163,7 @@ import ThemeButton from '../components/ThemeButton.vue';
 import About from './About.vue';
 import Projects from './Projects.vue';
 import Resume from './Resume.vue';
+import History from './History.vue';
 
 export default {
   name: 'Home',
@@ -135,6 +171,7 @@ export default {
     About,
     Projects,
     Resume,
+    History,
     ContactButton,
     ThemeButton,
     BackToUpButton

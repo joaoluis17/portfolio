@@ -64,26 +64,33 @@ var __VLS_components;
 var __VLS_directives;
 // CSS variable injection 
 // CSS variable injection end 
-// @ts-ignore
-/** @type { [typeof Header, ] } */ ;
+/** @type {[typeof Header, ]} */ ;
 // @ts-ignore
 var __VLS_0 = __VLS_asFunctionalComponent(Header_vue_1.default, new Header_vue_1.default({}));
 var __VLS_1 = __VLS_0.apply(void 0, __spreadArray([{}], __VLS_functionalComponentArgsRest(__VLS_0), false));
-__VLS_asFunctionalElement(__VLS_intrinsicElements.section, __VLS_intrinsicElements.section)(__assign({ class: ("bg-bg-gray-50 dark:bg-gray-900") }));
-__VLS_asFunctionalElement(__VLS_intrinsicElements.div, __VLS_intrinsicElements.div)(__assign({ class: ("font-roboto-flex app-container max-w-5xl") }));
-__VLS_asFunctionalElement(__VLS_intrinsicElements.main, __VLS_intrinsicElements.main)({});
-var __VLS_5 = {}.RouterView;
-/** @type { [typeof __VLS_components.RouterView, typeof __VLS_components.routerView, ] } */ ;
+__VLS_asFunctionalElement(__VLS_intrinsicElements.section, __VLS_intrinsicElements.section)(__assign({ class: "bg-gradient-to-bl from-blue-100 to-white dark:bg-gradient-to-bl dark:from-blue-300 dark:to-blue-900" }));
+__VLS_asFunctionalElement(__VLS_intrinsicElements.div, __VLS_intrinsicElements.div)(__assign({ class: "font-roboto-flex app-container max-w-5xl" }));
+__VLS_asFunctionalElement(__VLS_intrinsicElements.main, __VLS_intrinsicElements.main)(__assign({ class: "pt-16" }));
+var __VLS_3 = {}.RouterView;
+/** @type {[typeof __VLS_components.RouterView, typeof __VLS_components.routerView, ]} */ ;
 // @ts-ignore
-var __VLS_6 = __VLS_asFunctionalComponent(__VLS_5, new __VLS_5({}));
-var __VLS_7 = __VLS_6.apply(void 0, __spreadArray([{}], __VLS_functionalComponentArgsRest(__VLS_6), false));
+var __VLS_4 = __VLS_asFunctionalComponent(__VLS_3, new __VLS_3({}));
+var __VLS_5 = __VLS_4.apply(void 0, __spreadArray([{}], __VLS_functionalComponentArgsRest(__VLS_4), false));
+/** @type {[typeof Footer, ]} */ ;
 // @ts-ignore
-/** @type { [typeof Footer, ] } */ ;
-// @ts-ignore
-var __VLS_11 = __VLS_asFunctionalComponent(Footer_vue_1.default, new Footer_vue_1.default({}));
-var __VLS_12 = __VLS_11.apply(void 0, __spreadArray([{}], __VLS_functionalComponentArgsRest(__VLS_11), false));
-['bg-bg-gray-50', 'dark:bg-gray-900', 'font-roboto-flex', 'app-container', 'max-w-5xl',];
-var __VLS_special;
+var __VLS_7 = __VLS_asFunctionalComponent(Footer_vue_1.default, new Footer_vue_1.default({}));
+var __VLS_8 = __VLS_7.apply(void 0, __spreadArray([{}], __VLS_functionalComponentArgsRest(__VLS_7), false));
+/** @type {__VLS_StyleScopedClasses['bg-gradient-to-bl']} */ ;
+/** @type {__VLS_StyleScopedClasses['from-blue-100']} */ ;
+/** @type {__VLS_StyleScopedClasses['to-white']} */ ;
+/** @type {__VLS_StyleScopedClasses['dark:bg-gradient-to-bl']} */ ;
+/** @type {__VLS_StyleScopedClasses['dark:from-blue-300']} */ ;
+/** @type {__VLS_StyleScopedClasses['dark:to-blue-900']} */ ;
+/** @type {__VLS_StyleScopedClasses['font-roboto-flex']} */ ;
+/** @type {__VLS_StyleScopedClasses['app-container']} */ ;
+/** @type {__VLS_StyleScopedClasses['max-w-5xl']} */ ;
+/** @type {__VLS_StyleScopedClasses['pt-16']} */ ;
+var __VLS_dollars;
 var __VLS_self = (await Promise.resolve().then(function () { return __importStar(require('vue')); })).defineComponent({
     setup: function () {
         return {
