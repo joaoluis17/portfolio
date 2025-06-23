@@ -1,5 +1,5 @@
 <template>
-    <section class="w-full px-8 py-16 text-left">
+    <section id="history" class="w-full px-8 py-16 text-left">
       <h2 class="text-3xl text-gray-600 dark:text-gray-200 font-bold mb-6">Meu histórico</h2>
       <p class="text-gray-600 dark:text-gray-300 mb-4">
         Minha trajetória profissional começou em 2015, atuando na organização e diversos segmentos na área de eventos como casamentos, aniversários e festivais — tanto de forma voluntária quanto remunerada. Em 2016, trabalhei em uma escola de música, realizando atendimento ao público, controle de agendas e prospecção de alunos. 

@@ -15,13 +15,37 @@
       </button>
 
       <ul
-        :class="menuOpen ? 'block' : 'hidden'" @click.away="menuOpen = false"
-        class="absolute z-50 md:relative top-16 md:top-auto left-0 w-full md:w-auto bg-gray-800 md:bg-transparent md:flex flex-col md:flex-row items-center md:space-x-4 p-4 md:p-0">
-        <li><a href="#about" @click="goToSection('about')" class="block py-2 px-3 hover:text-blue-400">Sobre Mim</a></li>
-        <li><a href="#projects" @click="goToSection('projects')" class="block py-2 px-3 hover:text-blue-400">Projetos</a></li>
-        <li><a href="#resume" @click="goToSection('resume')" class="block py-2 px-3 hover:text-blue-400">Experiências</a></li>
-        <li><router-link to="/contact" class="block py-2 px-3 hover:text-blue-400" @click="menuOpen = false">Contato</router-link></li>
+        :class="menuOpen ? 'block' : 'hidden'"
+        @click.away="menuOpen = false"
+        class="absolute z-50 md:relative top-16 md:top-auto left-0 w-full md:w-auto bg-gray-800 md:bg-transparent md:flex flex-col md:flex-row items-center md:space-x-4 p-4 md:p-0"
+      >
+        <li>
+          <a href="#about" @click="goToSection('about')" class="block py-2 px-3 hover:text-blue-400">Sobre Mim</a>
+        </li>
+        <li>
+          <a href="#projects" @click="goToSection('projects')" class="block py-2 px-3 hover:text-blue-400">Projetos</a>
+        </li>
+
+        <!-- MOBILE ONLY: Histórico -->
+        <li class="block md:hidden">
+          <a href="#history" @click="goToSection('resume')" class="block py-2 px-3 hover:text-blue-400">Histórico</a>
+        </li>
+
+        <!-- MOBILE ONLY: Experiências -->
+        <li class="block md:hidden">
+          <a href="#resume" @click="goToSection('resume')" class="block py-2 px-3 hover:text-blue-400">Experiências</a>
+        </li>
+
+        <!-- DESKTOP ONLY: Histórico/Experiências -->
+        <li class="hidden md:block">
+          <a href="#resume" @click="goToSection('resume')" class="block py-2 px-3 hover:text-blue-400">Histórico/Experiências</a>
+        </li>
+
+        <li>
+          <router-link to="/contact" class="block py-2 px-3 hover:text-blue-400" @click="menuOpen = false">Contato</router-link>
+        </li>
       </ul>
+
     </nav>
   </header>
 </template>
