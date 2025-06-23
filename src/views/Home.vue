@@ -39,16 +39,20 @@
             <span>JavaScript</span>
           </label>
           <label class="badge flex items-center gap-2 px-4 py-2 bg-green-200 text-green-700 rounded-full shadow-sm">
-            <img src="@/assets/node-icon.svg" class="w-5 h-5">
-            <span>Node JS</span>
-          </label>
-          <label class="badge flex items-center gap-2 px-4 py-2 bg-green-200 text-green-700 rounded-full shadow-sm">
             <img src="@/assets/vue-icon.svg" class="w-5 h-5">
             <span>Vue JS</span>
           </label>
           <label class="badge flex items-center gap-2 px-4 py-2 bg-green-200 text-green-700 rounded-full shadow-sm">
             <img src="@/assets/alpine-icon.svg" class="w-5 h-5">
             <span>Alpine JS</span>
+          </label>
+          <label class="badge flex items-center gap-2 px-4 py-2 bg-green-200 text-green-700 rounded-full shadow-sm">
+            <img src="@/assets/node-icon.svg" class="w-5 h-5">
+            <span>Node JS</span>
+          </label>
+          <label class="badge flex items-center gap-2 px-4 py-2 bg-green-200 text-green-700 rounded-full shadow-sm">
+            <img src="@/assets/typescript-icon.svg" class="w-5 h-5">
+            <span>TypeScript</span>
           </label>
           <label class="badge flex items-center gap-2 px-4 py-2 bg-green-200 text-green-700 rounded-full shadow-sm">
             <img src="@/assets/php-icon.svg" class="w-5 h-5">
@@ -148,6 +152,8 @@
     </div>
   </section>
 
+  <Certificates />
+
   <ContactButton />
 
   <ThemeButton />
@@ -164,6 +170,7 @@ import About from './About.vue';
 import Projects from './Projects.vue';
 import Resume from './Resume.vue';
 import History from './History.vue';
+import Certificates from './Certificates.vue';
 
 export default {
   name: 'Home',
@@ -172,6 +179,7 @@ export default {
     Projects,
     Resume,
     History,
+    Certificates,
     ContactButton,
     ThemeButton,
     BackToUpButton

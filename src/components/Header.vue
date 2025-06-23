@@ -28,7 +28,7 @@
 
         <!-- MOBILE ONLY: Histórico -->
         <li class="block md:hidden">
-          <a href="#history" @click="goToSection('resume')" class="block py-2 px-3 hover:text-blue-400">Histórico</a>
+          <a href="#history" @click="goToSection('history')" class="block py-2 px-3 hover:text-blue-400">Histórico</a>
         </li>
 
         <!-- MOBILE ONLY: Experiências -->
@@ -39,6 +39,10 @@
         <!-- DESKTOP ONLY: Histórico/Experiências -->
         <li class="hidden md:block">
           <a href="#resume" @click="goToSection('resume')" class="block py-2 px-3 hover:text-blue-400">Histórico/Experiências</a>
+        </li>
+
+        <li>
+          <a href="#certificates" @click="goToSection('certificates')" class="block py-2 px-3 hover:text-blue-400">Cursos e Certificados</a>
         </li>
 
         <li>
