@@ -1,5 +1,5 @@
 <template>
-  <section id="certificates" class="w-full px-20 pb-20 items-start text-left">
+  <section id="certificates" class="w-full px-4 pb-20 items-start text-left">
       <h2 class="text-3xl text-gray-600 dark:text-gray-200 font-bold my-12">Cursos e Certificados</h2>
       
       <div class="relative">
@@ -79,16 +79,16 @@ data() {
         certificado: 'https://www.credly.com/badges/135198a1-a6cb-4e1c-b758-0d0478d2da1a/linked_in_profile',
       },
       {
-        title: 'Organização de Equipes Ágeis: os papéis existentes em uma equipe',
-        description: 'Curso com certificação de 6 horas em Organização de Equipes pela Alura',
-        fullDescription: 'Nesse curso, fui ensinado sobre a organização de equipes com métodos ágeis, entendendo os papéis e funções existentes em uma equipe.',
-        link: 'https://cursos.alura.com.br/certificate/ce5bb624-df2f-4b12-bc12-60adebd00a0b?lang',
+        title: 'Lean Manufacturing - Nível 1',
+        description: 'Curso com certificação de 2 horas em Lean Manufacturing pela RL&Associados.',
+        fullDescription: 'Nesse curso introdutório de nível 1, aprendi a base do "Lean Manufacturing", onde foi explicado temas como: Poka Yoke, Andon, Gerenciamento de Mudança, entre outros.',
+        certificado: 'https://acrobat.adobe.com/id/urn:aaid:sc:va6c2:e6339682-0579-4e5d-8abb-2f00b81f207b',
       },
       {
-        title: 'Imersão Dev 9ª Edição',
-        description: 'Workshop online com certificação de 4 horas em Desenvolvimento Web pela Alura',
-        fullDescription: 'Imersão Dev com foco em Desenvolvimento Web usando a linguagem JavaScript. Nesse workshop online, foi ensinado o básico da lógica de programação, além de explicar um pouco sobre cada função da área Dev.',
-        link: 'https://cursos.alura.com.br/immersion/certificate/e7db9c3d-2271-4dd2-8d22-60390338c577?lang',
+        title: 'Formação White Belt Six Sigma',
+        description: 'Curso com certificação de 2 horas em Lean White Belt Six Sigma pela RL&Associados.',
+        fullDescription: 'Certificação White Belt, onde aprendi a base do Six Sigma. Nele, aprendi sobre os níveis e funções de cada "Belt", além de ferramentas e metodologias como: Dados - Global e Dentro, Desvio Padrão, Análise prática de um processo, Normalidade dos dados, entre outros.',
+        certificado: 'https://acrobat.adobe.com/id/urn:aaid:sc:va6c2:71e8cd41-c921-4dde-ba61-0c1e65bb5eee',
       },
       {
         title: 'Liderança e Gestão De Equipes',
@@ -101,6 +101,18 @@ data() {
         description: 'Curso com certificação de 30 horas em Resolução de Problemas pelo ENAP.',
         fullDescription: 'Este é o segundo curso do Eixo "Resolvendo Problemas" que tive a oportunidade de finalizar. Nesse curso, pude aprender técnicas e ferramentas de performance para que o time consiga ter melhores resultados de forma mais efetiva. Tive introdução ao método OKR, além de outras metodologias e ferramentas como o Kanban e o Canva.',
         link: 'https://acrobat.adobe.com/id/urn:aaid:sc:VA6C2:5751b4ff-730c-43d2-8d11-64e361d76bc9',
+      },
+      {
+        title: 'Organização de Equipes Ágeis: os papéis existentes em uma equipe',
+        description: 'Curso com certificação de 6 horas em Organização de Equipes pela Alura',
+        fullDescription: 'Nesse curso, fui ensinado sobre a organização de equipes com métodos ágeis, entendendo os papéis e funções existentes em uma equipe.',
+        link: 'https://cursos.alura.com.br/certificate/ce5bb624-df2f-4b12-bc12-60adebd00a0b?lang',
+      },
+      {
+        title: 'Imersão Dev 9ª Edição',
+        description: 'Workshop online com certificação de 4 horas em Desenvolvimento Web pela Alura',
+        fullDescription: 'Imersão Dev com foco em Desenvolvimento Web usando a linguagem JavaScript. Nesse workshop online, foi ensinado o básico da lógica de programação, além de explicar um pouco sobre cada função da área Dev.',
+        link: 'https://cursos.alura.com.br/immersion/certificate/e7db9c3d-2271-4dd2-8d22-60390338c577?lang',
       },
     ],
   };

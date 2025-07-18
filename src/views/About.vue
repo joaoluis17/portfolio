@@ -1,5 +1,5 @@
 <template>
-    <section id="about" class="w-full px-20 items-start text-left">
+    <section id="about" class="w-full px-4 items-start text-left">
         <h2 class="text-3xl text-gray-600 dark:text-gray-200 font-bold my-12">Sobre Mim</h2>
         <p class="text-lg text-gray-600 dark:text-gray-200">
             Desenvolvedor Web com experiência na criação de aplicações escaláveis e responsivas. Atuo com foco especial nas camadas de interface, utilizando tecnologias como VueJS, JavaScript, Tailwind CSS, Laravel e PHP para proporcionar uma excelente experiência ao usuário.
