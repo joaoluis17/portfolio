@@ -2,11 +2,21 @@
   <section id="projects" class="w-full px-4 items-start text-left">
       <h2 class="text-3xl text-gray-600 dark:text-gray-200 font-bold my-12">Projetos</h2>
       
-      <div class="flex overflow-x-auto space-x-4 py-4">
+      <div class="relative">
+        <!-- Botão Esquerda -->
+        <button 
+          @click="scrollLeft"
+          class="absolute left-0 top-1/2 transform -translate-y-1/2 z-10 bg-white/80 hover:bg-white rounded-full p-2 shadow"
+        >
+          ◀
+        </button>
+        
+        <!-- Lista de Certificados com Scroll -->
+        <div ref="scrollContainer" class="flex overflow-x-auto scroll-smooth space-x-4 py-4 no-scrollbar">
           <div
               v-for="(project, index) in projects"
               :key="index"
-              class="project-item bg-gray-200 p-6 rounded shadow hover:shadow-lg transition-shadow w-64"
+              class="project-item bg-gray-200 p-6 rounded shadow hover:shadow-lg transition-shadow w-64 shrink-0"
           >
               <h3 class="text-xl text-gray-600 font-bold mb-2">{{ project.title }}</h3>
               <p class="text-gray-600">{{ project.description }}</p>
@@ -17,6 +27,15 @@
                   Ver Detalhes
               </button>
           </div>
+        </div>
+
+        <!-- Botão Direita -->
+        <button 
+          @click="scrollRight"
+          class="absolute right-0 top-1/2 transform -translate-y-1/2 z-10 bg-white/80 hover:bg-white rounded-full p-2 shadow"
+        >
+          ▶
+        </button>
       </div>
 
       <div 
@@ -75,9 +94,15 @@ data() {
       },
       {
         title: 'Helpick',
-        description: 'Comunidade online para músicos',
+        description: 'Comunidade online para músicos.',
         fullDescription: 'A ideia desse site é uma comunidade musical, onde os usuários poderão tirar dúvidas e conhecer outros músicos para melhorar seu networking e criar amizades. Este é meu primeiro projeto Full-Stack em Laravel, Tailwind CSS e MySQL, além de usar Alpine e JavaScript para a lógica de algumas mini-funções do site. Tive auxílio do João Fernando (ocorvu) nesse projeto, onde ele me ajudou a criar alguns componentes do fórum. Nele temos um site com alguns painéis (Fórum, Blog e Produtos), além de ter cadastro de usuários e outras funções. Criei também, as landing pages responsivas usando JavaScript e Tailwind CSS.',
         link: 'https://github.com/joaoluis17/helpick',
+      },
+      {
+        title: 'Calculadora de IMC',
+        description: 'Calculadora de IMC simples de usar.',
+        fullDescription: 'Calculadora de IMC feita com HTML/CSS e Python. Um projeto simples e fácil de usar. Para por em prática meus conhecimentos em python',
+        link: 'https://github.com/joaoluis17/calculator.git',
       },
     ],
   };
@@ -93,6 +118,12 @@ methods: {
     if (this.selectedProject !== null && this.$refs.projectDetails && !this.$refs.projectDetails.contains(event.target)) {
       this.closeProjectDetails();
     }
+  },
+  scrollLeft() {
+    this.$refs.scrollContainer.scrollBy({ left: -300, behavior: 'smooth' });
+  },
+  scrollRight() {
+    this.$refs.scrollContainer.scrollBy({ left: 300, behavior: 'smooth' });
   }
 },
 mounted() {
