@@ -8,7 +8,7 @@
         Em 2021, ingressei na Teleperformance como atendente de SAC da Shopee, onde desenvolvi habilidades em comunicação, preenchimento de planilhas e padronização de scripts de atendimento. 
       </p>
       <p class="text-gray-600 dark:text-gray-300">
-        Ainda em 2021, tive a oportunidade de iniciar minha carreira na área de tecnologia na empresa Souk, onde atuo até hoje. Comecei como desenvolvedor backend júnior, mas fui realocado para o front-end por afinidade e demanda. Cerca de um ano depois, passei também a assumir responsabilidades como gestor de projetos, liderando entregas com foco em metodologias ágeis. Atualmente, concilio as funções de front-end e gestão ágil, contribuindo para a qualidade e eficiência dos produtos entregues. 
+        Ainda em 2021, tive a oportunidade de iniciar minha carreira na área de tecnologia na empresa Souk, onde atuei até setembro de 2025. Comecei como desenvolvedor backend júnior, mas fui realocado para o front-end por afinidade e demanda. Cerca de um ano depois, passei também a assumir responsabilidades como gestor de projetos, liderando entregas com foco em metodologias ágeis. 
       </p>
     </section>
   </template>

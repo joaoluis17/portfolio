@@ -4,7 +4,7 @@
         <div class="mb-12 space-y-4">
             <div class="bg-gray-200 p-6 rounded shadow hover:shadow-lg transition-shadow">
                 <h3 class="text-xl text-gray-600 font-bold mb-2">Desenvolvedor Web Front-End/Scrum Master</h3>
-                <p class="text-gray-600">04/2021 - Presente</p>
+                <p class="text-gray-600">04/2021 - 09/2025</p>
             </div>
             <div class="bg-gray-200 p-6 rounded shadow hover:shadow-lg transition-shadow">
                 <h3 class="text-xl text-gray-600 font-bold mb-2">Expert em Interação</h3>
