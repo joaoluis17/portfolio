@@ -12,13 +12,13 @@
           </div>
         </a>
     </div>
-    <section class="w-full flex flex-row px-12 items-center gap-6">
+    <section class="w-full flex flex-row px-4 items-center gap-6">
       <div id="home" class="p-8 flex flex-col items-start">
         <div class="avatar-background rounded-full overflow-hidden w-32 h-32 mb-4">
           <img src="../assets/profile-photo.jpg" height="1599" width="899" alt="Avatar-Photo"/>
         </div>
         <h1 className="text-4xl text-gray-600 dark:text-gray-200 font-bold mb-2">João Luis Prado</h1>
-        <p className="text-lg text-gray-600 dark:text-gray-200">Desenvolvedor web Front-End & Gestor de Projetos</p>
+        <p className="text-lg text-gray-600 dark:text-gray-200">Desenvolvedor Full-Stack & Gestor de Projetos</p>
         <p className="text-sm text-gray-400 dark:text-gray-50">(JavaScript | Vue JS | PHP | Laravel | Scrum | Kanban) - Brasil</p>
 
         <div class="flex flex-wrap gap-4 mt-4">

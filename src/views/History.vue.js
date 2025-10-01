@@ -50,7 +50,7 @@ exports.default = (await Promise.resolve().then(function () { return __importSta
 var __VLS_ctx = {};
 var __VLS_components;
 var __VLS_directives;
-__VLS_asFunctionalElement(__VLS_intrinsicElements.section, __VLS_intrinsicElements.section)(__assign({ class: "w-full px-8 py-16 text-left" }));
+__VLS_asFunctionalElement(__VLS_intrinsicElements.section, __VLS_intrinsicElements.section)(__assign({ id: "history" }, { class: "w-full px-8 py-16 text-left" }));
 __VLS_asFunctionalElement(__VLS_intrinsicElements.h2, __VLS_intrinsicElements.h2)(__assign({ class: "text-3xl text-gray-600 dark:text-gray-200 font-bold mb-6" }));
 __VLS_asFunctionalElement(__VLS_intrinsicElements.p, __VLS_intrinsicElements.p)(__assign({ class: "text-gray-600 dark:text-gray-300 mb-4" }));
 __VLS_asFunctionalElement(__VLS_intrinsicElements.p, __VLS_intrinsicElements.p)(__assign({ class: "text-gray-600 dark:text-gray-300 mb-4" }));

@@ -63,6 +63,7 @@ var About_vue_1 = __importDefault(require("./About.vue"));
 var Projects_vue_1 = __importDefault(require("./Projects.vue"));
 var Resume_vue_1 = __importDefault(require("./Resume.vue"));
 var History_vue_1 = __importDefault(require("./History.vue"));
+var Certificates_vue_1 = __importDefault(require("./Certificates.vue"));
 exports.default = (await Promise.resolve().then(function () { return __importStar(require('vue')); })).defineComponent({
     name: 'Home',
     components: {
@@ -70,6 +71,7 @@ exports.default = (await Promise.resolve().then(function () { return __importSta
         Projects: Projects_vue_1.default,
         Resume: Resume_vue_1.default,
         History: History_vue_1.default,
+        Certificates: Certificates_vue_1.default,
         ContactButton: ContactButton_vue_1.default,
         ThemeButton: ThemeButton_vue_1.default,
         BackToUpButton: BackToUpButton_vue_1.default
@@ -82,6 +84,7 @@ var __VLS_componentsOption = {
     Projects: Projects_vue_1.default,
     Resume: Resume_vue_1.default,
     History: History_vue_1.default,
+    Certificates: Certificates_vue_1.default,
     ContactButton: ContactButton_vue_1.default,
     ThemeButton: ThemeButton_vue_1.default,
     BackToUpButton: BackToUpButton_vue_1.default
@@ -102,7 +105,7 @@ __VLS_asFunctionalElement(__VLS_intrinsicElements.a, __VLS_intrinsicElements.a)(
 });
 __VLS_asFunctionalElement(__VLS_intrinsicElements.div, __VLS_intrinsicElements.div)(__assign({ class: "rounded-xl border-gray-150 p-0" }));
 __VLS_asFunctionalElement(__VLS_intrinsicElements.img)(__assign(__assign({ src: "../assets/linkedin-logo.svg" }, { class: "w-10 h-10 hover:w-16 hover:h-16" }), { alt: "LinkedIn Logo" }));
-__VLS_asFunctionalElement(__VLS_intrinsicElements.section, __VLS_intrinsicElements.section)(__assign({ class: "w-full flex flex-row px-12 items-center gap-6" }));
+__VLS_asFunctionalElement(__VLS_intrinsicElements.section, __VLS_intrinsicElements.section)(__assign({ class: "w-full flex flex-row px-4 items-center gap-6" }));
 __VLS_asFunctionalElement(__VLS_intrinsicElements.div, __VLS_intrinsicElements.div)(__assign({ id: "home" }, { class: "p-8 flex flex-col items-start" }));
 __VLS_asFunctionalElement(__VLS_intrinsicElements.div, __VLS_intrinsicElements.div)(__assign({ class: "avatar-background rounded-full overflow-hidden w-32 h-32 mb-4" }));
 __VLS_asFunctionalElement(__VLS_intrinsicElements.img)({
@@ -134,13 +137,16 @@ __VLS_asFunctionalElement(__VLS_intrinsicElements.label, __VLS_intrinsicElements
 __VLS_asFunctionalElement(__VLS_intrinsicElements.img, __VLS_intrinsicElements.img)(__assign({ src: "@/assets/js-icon.svg" }, { class: "w-5 h-5" }));
 __VLS_asFunctionalElement(__VLS_intrinsicElements.span, __VLS_intrinsicElements.span)({});
 __VLS_asFunctionalElement(__VLS_intrinsicElements.label, __VLS_intrinsicElements.label)(__assign({ class: "badge flex items-center gap-2 px-4 py-2 bg-green-200 text-green-700 rounded-full shadow-sm" }));
-__VLS_asFunctionalElement(__VLS_intrinsicElements.img, __VLS_intrinsicElements.img)(__assign({ src: "@/assets/node-icon.svg" }, { class: "w-5 h-5" }));
-__VLS_asFunctionalElement(__VLS_intrinsicElements.span, __VLS_intrinsicElements.span)({});
-__VLS_asFunctionalElement(__VLS_intrinsicElements.label, __VLS_intrinsicElements.label)(__assign({ class: "badge flex items-center gap-2 px-4 py-2 bg-green-200 text-green-700 rounded-full shadow-sm" }));
 __VLS_asFunctionalElement(__VLS_intrinsicElements.img, __VLS_intrinsicElements.img)(__assign({ src: "@/assets/vue-icon.svg" }, { class: "w-5 h-5" }));
 __VLS_asFunctionalElement(__VLS_intrinsicElements.span, __VLS_intrinsicElements.span)({});
 __VLS_asFunctionalElement(__VLS_intrinsicElements.label, __VLS_intrinsicElements.label)(__assign({ class: "badge flex items-center gap-2 px-4 py-2 bg-green-200 text-green-700 rounded-full shadow-sm" }));
 __VLS_asFunctionalElement(__VLS_intrinsicElements.img, __VLS_intrinsicElements.img)(__assign({ src: "@/assets/alpine-icon.svg" }, { class: "w-5 h-5" }));
+__VLS_asFunctionalElement(__VLS_intrinsicElements.span, __VLS_intrinsicElements.span)({});
+__VLS_asFunctionalElement(__VLS_intrinsicElements.label, __VLS_intrinsicElements.label)(__assign({ class: "badge flex items-center gap-2 px-4 py-2 bg-green-200 text-green-700 rounded-full shadow-sm" }));
+__VLS_asFunctionalElement(__VLS_intrinsicElements.img, __VLS_intrinsicElements.img)(__assign({ src: "@/assets/node-icon.svg" }, { class: "w-5 h-5" }));
+__VLS_asFunctionalElement(__VLS_intrinsicElements.span, __VLS_intrinsicElements.span)({});
+__VLS_asFunctionalElement(__VLS_intrinsicElements.label, __VLS_intrinsicElements.label)(__assign({ class: "badge flex items-center gap-2 px-4 py-2 bg-green-200 text-green-700 rounded-full shadow-sm" }));
+__VLS_asFunctionalElement(__VLS_intrinsicElements.img, __VLS_intrinsicElements.img)(__assign({ src: "@/assets/typescript-icon.svg" }, { class: "w-5 h-5" }));
 __VLS_asFunctionalElement(__VLS_intrinsicElements.span, __VLS_intrinsicElements.span)({});
 __VLS_asFunctionalElement(__VLS_intrinsicElements.label, __VLS_intrinsicElements.label)(__assign({ class: "badge flex items-center gap-2 px-4 py-2 bg-green-200 text-green-700 rounded-full shadow-sm" }));
 __VLS_asFunctionalElement(__VLS_intrinsicElements.img, __VLS_intrinsicElements.img)(__assign({ src: "@/assets/php-icon.svg" }, { class: "w-5 h-5" }));
@@ -225,21 +231,26 @@ var __VLS_12 = {}.Resume;
 // @ts-ignore
 var __VLS_13 = __VLS_asFunctionalComponent(__VLS_12, new __VLS_12({}));
 var __VLS_14 = __VLS_13.apply(void 0, __spreadArray([{}], __VLS_functionalComponentArgsRest(__VLS_13), false));
-var __VLS_16 = {}.ContactButton;
-/** @type {[typeof __VLS_components.ContactButton, ]} */ ;
+var __VLS_16 = {}.Certificates;
+/** @type {[typeof __VLS_components.Certificates, ]} */ ;
 // @ts-ignore
 var __VLS_17 = __VLS_asFunctionalComponent(__VLS_16, new __VLS_16({}));
 var __VLS_18 = __VLS_17.apply(void 0, __spreadArray([{}], __VLS_functionalComponentArgsRest(__VLS_17), false));
-var __VLS_20 = {}.ThemeButton;
-/** @type {[typeof __VLS_components.ThemeButton, ]} */ ;
+var __VLS_20 = {}.ContactButton;
+/** @type {[typeof __VLS_components.ContactButton, ]} */ ;
 // @ts-ignore
 var __VLS_21 = __VLS_asFunctionalComponent(__VLS_20, new __VLS_20({}));
 var __VLS_22 = __VLS_21.apply(void 0, __spreadArray([{}], __VLS_functionalComponentArgsRest(__VLS_21), false));
-var __VLS_24 = {}.BackToUpButton;
-/** @type {[typeof __VLS_components.BackToUpButton, ]} */ ;
+var __VLS_24 = {}.ThemeButton;
+/** @type {[typeof __VLS_components.ThemeButton, ]} */ ;
 // @ts-ignore
 var __VLS_25 = __VLS_asFunctionalComponent(__VLS_24, new __VLS_24({}));
 var __VLS_26 = __VLS_25.apply(void 0, __spreadArray([{}], __VLS_functionalComponentArgsRest(__VLS_25), false));
+var __VLS_28 = {}.BackToUpButton;
+/** @type {[typeof __VLS_components.BackToUpButton, ]} */ ;
+// @ts-ignore
+var __VLS_29 = __VLS_asFunctionalComponent(__VLS_28, new __VLS_28({}));
+var __VLS_30 = __VLS_29.apply(void 0, __spreadArray([{}], __VLS_functionalComponentArgsRest(__VLS_29), false));
 /** @type {__VLS_StyleScopedClasses['relative']} */ ;
 /** @type {__VLS_StyleScopedClasses['w-full']} */ ;
 /** @type {__VLS_StyleScopedClasses['absolute']} */ ;
@@ -266,7 +277,7 @@ var __VLS_26 = __VLS_25.apply(void 0, __spreadArray([{}], __VLS_functionalCompon
 /** @type {__VLS_StyleScopedClasses['w-full']} */ ;
 /** @type {__VLS_StyleScopedClasses['flex']} */ ;
 /** @type {__VLS_StyleScopedClasses['flex-row']} */ ;
-/** @type {__VLS_StyleScopedClasses['px-12']} */ ;
+/** @type {__VLS_StyleScopedClasses['px-4']} */ ;
 /** @type {__VLS_StyleScopedClasses['items-center']} */ ;
 /** @type {__VLS_StyleScopedClasses['gap-6']} */ ;
 /** @type {__VLS_StyleScopedClasses['p-8']} */ ;
@@ -283,6 +294,18 @@ var __VLS_26 = __VLS_25.apply(void 0, __spreadArray([{}], __VLS_functionalCompon
 /** @type {__VLS_StyleScopedClasses['flex-wrap']} */ ;
 /** @type {__VLS_StyleScopedClasses['gap-4']} */ ;
 /** @type {__VLS_StyleScopedClasses['mt-4']} */ ;
+/** @type {__VLS_StyleScopedClasses['badge']} */ ;
+/** @type {__VLS_StyleScopedClasses['flex']} */ ;
+/** @type {__VLS_StyleScopedClasses['items-center']} */ ;
+/** @type {__VLS_StyleScopedClasses['gap-2']} */ ;
+/** @type {__VLS_StyleScopedClasses['px-4']} */ ;
+/** @type {__VLS_StyleScopedClasses['py-2']} */ ;
+/** @type {__VLS_StyleScopedClasses['bg-green-200']} */ ;
+/** @type {__VLS_StyleScopedClasses['text-green-700']} */ ;
+/** @type {__VLS_StyleScopedClasses['rounded-full']} */ ;
+/** @type {__VLS_StyleScopedClasses['shadow-sm']} */ ;
+/** @type {__VLS_StyleScopedClasses['w-5']} */ ;
+/** @type {__VLS_StyleScopedClasses['h-5']} */ ;
 /** @type {__VLS_StyleScopedClasses['badge']} */ ;
 /** @type {__VLS_StyleScopedClasses['flex']} */ ;
 /** @type {__VLS_StyleScopedClasses['items-center']} */ ;

@@ -104,6 +104,13 @@ data() {
         fullDescription: 'Calculadora de IMC feita com HTML/CSS e Python. Um projeto simples e fácil de usar. Para por em prática meus conhecimentos em python',
         link: 'https://github.com/joaoluis17/calculator.git',
       },
+      {
+        title: 'Landing Page - Wicomm',
+        description: 'Landing Page de uma loja fictícia criada em um projeto de teste técnico.',
+        fullDescription: 'Projeto desenvolvido como teste técnico para a empresa Wicomm, utilizando ReactJS e Vite, com foco em componentização, pixel perfect e boas práticas de SEO. O layout segue fielmente o Figma fornecido, com ajustes responsivos porém, priorizando a versão desktop. O projeto está disponível em produção no Vercel.',
+        link: 'https://github.com/joaoluis17/wicomm-teste',
+        linkSite: 'https://wicomm-teste-bay.vercel.app/',
+      },
     ],
   };
 },

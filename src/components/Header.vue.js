@@ -139,7 +139,16 @@ __VLS_asFunctionalElement(__VLS_intrinsicElements.a, __VLS_intrinsicElements.a)(
         var $event = _a[0];
         __VLS_ctx.goToSection('projects');
     } }, { href: "#projects" }), { class: "block py-2 px-3 hover:text-blue-400" }));
-__VLS_asFunctionalElement(__VLS_intrinsicElements.li, __VLS_intrinsicElements.li)({});
+__VLS_asFunctionalElement(__VLS_intrinsicElements.li, __VLS_intrinsicElements.li)(__assign({ class: "block md:hidden" }));
+__VLS_asFunctionalElement(__VLS_intrinsicElements.a, __VLS_intrinsicElements.a)(__assign(__assign({ onClick: function () {
+        var _a = [];
+        for (var _i = 0; _i < arguments.length; _i++) {
+            _a[_i] = arguments[_i];
+        }
+        var $event = _a[0];
+        __VLS_ctx.goToSection('history');
+    } }, { href: "#history" }), { class: "block py-2 px-3 hover:text-blue-400" }));
+__VLS_asFunctionalElement(__VLS_intrinsicElements.li, __VLS_intrinsicElements.li)(__assign({ class: "block md:hidden" }));
 __VLS_asFunctionalElement(__VLS_intrinsicElements.a, __VLS_intrinsicElements.a)(__assign(__assign({ onClick: function () {
         var _a = [];
         for (var _i = 0; _i < arguments.length; _i++) {
@@ -148,6 +157,24 @@ __VLS_asFunctionalElement(__VLS_intrinsicElements.a, __VLS_intrinsicElements.a)(
         var $event = _a[0];
         __VLS_ctx.goToSection('resume');
     } }, { href: "#resume" }), { class: "block py-2 px-3 hover:text-blue-400" }));
+__VLS_asFunctionalElement(__VLS_intrinsicElements.li, __VLS_intrinsicElements.li)(__assign({ class: "hidden md:block" }));
+__VLS_asFunctionalElement(__VLS_intrinsicElements.a, __VLS_intrinsicElements.a)(__assign(__assign({ onClick: function () {
+        var _a = [];
+        for (var _i = 0; _i < arguments.length; _i++) {
+            _a[_i] = arguments[_i];
+        }
+        var $event = _a[0];
+        __VLS_ctx.goToSection('resume');
+    } }, { href: "#resume" }), { class: "block py-2 px-3 hover:text-blue-400" }));
+__VLS_asFunctionalElement(__VLS_intrinsicElements.li, __VLS_intrinsicElements.li)({});
+__VLS_asFunctionalElement(__VLS_intrinsicElements.a, __VLS_intrinsicElements.a)(__assign(__assign({ onClick: function () {
+        var _a = [];
+        for (var _i = 0; _i < arguments.length; _i++) {
+            _a[_i] = arguments[_i];
+        }
+        var $event = _a[0];
+        __VLS_ctx.goToSection('certificates');
+    } }, { href: "#certificates" }), { class: "block py-2 px-3 hover:text-blue-400" }));
 __VLS_asFunctionalElement(__VLS_intrinsicElements.li, __VLS_intrinsicElements.li)({});
 var __VLS_0 = {}.RouterLink;
 /** @type {[typeof __VLS_components.RouterLink, typeof __VLS_components.routerLink, typeof __VLS_components.RouterLink, typeof __VLS_components.routerLink, ]} */ ;
@@ -216,6 +243,24 @@ var __VLS_3;
 /** @type {__VLS_StyleScopedClasses['py-2']} */ ;
 /** @type {__VLS_StyleScopedClasses['px-3']} */ ;
 /** @type {__VLS_StyleScopedClasses['hover:text-blue-400']} */ ;
+/** @type {__VLS_StyleScopedClasses['block']} */ ;
+/** @type {__VLS_StyleScopedClasses['py-2']} */ ;
+/** @type {__VLS_StyleScopedClasses['px-3']} */ ;
+/** @type {__VLS_StyleScopedClasses['hover:text-blue-400']} */ ;
+/** @type {__VLS_StyleScopedClasses['block']} */ ;
+/** @type {__VLS_StyleScopedClasses['md:hidden']} */ ;
+/** @type {__VLS_StyleScopedClasses['block']} */ ;
+/** @type {__VLS_StyleScopedClasses['py-2']} */ ;
+/** @type {__VLS_StyleScopedClasses['px-3']} */ ;
+/** @type {__VLS_StyleScopedClasses['hover:text-blue-400']} */ ;
+/** @type {__VLS_StyleScopedClasses['block']} */ ;
+/** @type {__VLS_StyleScopedClasses['md:hidden']} */ ;
+/** @type {__VLS_StyleScopedClasses['block']} */ ;
+/** @type {__VLS_StyleScopedClasses['py-2']} */ ;
+/** @type {__VLS_StyleScopedClasses['px-3']} */ ;
+/** @type {__VLS_StyleScopedClasses['hover:text-blue-400']} */ ;
+/** @type {__VLS_StyleScopedClasses['hidden']} */ ;
+/** @type {__VLS_StyleScopedClasses['md:block']} */ ;
 /** @type {__VLS_StyleScopedClasses['block']} */ ;
 /** @type {__VLS_StyleScopedClasses['py-2']} */ ;
 /** @type {__VLS_StyleScopedClasses['px-3']} */ ;
