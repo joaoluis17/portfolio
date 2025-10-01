@@ -51,6 +51,14 @@
             <span>Node JS</span>
           </label>
           <label class="badge flex items-center gap-2 px-4 py-2 bg-green-200 text-green-700 rounded-full shadow-sm">
+            <img src="@/assets/react-icon.svg" class="w-5 h-5">
+            <span>React JS</span>
+          </label>
+          <label class="badge flex items-center gap-2 px-4 py-2 bg-green-200 text-green-700 rounded-full shadow-sm">
+            <img src="@/assets/react-native-icon.svg" class="w-5 h-5">
+            <span>React Native</span>
+          </label>
+          <label class="badge flex items-center gap-2 px-4 py-2 bg-green-200 text-green-700 rounded-full shadow-sm">
             <img src="@/assets/typescript-icon.svg" class="w-5 h-5">
             <span>TypeScript</span>
           </label>
