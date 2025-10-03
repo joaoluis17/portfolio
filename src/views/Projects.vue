@@ -81,7 +81,7 @@ data() {
       {
         title: 'Site Pessoal',
         description: 'Nesse projeto, criei um site pessoal para divulgar meus trabalhos na área da música',
-        fullDescription: 'Essa landing page, criada em Vue JS, com layout totalmente responsivo e com diversas telas integradas no arquivo principal.',
+        fullDescription: 'Essa landing page, criada em Vue JS, com layout totalmente responsivo e com diversas telas integradas no arquivo principal, mostrando a utilização de componentização e outras boas práticas para um código limpo. O site está hospedado no Netlify, e o código-fonte está disponível no GitHub. O site foi criado para divulgar meus trabalhos na área da música, com um design moderno e funcional.',
         link: 'https://github.com/joaoluis17/music-portfolio',
         linkSite: 'https://john-prado.netlify.app/',
       },
@@ -93,10 +93,11 @@ data() {
         linkSite: 'https://conversor-universal.netlify.app/',
       },
       {
-        title: 'Helpick',
-        description: 'Comunidade online para músicos.',
-        fullDescription: 'A ideia desse site é uma comunidade musical, onde os usuários poderão tirar dúvidas e conhecer outros músicos para melhorar seu networking e criar amizades. Este é meu primeiro projeto Full-Stack em Laravel, Tailwind CSS e MySQL, além de usar Alpine e JavaScript para a lógica de algumas mini-funções do site. Tive auxílio do João Fernando (ocorvu) nesse projeto, onde ele me ajudou a criar alguns componentes do fórum. Nele temos um site com alguns painéis (Fórum, Blog e Produtos), além de ter cadastro de usuários e outras funções. Criei também, as landing pages responsivas usando JavaScript e Tailwind CSS.',
-        link: 'https://github.com/joaoluis17/helpick',
+        title: 'Landing Page - Wicomm',
+        description: 'Landing Page de uma loja fictícia criada em um projeto de teste técnico.',
+        fullDescription: 'Projeto desenvolvido como teste técnico para a empresa Wicomm, utilizando ReactJS e Vite, com foco em componentização, pixel perfect e boas práticas de SEO. O layout segue fielmente o Figma fornecido, com ajustes responsivos, porém priorizando a versão desktop. O projeto está disponível em produção no Vercel.',
+        link: 'https://github.com/joaoluis17/wicomm-teste',
+        linkSite: 'https://wicomm-teste-bay.vercel.app/',
       },
       {
         title: 'Calculadora de IMC',
@@ -105,11 +106,10 @@ data() {
         link: 'https://github.com/joaoluis17/calculator.git',
       },
       {
-        title: 'Landing Page - Wicomm',
-        description: 'Landing Page de uma loja fictícia criada em um projeto de teste técnico.',
-        fullDescription: 'Projeto desenvolvido como teste técnico para a empresa Wicomm, utilizando ReactJS e Vite, com foco em componentização, pixel perfect e boas práticas de SEO. O layout segue fielmente o Figma fornecido, com ajustes responsivos porém, priorizando a versão desktop. O projeto está disponível em produção no Vercel.',
-        link: 'https://github.com/joaoluis17/wicomm-teste',
-        linkSite: 'https://wicomm-teste-bay.vercel.app/',
+        title: 'Helpick',
+        description: 'Comunidade online para músicos.',
+        fullDescription: 'A ideia desse site é uma comunidade musical, onde os usuários poderão tirar dúvidas e conhecer outros músicos para melhorar seu networking e criar amizades. Este é meu primeiro projeto Full-Stack em Laravel, Tailwind CSS e MySQL, além de usar AlpineJS e JavaScript para a lógica de algumas mini-funções do site. Tive auxílio do João Fernando (ocorvu) nesse projeto, onde ele me ajudou a criar alguns componentes do fórum. Nele temos um site com alguns painéis (Fórum, Blog e Produtos), além de ter cadastro de usuários e outras funções. Criei também, as landing pages responsivas usando JavaScript e Tailwind CSS.',
+        link: 'https://github.com/joaoluis17/helpick',
       },
     ],
   };
