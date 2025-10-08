@@ -3,20 +3,23 @@
       <h2 class="text-3xl text-gray-600 dark:text-gray-200 font-bold my-12">Projetos</h2>
       
       <div class="relative">
-        <!-- Botão Esquerda -->
-        <button 
+        <!-- Botão Esquerda - SVG estilizado -->
+        <button
           @click="scrollLeft"
-          class="absolute left-0 top-1/2 transform -translate-y-1/2 z-10 bg-white/80 hover:bg-white rounded-full p-2 shadow"
+          aria-label="Scroll left"
+          class="absolute left-2 top-1/2 transform -translate-y-1/2 z-20 bg-white rounded-full p-2 shadow hover:scale-105 transition"
         >
-          ◀
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-700" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+          </svg>
         </button>
-        
-        <!-- Lista de Certificados com Scroll -->
-        <div ref="scrollContainer" class="flex overflow-x-auto scroll-smooth space-x-4 py-4 no-scrollbar">
+
+        <!-- Lista de Projetos com Scroll (barra escondida) -->
+        <div ref="scrollContainer" class="flex overflow-x-auto scroll-smooth space-x-4 py-4 hide-scrollbar">
           <div
               v-for="(project, index) in projects"
               :key="index"
-              class="project-item bg-gray-200 p-6 rounded shadow hover:shadow-lg transition-shadow w-64 shrink-0"
+              class="project-item bg-gray-200 p-6 rounded shadow hover:shadow-lg transition-shadow w-56 shrink-0"
           >
               <h3 class="text-xl text-gray-600 font-bold mb-2">{{ project.title }}</h3>
               <p class="text-gray-600">{{ project.description }}</p>
@@ -29,12 +32,15 @@
           </div>
         </div>
 
-        <!-- Botão Direita -->
-        <button 
+        <!-- Botão Direita - SVG estilizado -->
+        <button
           @click="scrollRight"
-          class="absolute right-0 top-1/2 transform -translate-y-1/2 z-10 bg-white/80 hover:bg-white rounded-full p-2 shadow"
+          aria-label="Scroll right"
+          class="absolute right-2 top-1/2 transform -translate-y-1/2 z-20 bg-white rounded-full p-2 shadow hover:scale-105 transition"
         >
-          ▶
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-700" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+          </svg>
         </button>
       </div>
 
@@ -127,10 +133,12 @@ methods: {
     }
   },
   scrollLeft() {
-    this.$refs.scrollContainer.scrollBy({ left: -300, behavior: 'smooth' });
+    const step = 240; // approx card width (224) + gap
+    this.$refs.scrollContainer.scrollBy({ left: -step, behavior: 'smooth' });
   },
   scrollRight() {
-    this.$refs.scrollContainer.scrollBy({ left: 300, behavior: 'smooth' });
+    const step = 240;
+    this.$refs.scrollContainer.scrollBy({ left: step, behavior: 'smooth' });
   }
 },
 mounted() {
@@ -141,3 +149,17 @@ beforeUnmount() {
 }
 };
 </script>
+
+<style scoped>
+.hide-scrollbar::-webkit-scrollbar {
+  height: 8px;
+}
+.hide-scrollbar::-webkit-scrollbar-thumb {
+  background: rgba(0,0,0,0.15);
+  border-radius: 9999px;
+}
+.hide-scrollbar {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(0,0,0,0.15) transparent;
+}
+</style>
