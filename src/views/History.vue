@@ -7,8 +7,11 @@
       <p class="text-gray-600 dark:text-gray-300 mb-4">
         Em 2021, ingressei na Teleperformance como atendente de SAC da Shopee, onde desenvolvi habilidades em comunicação, preenchimento de planilhas e padronização de scripts de atendimento. 
       </p>
-      <p class="text-gray-600 dark:text-gray-300">
+      <p class="text-gray-600 dark:text-gray-300 mb-4">
         Ainda em 2021, tive a oportunidade de iniciar minha carreira na área de tecnologia na empresa Souk, onde atuei até setembro de 2025. Comecei como desenvolvedor backend júnior, mas fui realocado para o front-end por afinidade e demanda. Cerca de um ano depois, passei também a assumir responsabilidades como gestor de projetos, liderando entregas com foco em metodologias ágeis. 
+      </p>
+      <p class="text-gray-600 dark:text-gray-300">
+        Em outubro de 2025, iniciei uma nova etapa profissional na FMU, onde atuo como desenvolvedor full-stack. Além do desenvolvimento de soluções, também contribuo com iniciativas voltadas à gestão, como a criação de dashboards, acompanhamento de indicadores e apoio na organização de processos internos. Sigo na instituição, ampliando minha atuação técnica e estratégica dentro do time. 
       </p>
     </section>
   </template>

@@ -56,38 +56,12 @@
 import certificatesData from '@/data/certificates';
 
 export default {
-name: 'certificates',
-data() {
-  return {
-    selectedcertificate: null,
-    certificates: certificatesData,
-  };
-},
-methods: {
-  showcertificateDetails(index) {
-    this.selectedcertificate = index;
+  name: 'Certificates',
+  data() {
+    return {
+      selectedcertificate: null,
+      certificates: certificatesData,
+    };
   },
-  closecertificateDetails() {
-    this.selectedcertificate = null;
-  },
-  handleClickOutside(event) {
-    if (this.selectedcertificate !== null && this.$refs.certificateDetails && !this.$refs.certificateDetails.contains(event.target)) {
-      this.closecertificateDetails();
-    }
-  },
-  scrollLeft() {
-    this.$refs.scrollContainer.scrollBy({ left: -300, behavior: 'smooth' });
-  },
-  scrollRight() {
-    this.$refs.scrollContainer.scrollBy({ left: 300, behavior: 'smooth' });
-  }
-},
-mounted() {
-  document.addEventListener('click', this.handleClickOutside);
-},
-beforeUnmount() {
-  document.removeEventListener('click', this.handleClickOutside);
-}
 };
-
 </script>

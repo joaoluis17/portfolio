@@ -25,7 +25,7 @@ export default {
   name: 'AllCertificates',
   data() {
     return {
-      certificates: certificatesData,
+      certificates: certificatesData
     };
   },
 };
