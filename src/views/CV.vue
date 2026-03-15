@@ -5,8 +5,8 @@
       <h1 class="text-xl font-bold">Currículo - João Luis Aguiar Rodrigues do Prado</h1>
 
       <a 
-        href="/public/Joao_Luis_Aguiar_Rodrigues_do_Prado_CV.pdf"
-        download="Joao_Luis_Aguiar_Rodrigues_do_Prado_CV.pdf"
+        href="/cv.pdf"
+        download="cv.pdf"
         class="px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700"
       >
         Baixar PDF
@@ -14,7 +14,7 @@
     </div>
 
     <iframe
-      src="/public/Joao_Luis_Aguiar_Rodrigues_do_Prado_CV.pdf#zoom=70"
+      src="/cv.pdf#zoom=70"
       class="w-full h-full"
     ></iframe>
 

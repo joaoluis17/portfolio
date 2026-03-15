@@ -11,7 +11,7 @@
             <img src="../assets/linkedin-logo.svg" class="w-10 h-10 hover:w-16 hover:h-16" alt="LinkedIn Logo"/>
           </div>
         </a>
-        <router-link to="/cv" target="_blank" rel="noopener noreferrer">
+        <a href="/cv.pdf" target="_blank" rel="noopener noreferrer">
           <div class="rounded-xl p-0 cursor-pointer">
             <img 
               src="../assets/pdf-icon.svg" 
@@ -20,7 +20,7 @@
               title="Currículo"
             />
           </div>
-        </router-link>
+        </a>
     </div>
     <section class="w-full flex flex-row px-4 items-center gap-6">
       <div id="home" class="p-8 flex flex-col items-start">
