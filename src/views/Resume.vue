@@ -4,7 +4,7 @@
         <div class="mb-12 space-y-4">
             <div class="bg-gray-200 p-6 rounded shadow hover:shadow-lg transition-shadow">
                 <h3 class="text-xl text-gray-600 font-bold mb-2">Desenvolvedor Web Full-Stack</h3>
-                <p class="text-gray-600">10/2025 - presente</p>
+                <p class="text-gray-600">10/2025 - 03/2026</p>
             </div>
             <div class="bg-gray-200 p-6 rounded shadow hover:shadow-lg transition-shadow">
                 <h3 class="text-xl text-gray-600 font-bold mb-2">Desenvolvedor Web Front-End/Scrum Master</h3>

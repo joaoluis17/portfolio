@@ -56,40 +56,15 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-var AllCertificates_vue_1 = __importDefault(require("./AllCertificates.vue"));
+var certificates_1 = __importDefault(require("@/data/certificates"));
 exports.default = (await Promise.resolve().then(function () { return __importStar(require('vue')); })).defineComponent({
-    name: 'certificates',
+    name: 'Certificates',
     data: function () {
         return {
             selectedcertificate: null,
-            certificates: AllCertificates_vue_1.default,
+            certificates: certificates_1.default,
         };
     },
-    methods: {
-        showcertificateDetails: function (index) {
-            this.selectedcertificate = index;
-        },
-        closecertificateDetails: function () {
-            this.selectedcertificate = null;
-        },
-        handleClickOutside: function (event) {
-            if (this.selectedcertificate !== null && this.$refs.certificateDetails && !this.$refs.certificateDetails.contains(event.target)) {
-                this.closecertificateDetails();
-            }
-        },
-        scrollLeft: function () {
-            this.$refs.scrollContainer.scrollBy({ left: -300, behavior: 'smooth' });
-        },
-        scrollRight: function () {
-            this.$refs.scrollContainer.scrollBy({ left: 300, behavior: 'smooth' });
-        }
-    },
-    mounted: function () {
-        document.addEventListener('click', this.handleClickOutside);
-    },
-    beforeUnmount: function () {
-        document.removeEventListener('click', this.handleClickOutside);
-    }
 });
 ; /* PartiallyEnd: #3632/script.vue */
 var __VLS_ctx = {};
@@ -101,24 +76,13 @@ __VLS_asFunctionalElement(__VLS_intrinsicElements.div, __VLS_intrinsicElements.d
 __VLS_asFunctionalElement(__VLS_intrinsicElements.div, __VLS_intrinsicElements.div)(__assign({ class: "overflow-hidden" }));
 __VLS_asFunctionalElement(__VLS_intrinsicElements.div, __VLS_intrinsicElements.div)(__assign({ ref: "scrollContainer" }, { class: "flex space-x-4 py-4" }));
 /** @type {typeof __VLS_ctx.scrollContainer} */ ;
-var _loop_1 = function (certificate, index) {
+for (var _i = 0, _a = __VLS_getVForSourceType((__VLS_ctx.certificates.slice(0, 4))); _i < _a.length; _i++) {
+    var _b = _a[_i], certificate = _b[0], index = _b[1];
     __VLS_asFunctionalElement(__VLS_intrinsicElements.div, __VLS_intrinsicElements.div)(__assign({ key: (index) }, { class: "certificate-item bg-gray-200 p-6 rounded shadow hover:shadow-lg transition-shadow w-56 flex-shrink-0" }));
     __VLS_asFunctionalElement(__VLS_intrinsicElements.h3, __VLS_intrinsicElements.h3)(__assign({ class: "text-xl text-gray-600 font-bold mb-2" }));
     (certificate.title);
     __VLS_asFunctionalElement(__VLS_intrinsicElements.p, __VLS_intrinsicElements.p)(__assign({ class: "text-gray-600" }));
     (certificate.description);
-    __VLS_asFunctionalElement(__VLS_intrinsicElements.button, __VLS_intrinsicElements.button)(__assign({ onClick: function () {
-            var _a = [];
-            for (var _i = 0; _i < arguments.length; _i++) {
-                _a[_i] = arguments[_i];
-            }
-            var $event = _a[0];
-            __VLS_ctx.showcertificateDetails(index);
-        } }, { class: "mt-4 bg-blue-400 text-white py-2 px-4 rounded hover:bg-blue-700" }));
-};
-for (var _i = 0, _a = __VLS_getVForSourceType((__VLS_ctx.certificates.slice(0, 4))); _i < _a.length; _i++) {
-    var _b = _a[_i], certificate = _b[0], index = _b[1];
-    _loop_1(certificate, index);
 }
 __VLS_asFunctionalElement(__VLS_intrinsicElements.div, __VLS_intrinsicElements.div)(__assign({ class: "mt-2 flex justify-end" }));
 var __VLS_0 = {}.RouterLink;
@@ -167,13 +131,6 @@ if (__VLS_ctx.selectedcertificate !== null) {
 /** @type {__VLS_StyleScopedClasses['font-bold']} */ ;
 /** @type {__VLS_StyleScopedClasses['mb-2']} */ ;
 /** @type {__VLS_StyleScopedClasses['text-gray-600']} */ ;
-/** @type {__VLS_StyleScopedClasses['mt-4']} */ ;
-/** @type {__VLS_StyleScopedClasses['bg-blue-400']} */ ;
-/** @type {__VLS_StyleScopedClasses['text-white']} */ ;
-/** @type {__VLS_StyleScopedClasses['py-2']} */ ;
-/** @type {__VLS_StyleScopedClasses['px-4']} */ ;
-/** @type {__VLS_StyleScopedClasses['rounded']} */ ;
-/** @type {__VLS_StyleScopedClasses['hover:bg-blue-700']} */ ;
 /** @type {__VLS_StyleScopedClasses['mt-2']} */ ;
 /** @type {__VLS_StyleScopedClasses['flex']} */ ;
 /** @type {__VLS_StyleScopedClasses['justify-end']} */ ;

@@ -64,6 +64,7 @@ var Projects_vue_1 = __importDefault(require("./Projects.vue"));
 var Resume_vue_1 = __importDefault(require("./Resume.vue"));
 var History_vue_1 = __importDefault(require("./History.vue"));
 var Certificates_vue_1 = __importDefault(require("./Certificates.vue"));
+var AllCertificates_vue_1 = __importDefault(require("./AllCertificates.vue"));
 exports.default = (await Promise.resolve().then(function () { return __importStar(require('vue')); })).defineComponent({
     name: 'Home',
     components: {
@@ -72,6 +73,7 @@ exports.default = (await Promise.resolve().then(function () { return __importSta
         Resume: Resume_vue_1.default,
         History: History_vue_1.default,
         Certificates: Certificates_vue_1.default,
+        AllCertificates: AllCertificates_vue_1.default,
         ContactButton: ContactButton_vue_1.default,
         ThemeButton: ThemeButton_vue_1.default,
         BackToUpButton: BackToUpButton_vue_1.default
@@ -85,6 +87,7 @@ var __VLS_componentsOption = {
     Resume: Resume_vue_1.default,
     History: History_vue_1.default,
     Certificates: Certificates_vue_1.default,
+    AllCertificates: AllCertificates_vue_1.default,
     ContactButton: ContactButton_vue_1.default,
     ThemeButton: ThemeButton_vue_1.default,
     BackToUpButton: BackToUpButton_vue_1.default
