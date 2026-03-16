@@ -1,6 +1,6 @@
 <template>
   <Header />
-  <section class="bg-gradient-to-bl from-blue-100 to-white dark:bg-gradient-to-bl dark:from-blue-300 dark:to-blue-900">
+  <section class="bg-gradient-to-bl from-gray-50 to-white dark:bg-gradient-to-bl dark:from-gray-300 dark:to-gray-900">
     <div class="font-roboto-flex app-container max-w-5xl">
       <main class="pt-16">
         <router-view />
