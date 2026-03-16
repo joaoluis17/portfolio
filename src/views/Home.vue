@@ -65,10 +65,10 @@
           <div v-if="activeCategory === 'dev'" class="flex flex-wrap gap-4">
             <label
               v-for="skill in devSkills"
-              :key="skill.name"
+              :key="skill.icon"
               class="badge basis-1/6 w-fit flex justify-center items-center gap-2 px-4 py-2 bg-green-200 text-green-700 rounded-full shadow-sm"
             >
-              <img :src="`/src/assets/${skill.icon}`" class="w-5 h-5">
+              <img :src="skill.icon" class="w-5 h-5">
               <span class="whitespace-nowrap">{{ skill.name }}</span>
             </label>
           </div>
@@ -78,10 +78,10 @@
           <div v-if="activeCategory === 'gestao'" class="flex flex-wrap gap-4">
             <label
               v-for="skill in gestaoSkills"
-              :key="skill.name"
+              :key="skill.icon"
               class="badge basis-1/6 w-fit flex justify-center items-center gap-2 px-4 py-2 bg-blue-200 text-blue-700 rounded-full shadow-sm"
             >
-              <img :src="`/src/assets/${skill.icon}`" class="w-5 h-5">
+              <img :src="skill.icon" class="w-5 h-5">
               <span class="whitespace-nowrap">{{ skill.name }}</span>
             </label>
           </div>
@@ -90,10 +90,10 @@
           <div v-if="activeCategory === 'soft'" class="flex flex-wrap gap-4">
             <label
               v-for="skill in softSkills"
-              :key="skill.name"
+              :key="skill.icon"
               class="badge basis-1/4 flex justify-center items-center gap-2 px-4 py-2 bg-slate-200 text-slate-700 rounded-full shadow-sm"
             >
-              <img :src="`/src/assets/${skill.icon}`" class="w-5 h-5">
+              <img :src="skill.icon" class="w-5 h-5">
               <span class="whitespace-nowrap">{{ skill.name }}</span>
             </label>
           </div>
