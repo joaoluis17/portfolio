@@ -1,5 +1,5 @@
 <template>
-  <section class="relative w-full px-4">
+  <section class="relative w-full max-w-6xl">
     <div class="absolute top-0 right-0 flex space-x-4 p-4 mt-4">
         <a href="https://github.com/joaoluis17" target="_blank" rel="noopener noreferrer" title="GitHub">
           <div class="rounded-xl border-gray-150 p-0">
@@ -24,7 +24,7 @@
     </div>
 
     <section class="w-full flex flex-row px-4 items-center gap-6">
-      <div id="home" class="p-8 flex flex-col items-start">
+      <div id="home" class="py-8 flex flex-col items-start">
 
         <div class="avatar-background rounded-full overflow-hidden w-32 h-32 mb-4">
           <img src="../assets/profile-photo.jpg" height="1599" width="899" alt="Avatar-Photo"/>
