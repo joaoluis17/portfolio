@@ -117,7 +117,6 @@
   <Certificates />
 
   <ContactButton />
-  <ThemeButton />
   <BackToUpButton />
 </template>
 
@@ -125,7 +124,6 @@
 <script>
 import BackToUpButton from '../components/BackToUpButton.vue';
 import ContactButton from '../components/ContactButton.vue';
-import ThemeButton from '../components/ThemeButton.vue';
 import About from './About.vue';
 import Projects from './Projects.vue';
 import Resume from './Resume.vue';
@@ -162,7 +160,6 @@ export default {
     Certificates,
     AllCertificates,
     ContactButton,
-    ThemeButton,
     BackToUpButton
   }
 };
