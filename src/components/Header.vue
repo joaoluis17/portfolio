@@ -46,7 +46,7 @@
         </li>
 
         <li>
-          <router-link to="/contact" class="block py-2 px-3 hover:text-blue-400" @click="menuOpen = false">Contato</router-link>
+          <a href="#contact" @click="goToSection('contact')" class="block py-2 px-3 hover:text-blue-400">Contato</a>
         </li>
 
         <li>
