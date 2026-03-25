@@ -3,12 +3,12 @@
     <div class="absolute top-0 right-0 flex space-x-4 p-4 mt-4">
         <a href="https://github.com/joaoluis17" target="_blank" rel="noopener noreferrer" title="GitHub">
           <div class="rounded-xl border-gray-150 p-0">
-            <img src="../assets/github-logo.svg" class="w-10 h-10 hover:w-16 hover:h-16" alt="GitHub Logo"/>
+            <img src="../assets/github-logo.svg" class="w-10 h-10 hover:w-16 hover:h-16 transition-all duration-200" alt="GitHub Logo"/>
           </div>
         </a>
         <a href="https://www.linkedin.com/in/joao-luis-prado/" target="_blank" rel="noopener noreferrer" title="LinkedIn">
           <div class="rounded-xl border-gray-150 p-0">
-            <img src="../assets/linkedin-logo.svg" class="w-10 h-10 hover:w-16 hover:h-16" alt="LinkedIn Logo"/>
+            <img src="../assets/linkedin-icon.svg" class="w-10 h-10 hover:w-16 hover:h-16 transition-all duration-200" alt="LinkedIn Logo"/>
           </div>
         </a>
         <a href="/cv.pdf" target="_blank" rel="noopener noreferrer">
@@ -116,14 +116,14 @@
 
   <Certificates />
 
-  <ContactButton />
+  <Contact />
+
   <BackToUpButton />
 </template>
 
 
 <script>
 import BackToUpButton from '../components/BackToUpButton.vue';
-import ContactButton from '../components/ContactButton.vue';
 import About from './About.vue';
 import Projects from './Projects.vue';
 import Resume from './Resume.vue';
@@ -131,6 +131,7 @@ import History from './History.vue';
 import Certificates from './Certificates.vue';
 import AllCertificates from './AllCertificates.vue';
 import { devSkills, gestaoSkills, softSkills } from '@/data/skills'
+import Contact from './Contact.vue';
 
 export default {
   name: 'Home',
@@ -159,7 +160,7 @@ export default {
     History,
     Certificates,
     AllCertificates,
-    ContactButton,
+    Contact,
     BackToUpButton
   }
 };

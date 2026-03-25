@@ -1,27 +1,9 @@
 export default [
   {
-    title: 'Agile Explorer - IBM',
-    description: 'Curso com certificação de 8 horas em Desenvolvimento Ágil pela IBM.',
-    fullDescription: 'Nesse plano de aprendizagem, aprendi do básico ao avançado sobre desenvolvimento ágil, com a metodologia da IBM.',
-    link: 'https://www.credly.com/badges/135198a1-a6cb-4e1c-b758-0d0478d2da1a/linked_in_profile',
-  },
-  {
     title: 'Liderança e Gestão De Equipes',
     description: 'Curso com certificação de 30 horas em Resolução de Problemas pelo ENAP.',
     fullDescription: 'Curso focado em gestão de equipes e resolução de problemas.',
     link: 'https://acrobat.adobe.com/id/urn:aaid:sc:VA6C2:576fd501-64ed-47a9-a5bc-fdb849e419a4',
-  },
-  {
-    title: 'OKR Aplicado a Transformacao Digital',
-    description: 'Curso com certificação de 25 horas pelo ENAP.',
-    fullDescription: 'Curso voltado para a aplicação de OKR em projetos de transformação digital.',
-    link: 'https://acrobat.adobe.com/id/urn:aaid:sc:VA6C2:5751b4ff-730c-43d2-8d11-64e361d76bc9',
-  },
-  {
-    title: 'Lean Manufacturing - Nível 1',
-    description: 'Curso com certificação de 2 horas em Lean Manufacturing pela RL&Associados.',
-    fullDescription: 'Nesse curso introdutório de nível 1, aprendi a base do Lean Manufacturing.',
-    link: 'https://acrobat.adobe.com/id/urn:aaid:sc:va6c2:e6339682-0579-4e5d-8abb-2f00b81f207b',
   },
   {
     title: 'Desenvolvendo Times de Alta Performance',
@@ -30,10 +12,88 @@ export default [
     link: 'https://acrobat.adobe.com/id/urn:aaid:sc:VA6C2:5751b4ff-730c-43d2-8d11-64e361d76bc9',
   },
   {
-    title: 'Formação White Belt Six Sigma',
-    description: 'Curso com certificação de 2 horas em Lean White Belt Six Sigma pela RL&Associados.',
-    fullDescription: 'Certificação White Belt onde aprendi a base do Six Sigma.',
-    link: 'https://acrobat.adobe.com/id/urn:aaid:sc:va6c2:71e8cd41-c921-4dde-ba61-0c1e65bb5eee',
+    title: 'OKR Aplicado a Transformacao Digital',
+    description: 'Curso com certificação de 25 horas pelo ENAP.',
+    fullDescription: 'Curso voltado para a aplicação de OKR em projetos de transformação digital.',
+    link: 'https://acrobat.adobe.com/id/urn:aaid:sc:VA6C2:5751b4ff-730c-43d2-8d11-64e361d76bc9',
+  },
+  {
+    title: ' Análise e Melhoria de Processos',
+    description: 'Curso com certificação de 20 horas em Análise e Melhoria de Processos pelo ENAP.',
+    fullDescription: 'Curso focado em análise e melhoria de processos, onde aprendi a mapear, analisar e otimizar processos organizacionais para aumentar a eficiência e reduzir custos.',
+    link: 'https://acrobat.adobe.com/id/urn:aaid:sc:VA6C2:3c586453-bc59-4f57-b795-f7a9f9ee9a73?viewer%21megaVerb=group-discover',
+  },
+  {
+    title: ' Gestão da Estratégia com BSC - Fundamentos ',
+    description: 'Curso com certificação de 20 horas em Fundamentos de Gestão de Estratégia com BSC pelo ENAP.',
+    fullDescription: 'Curso focado em gestão de estratégia com BSC, onde aprendi a criar e implementar um Balanced Scorecard para alinhar as atividades da organização com sua visão e estratégia.',
+    link: 'https://acrobat.adobe.com/id/urn:aaid:sc:VA6C2:e4345e9b-b34f-4a17-80d2-1fcee469bc4e',
+  },
+  {
+    title: 'Soft Skills: como mandar bem no trabalho e na vida',
+    description: 'Curso com certificação de 12 horas em Soft Skills pela SENAC.',
+    fullDescription: 'Curso focado em desenvolvimento de soft skills, onde aprendi a importância de habilidades interpessoais, comunicação eficaz, trabalho em equipe e liderança para o sucesso profissional e pessoal.',
+    link: 'https://cursos-orango.senac.br/pluginfile.php/1/tool_certificate/issues/1753471106/8555115891JR.pdf',
+  },
+  {
+    title: 'Avançando com Orientação a Objetos com PHP: Herança, Polimorfismo e Interfaces',
+    description: 'Curso com certificação de 10 horas pela Alura.',
+    fullDescription: 'Curso sobre orientação a objetos com PHP, focando em herança, polimorfismo e interfaces.',
+    link: 'https://cursos.alura.com.br/certificate/97ae0b5e-f6e7-4ec3-8238-3979ae1ba1d1?lang',
+  },
+  {
+    title: 'Flexbox: posicione elementos na tela',
+    description: 'Curso com certificação de 9 horas pela Alura.',
+    fullDescription: 'Curso introdutório sobre Flexbox, focando em posicionar elementos na tela de forma eficiente.',
+    link: 'https://cursos.alura.com.br/certificate/dc35e74e-c13c-41bc-9710-88694547cf81?lang',
+  },
+  {
+    title: 'Certificação Linux LPI Essentials parte 1: Evolution and Distributions',
+    description: 'Curso com certificação de 8 horas pela Alura.',
+    fullDescription: 'Curso introdutório sobre Linux, focando na evolução do sistema operacional e suas distribuições.',
+    link: 'https://cursos.alura.com.br/certificate/77f12093-7b3b-4b26-81e3-d5606a5bdcc6?lang',
+  },
+  {
+    title: 'Avançando com PHP: Arrays, Strings, Função e Web',
+    description: 'Curso com certificação de 8 horas pela Alura.',
+    fullDescription: 'Curso sobre PHP, focando em arrays, strings, funções e desenvolvimento web.',
+    link: 'https://cursos.alura.com.br/certificate/35c26703-5b12-435d-91b7-ffec74846454?lang',
+  },
+  {
+    title: 'HTML5 e CSS3 parte 4: avançando no CSS',
+    description: 'Curso com certificação de 8 horas pela Alura.',
+    fullDescription: 'Parte 4 do curso introdutório sobre HTML5 e CSS3. Nesse curso, o foco está em avançar no CSS.',
+    link: 'https://cursos.alura.com.br/certificate/4eaf1964-cc83-42d4-b614-c4a6c29cf24d?lang',
+  },
+  {
+    title: 'HTML5 e CSS3 parte 3: trabalhando com formulários e tabelas',
+    description: 'Curso com certificação de 8 horas pela Alura.',
+    fullDescription: 'Parte 3 do curso introdutório sobre HTML5 e CSS3. Nesse curso, o foco está em formuários e tabelas.',
+    link: 'https://cursos.alura.com.br/certificate/4eaf1964-cc83-42d4-b614-c4a6c29cf24d?lang',
+  },
+  {
+    title: 'HTML5 e CSS3 parte 2: posicionamento, listas e navegação',
+    description: 'Curso com certificação de 8 horas pela Alura.',
+    fullDescription: 'Continuação do curso introdutório sobre HTML5 e CSS3, focando em posicionamento, listas e navegação.',
+    link: 'https://cursos.alura.com.br/certificate/764be633-accc-46bf-83d7-a275a74d16ac?lang',
+  },
+  {
+    title: 'HTML5 e CSS3 parte 1: crie uma página da Web',
+    description: 'Curso com certificação de 8 horas pela Alura.',
+    fullDescription: 'Curso introdutório sobre HTML5 e CSS3, onde aprendi a criar páginas da web com estrutura e estilo.',
+    link: 'https://cursos.alura.com.br/certificate/2f79b46f-e7f0-407d-8b1a-2f892242bb78?lang',
+  },
+  {
+    title: 'Agile Explorer - IBM',
+    description: 'Curso com certificação de 8 horas em Desenvolvimento Ágil pela IBM.',
+    fullDescription: 'Nesse plano de aprendizagem, aprendi do básico ao avançado sobre desenvolvimento ágil, com a metodologia da IBM.',
+    link: 'https://www.credly.com/badges/135198a1-a6cb-4e1c-b758-0d0478d2da1a/linked_in_profile',
+  },
+  {
+    title: 'Gestão ágil de projetos para resultados rápidos',
+    description: 'Curso com certificação de 6 horas pelo SENAC.',
+    fullDescription: 'Curso introdutório sobre gestão ágil de projetos, onde aprendi a aplicar metodologias ágeis para alcançar resultados mais rápidos e eficientes.',
+    link: 'https://cursos-orango.senac.br/pluginfile.php/1/tool_certificate/issues/1748874613/5684218973JR.pdf',
   },
   {
     title: 'Organização de Equipes Ágeis',
@@ -42,9 +102,51 @@ export default [
     link: 'https://cursos.alura.com.br/certificate/ce5bb624-df2f-4b12-bc12-60adebd00a0b?lang',
   },
   {
+    title: 'Git e Github: controle e compartilhe seu código',
+    description: 'Curso com certificação de 6 horas pela Alura.',
+    fullDescription: 'Curso introdutório sobre Git e Github, onde aprendi a controlar e compartilhar seu código de forma eficiente.',
+    link: 'https://cursos.alura.com.br/certificate/9d116a9e-b8e6-4a53-83ad-f70dd9b6a9a7?lang',
+  },
+  {
     title: 'Imersão Dev 9ª Edição',
     description: 'Workshop online com certificação de 4 horas pela Alura.',
     fullDescription: 'Imersão focada em JavaScript e lógica de programação.',
     link: 'https://cursos.alura.com.br/immersion/certificate/e7db9c3d-2271-4dd2-8d22-60390338c577?lang',
+  },
+  {
+    title: 'Domine o SEO: coloque seus sites no topo!',
+    description: 'Curso com certificação de 3 horas em SEO pelo SENAC.',
+    fullDescription: 'Curso introdutório sobre SEO, onde aprendi as melhores práticas para otimizar sites e melhorar seu posicionamento nos motores de busca.',
+    link: 'https://cursos-orango.senac.br/pluginfile.php/1/tool_certificate/issues/1772450019/0376624645JR.pdf',
+  },
+  {
+    title: 'Tomada de decisão inteligente',
+    description: 'Curso com certificação de 3 horas pelo SENAC.',
+    fullDescription: 'Curso introdutório sobre tomada de decisão inteligente, onde aprendi a analisar situações, considerar diferentes perspectivas e tomar decisões informadas para alcançar melhores resultados.',
+    link: 'https://cursos-orango.senac.br/pluginfile.php/1/tool_certificate/issues/1750262977/0931884992JR.pdf',
+  },
+  {
+    title: 'Gestão de carreira: planeje seu futuro com propósito',
+    description: 'Curso com certificação de 3 horas pelo SENAC.',
+    fullDescription: 'Curso introdutório sobre gestão de carreira, onde aprendi a planejar o futuro com propósito e tomar decisões informadas para alcançar melhores resultados.',
+    link: 'https://cursos-orango.senac.br/pluginfile.php/1/tool_certificate/issues/1749825380/3734451416JR.pdf',
+  },
+  {
+    title: 'Lean Manufacturing - Nível 1',
+    description: 'Curso com certificação de 2 horas em Lean Manufacturing pela RL&Associados.',
+    fullDescription: 'Nesse curso introdutório de nível 1, aprendi a base do Lean Manufacturing.',
+    link: 'https://acrobat.adobe.com/id/urn:aaid:sc:va6c2:e6339682-0579-4e5d-8abb-2f00b81f207b',
+  },
+  {
+    title: 'Formação White Belt Six Sigma',
+    description: 'Curso com certificação de 2 horas em Lean White Belt Six Sigma pela RL&Associados.',
+    fullDescription: 'Certificação White Belt onde aprendi a base do Six Sigma.',
+    link: 'https://acrobat.adobe.com/id/urn:aaid:sc:va6c2:71e8cd41-c921-4dde-ba61-0c1e65bb5eee',
+  },
+  {
+    title: 'Produtividade e gestão do tempo para resultados conscientes',
+    description: 'Curso com certificação de 2 horas pelo SENAC.',
+    fullDescription: 'Curso introdutório sobre produtividade e gestão do tempo, onde aprendi a otimizar o uso do tempo e aumentar a eficiência para alcançar melhores resultados.',
+    link: 'https://cursos-orango.senac.br/pluginfile.php/1/tool_certificate/issues/1749564581/0553006641JR.pdf',
   }
 ];
