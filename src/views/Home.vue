@@ -23,8 +23,8 @@
         </a>
     </div>
 
-    <section class="w-full flex flex-row px-4 items-center gap-6">
-      <div id="home" class="py-8 flex flex-col items-start">
+    <section class="w-full flex flex-col md:flex-row px-4 items-center gap-6 overflow-hidden">
+      <div id="home" class="py-8 flex flex-col items-start min-w-0">
 
         <div class="avatar-background rounded-full overflow-hidden w-32 h-32 mb-4">
           <img src="../assets/profile-photo.jpg" height="1599" width="899" alt="Avatar-Photo"/>

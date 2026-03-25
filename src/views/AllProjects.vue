@@ -1,16 +1,27 @@
 <template>
-  <section class="w-full px-4 pb-20 relative">
-    <!-- Botão voltar no canto superior esquerdo -->
-    <div class="absolute left-4 top-4">
-      <router-link to="/" class=" bg-green-200 text-gray-800 py-2 px-8 rounded hover:bg-green-300 self-start">← Voltar</router-link>
+  <section class="w-full px-4 pb-20">
+
+    <!-- Header: Voltar + Título -->
+    <div class="flex items-center gap-4 mb-8 mt-4">
+      <router-link
+        to="/"
+        class="bg-green-200 text-gray-800 py-2 px-4 rounded hover:bg-green-300 text-sm shrink-0"
+      >
+        ← Voltar
+      </router-link>
+      <h2 class="text-2xl sm:text-3xl text-gray-600 dark:text-gray-200 font-bold">
+        Todos os Projetos
+      </h2>
     </div>
 
-    <h2 class="text-3xl text-gray-600 dark:text-gray-200 font-bold my-12">Todos os Projetos</h2>
+    <!-- Filtros -->
+    <div class="mb-6 flex flex-col gap-3">
+      <span class="text-gray-600 dark:text-gray-200 font-medium text-sm">Filtrar por:</span>
 
-    <div class="mb-6 grid grid-cols-1 lg:grid-cols-3 gap-4 items-start">
-      <div class="flex flex-col gap-2" ref="langFilter" @click.stop="">
-        <span class="block text-gray-600 dark:text-gray-200 font-medium">Filtrar por:</span>
-        <div class="relative w-full" @keydown.esc="isOpenLanguages = false">
+      <div class="flex flex-wrap gap-3 items-center">
+
+        <!-- Dropdown Linguagem -->
+        <div class="relative" ref="langFilter" @click.stop="" @keydown.esc="isOpenLanguages = false">
           <button
             type="button"
             @click="toggleDropdown('languages')"
@@ -20,14 +31,14 @@
             :aria-expanded="isOpenLanguages"
           >
             Linguagem
-            <svg aria-hidden="true" fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="size-4 rotate-0">
+            <svg aria-hidden="true" fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="size-4">
               <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5"/>
             </svg>
           </button>
 
           <div
             v-show="isOpenLanguages"
-            class="absolute top-11 left-10 flex w-fit min-w-48 flex-col overflow-hidden rounded-sm border border-neutral-300 bg-neutral-50 py-1.5 dark:border-neutral-700 dark:bg-neutral-900 z-10"
+            class="absolute top-11 left-0 flex w-fit min-w-48 flex-col overflow-hidden rounded-sm border border-neutral-300 bg-neutral-50 py-1.5 dark:border-neutral-700 dark:bg-neutral-900 z-10"
           >
             <button
               v-for="lang in languages"
@@ -41,21 +52,8 @@
           </div>
         </div>
 
-        <div class="mt-2 flex flex-wrap gap-2">
-          <span
-            v-for="lang in selectedLanguages"
-            :key="lang"
-            class="inline-flex items-center gap-1 rounded bg-blue-100 px-2 py-0.5 text-xs text-blue-700"
-          >
-            {{ lang }}
-            <button type="button" @click="removeLanguage(lang)" class="text-blue-500 hover:text-blue-800">×</button>
-          </span>
-        </div>
-      </div>
-
-      <div class="flex flex-col gap-2" ref="frameworkFilter" @click.stop="">
-        <span class="block text-gray-600 dark:text-gray-200 font-medium">Filtrar por:</span>
-        <div class="relative w-full" @keydown.esc="isOpenFrameworks = false">
+        <!-- Dropdown Frameworks -->
+        <div class="relative" ref="frameworkFilter" @click.stop="" @keydown.esc="isOpenFrameworks = false">
           <button
             type="button"
             @click="toggleDropdown('frameworks')"
@@ -65,14 +63,14 @@
             :aria-expanded="isOpenFrameworks"
           >
             Frameworks
-            <svg aria-hidden="true" fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="size-4 rotate-0">
+            <svg aria-hidden="true" fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="size-4">
               <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5"/>
             </svg>
           </button>
 
           <div
             v-show="isOpenFrameworks"
-            class="absolute top-11 left-10 flex w-fit min-w-48 flex-col overflow-hidden rounded-sm border border-neutral-300 bg-neutral-50 py-1.5 dark:border-neutral-700 dark:bg-neutral-900 z-10"
+            class="absolute top-11 left-0 flex w-fit min-w-48 flex-col overflow-hidden rounded-sm border border-neutral-300 bg-neutral-50 py-1.5 dark:border-neutral-700 dark:bg-neutral-900 z-10"
           >
             <button
               v-for="fw in frameworks"
@@ -86,31 +84,42 @@
           </div>
         </div>
 
-        <div class="mt-2 flex flex-wrap gap-2">
-          <span
-            v-for="fw in selectedFrameworks"
-            :key="fw"
-            class="inline-flex items-center gap-1 rounded bg-blue-100 px-2 py-0.5 text-xs text-blue-700"
-          >
-            {{ fw }}
-            <button type="button" @click="removeFramework(fw)" class="text-blue-500 hover:text-blue-800">×</button>
+        <!-- Contador + Limpar -->
+        <div class="flex items-center gap-3">
+          <span class="text-sm text-gray-500 dark:text-gray-400">
+            {{ filteredProjects.length }} resultado(s)
           </span>
+          <button
+            @click="clearAllFilters"
+            class="inline-flex items-center rounded-sm border border-red-300 bg-red-50 px-3 py-2 text-sm font-medium text-red-700 hover:bg-red-100"
+          >
+            Limpar todos
+          </button>
         </div>
       </div>
 
-      <div class="flex flex-col justify-between gap-3">
-        <div class="text-sm text-gray-500 dark:text-gray-200 mt-2">
-          {{ filteredProjects.length }} resultado(s)
-        </div>
-        <button
-          @click="clearAllFilters"
-          class="inline-flex items-center justify-center rounded-sm border border-red-300 bg-red-50 px-4 py-2 text-sm font-medium text-red-700 hover:bg-red-100"
+      <!-- Tags selecionadas -->
+      <div class="flex flex-wrap gap-2">
+        <span
+          v-for="lang in selectedLanguages"
+          :key="'l-' + lang"
+          class="inline-flex items-center gap-1 rounded bg-blue-100 px-2 py-0.5 text-xs text-blue-700"
         >
-          Limpar todos
-        </button>
+          {{ lang }}
+          <button type="button" @click="removeLanguage(lang)" class="text-blue-500 hover:text-blue-800">×</button>
+        </span>
+        <span
+          v-for="fw in selectedFrameworks"
+          :key="'f-' + fw"
+          class="inline-flex items-center gap-1 rounded bg-blue-100 px-2 py-0.5 text-xs text-blue-700"
+        >
+          {{ fw }}
+          <button type="button" @click="removeFramework(fw)" class="text-blue-500 hover:text-blue-800">×</button>
+        </span>
       </div>
     </div>
 
+    <!-- Grid de projetos -->
     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
       <div
         v-for="(project, i) in filteredProjects"
@@ -138,7 +147,7 @@
       @click="closeModal"
     >
       <div
-        class="bg-white dark:bg-gray-900 rounded-lg shadow-lg max-w-xl w-full p-6 relative"
+        class="bg-white dark:bg-gray-900 rounded-lg shadow-lg max-w-xl w-full mx-4 p-6 relative"
         @click.stop
       >
         <button
@@ -214,7 +223,8 @@ export default {
     },
     filteredProjects() {
       return this.projects.filter((p) => {
-        const languageMatch = !this.selectedLanguages.length || this.selectedLanguages.includes(p.language);
+        const languageMatch =
+          !this.selectedLanguages.length || this.selectedLanguages.includes(p.language);
 
         let frameworkMatch = false;
         if (!this.selectedFrameworks.length) {

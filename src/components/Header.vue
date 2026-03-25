@@ -1,5 +1,5 @@
 <template>
-  <header class="fixed top-0 left-0 w-full z-50 bg-gray-900 dark:bg-black text-white dark:text-gray-50 p-4">
+  <header class="fixed top-0 left-0 w-full z-50 bg-gray-900 dark:bg-black text-white dark:text-gray-50 p-4 overflow-x-hidden">
     <nav class="max-w-screen-xl mx-auto flex justify-between items-center">
       <div class="text-2xl font-bold">
         <a href="#home" @click="goToSection('home')" class="hover:text-blue-400">Início</a>
@@ -14,10 +14,8 @@
         </svg>
       </button>
 
-      <ul
-        :class="menuOpen ? 'block' : 'hidden'"
-        @click.away="menuOpen = false"
-        class="absolute z-50 md:relative top-16 md:top-auto left-0 w-full md:w-auto bg-gray-800 md:bg-transparent md:flex flex-col md:flex-row items-center md:space-x-4 p-4 md:p-0"
+      <ul :class="menuOpen ? 'block' : 'hidden'"
+        class="fixed z-50 md:relative top-16 md:top-auto left-0 right-0 w-full md:w-auto bg-gray-800 md:bg-transparent md:flex flex-col md:flex-row items-center md:space-x-4 p-4 md:p-0"
       >
         <li>
           <a href="#about" @click="goToSection('about')" class="block py-2 px-3 hover:text-blue-400">Sobre Mim</a>

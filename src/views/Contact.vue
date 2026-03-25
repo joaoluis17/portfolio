@@ -1,5 +1,5 @@
 <template>
-  <section id="contact" class="min-h-screen py-16 px-4 flex items-start justify-center">
+  <section id="contact" class="min-h-screen py-16 px-4 flex items-start justify-center pb-16">
     <div class="w-full max-w-5xl bg-gray-100 rounded-2xl shadow-lg border border-gray-200 p-10">
 
       <!-- Header -->
@@ -84,7 +84,6 @@
               <img src="../assets/linkedin-icon.svg" class="w-8 h-8" alt="LinkedIn Logo"/>
             </div>
           </a>
-
         </div>
       </div>
 
