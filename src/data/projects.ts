@@ -1,11 +1,34 @@
 export default [
       {
+        title: 'Easy Hire Form',
+        description: 'Um projeto open source de um formulário de contratação fácil de usar, visando facilitar o processo de recrutamento para empresas e candidatos.',
+        fullDescription: 'Criei esse projeto com o objetivo de fornecer uma solução simples e eficiente para o processo de recrutamento, tanto para empresas quanto para candidatos. O formulário é projetado para ser fácil de usar, com uma interface intuitiva e responsiva, permitindo que os usuários preencham suas informações de forma rápida e sem complicações. Ele foi feito utilizando Vue 3, TypeScript, Tailwind CSS e Vite. O código-fonte do projeto está disponível no GitHub, e o formulário pode ser facilmente integrado a sites ou plataformas de recrutamento.',
+        language: 'JavaScript',
+        framework: 'Vue.js',
+        link: 'https://github.com/joaoluis17/easy-hire-form',
+      },
+      {
         title: 'Rancheiro',
         description: 'Um app feito em React Native para ajudar os donos de fazendas a organizar e controlar o gerenciamento de animais e outras funções.',
         fullDescription: 'Esse é um projeto que criei junto com o meu sócio Geovane Alberto, visando ajudar os fazendeiros a organizar e gerenciar os animais e outras funções relacionadas à fazenda. O app foi desenvolvido utilizando React Native, com um design moderno e intuitivo, visando facilitar a navegação e o uso do aplicativo. O código-fonte do projeto está disponível no GitHub, e o app estará disponível para download na Play Store em breve.',
         language: 'JavaScript',
         framework: 'React Native',
         link: 'https://github.com/joaoluis17/rancheiro',
+      },
+      {
+        title: 'Content Scheduler',
+        description: 'Plugin de agendamento de conteúdo para WordPress, criado para facilitar a organização e publicação de posts em blogs e sites.',
+        fullDescription: 'Esse projeto é um plugin de agendamento de conteúdo para WordPress, desenvolvido para ajudar os criadores de conteúdo a organizar e programar suas publicações de forma eficiente. O plugin permite que os usuários criem e agendem posts com facilidade, oferecendo uma interface intuitiva e recursos avançados para gerenciamento de conteúdo. Ele foi criado utilizando PHP, seguindo as melhores práticas de desenvolvimento para WordPress. O código-fonte do projeto está disponível no GitHub.',
+        language: 'PHP',
+        link: 'https://github.com/joaoluis17/content-scheduler',
+      },
+      {
+        title: 'Register System',
+        description: 'Um sistema simples de cadastro.',
+        fullDescription: 'Criei esse projeto para praticar meus conhecimentos em Vue.js. A ideia veio depois do teste que fiz para a empresa Mercado Bitcoin, onde criei uma página de cadastro de usuário. O sistema é simples, com um formulário de cadastro que coleta informações básicas do usuário, como nome, email e senha. Nesse projeto, quis mostrar o que aprendi sobre componentização e boas práticas de código, montando o projeto com escalabilidade, além de criar um layout moderno e responsivo. Segui as mesmas regras do teste técnico, onde não utilizei typescript, nem nenhum framework de CSS, apenas CSS puro, me desafiando a fazer um trabalho melhor do que foi feito antes.',
+        language: 'JavaScript',
+        framework: 'Vue.js',
+        link: 'https://github.com/joaoluis17/register-system',
       },
       {
         title: 'Script de automação de envio de e-mails',

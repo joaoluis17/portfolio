@@ -147,7 +147,7 @@
       @click="closeModal"
     >
       <div
-        class="bg-white dark:bg-gray-900 rounded-lg shadow-lg max-w-xl w-full mx-4 p-6 relative"
+        class="bg-white dark:bg-gray-900 dark:text-gray-300 rounded-lg shadow-lg max-w-xl w-full mx-4 p-6 relative"
         @click.stop
       >
         <button

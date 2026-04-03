@@ -1,5 +1,11 @@
 export default [
   {
+    title: ' Gerenciamento de Projetos na Prática',
+    description: 'Curso com certificação de 40 horas em  Gerenciamento de Projetos pelo ENAP.',
+    fullDescription: 'Curso focado em gerenciamento de projetos, onde aprendi a planejar, executar e controlar projetos de forma eficiente para alcançar os objetivos estabelecidos.',
+    link: 'https://acrobat.adobe.com/id/urn:aaid:sc:VA6C2:88ef4239-8059-4e1a-9235-1554421a2784?viewer%21megaVerb=group-discover',
+  },
+  {
     title: 'Liderança e Gestão De Equipes',
     description: 'Curso com certificação de 30 horas em Resolução de Problemas pelo ENAP.',
     fullDescription: 'Curso focado em gestão de equipes e resolução de problemas.',
@@ -18,7 +24,13 @@ export default [
     link: 'https://acrobat.adobe.com/id/urn:aaid:sc:VA6C2:5751b4ff-730c-43d2-8d11-64e361d76bc9',
   },
   {
-    title: ' Análise e Melhoria de Processos',
+    title: 'Design para iniciantes: criação e distribuição multimídia',
+    description: 'Curso com certificação de 24 horas em Design pelo SENAC.',
+    fullDescription: 'Curso introdutório sobre design, onde aprendi os princípios básicos de criação e distribuição de conteúdo multimídia.',
+    link: 'https://cursos-orango.senac.br/pluginfile.php/1/tool_certificate/issues/1775075129/7354902944JA.pdf',
+  },
+  {
+    title: 'Análise e Melhoria de Processos',
     description: 'Curso com certificação de 20 horas em Análise e Melhoria de Processos pelo ENAP.',
     fullDescription: 'Curso focado em análise e melhoria de processos, onde aprendi a mapear, analisar e otimizar processos organizacionais para aumentar a eficiência e reduzir custos.',
     link: 'https://acrobat.adobe.com/id/urn:aaid:sc:VA6C2:3c586453-bc59-4f57-b795-f7a9f9ee9a73?viewer%21megaVerb=group-discover',
@@ -31,7 +43,7 @@ export default [
   },
   {
     title: 'Soft Skills: como mandar bem no trabalho e na vida',
-    description: 'Curso com certificação de 12 horas em Soft Skills pela SENAC.',
+    description: 'Curso com certificação de 12 horas em Soft Skills pelo SENAC.',
     fullDescription: 'Curso focado em desenvolvimento de soft skills, onde aprendi a importância de habilidades interpessoais, comunicação eficaz, trabalho em equipe e liderança para o sucesso profissional e pessoal.',
     link: 'https://cursos-orango.senac.br/pluginfile.php/1/tool_certificate/issues/1753471106/8555115891JR.pdf',
   },
