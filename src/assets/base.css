@@ -58,8 +58,23 @@
   font-weight: normal;
 }
 
-body {
+html,
+body,
+#app {
   min-height: 100vh;
+  min-height: 100dvh;
+  height: 100%;
+  overflow-x: hidden;
+  width: 100%;
+  max-width: 100vw;
+}
+
+:root {
+  height: 100%;
+}
+
+body {
+  min-height: 100%;
   color: var(--color-text);
   background: var(--color-background);
   transition:
@@ -83,4 +98,8 @@ body {
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+:global(html, body, #app) {
+  min-height: 100%;
 }
