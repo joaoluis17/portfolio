@@ -193,6 +193,11 @@
 <script>
 import projectsData from '@/data/projects';
 
+const normalizeFrameworks = (framework) => {
+  if (Array.isArray(framework)) return framework;
+  return framework ? [framework] : [];
+};
+
 export default {
   name: 'AllProjects',
   data() {
@@ -217,7 +222,7 @@ export default {
     frameworks() {
       const fws = new Set();
       this.projects.forEach((p) => {
-        if (p.framework) fws.add(p.framework);
+        normalizeFrameworks(p.framework).forEach((framework) => fws.add(framework));
       });
       return Array.from(fws).sort();
     },
@@ -225,12 +230,15 @@ export default {
       return this.projects.filter((p) => {
         const languageMatch =
           !this.selectedLanguages.length || this.selectedLanguages.includes(p.language);
+        const projectFrameworks = normalizeFrameworks(p.framework);
 
         let frameworkMatch = false;
         if (!this.selectedFrameworks.length) {
           frameworkMatch = true;
-        } else if (p.framework) {
-          frameworkMatch = this.selectedFrameworks.includes(p.framework);
+        } else if (projectFrameworks.length) {
+          frameworkMatch = projectFrameworks.some((framework) =>
+            this.selectedFrameworks.includes(framework),
+          );
         } else {
           frameworkMatch = this.selectedLanguages.includes('Python');
         }

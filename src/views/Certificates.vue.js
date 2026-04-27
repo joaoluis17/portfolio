@@ -65,16 +65,39 @@ exports.default = (await Promise.resolve().then(function () { return __importSta
             certificates: certificates_1.default,
         };
     },
+    methods: {
+        scrollLeft: function () {
+            this.$refs.scrollContainer.scrollBy({ left: -300, behavior: 'smooth' });
+        },
+        scrollRight: function () {
+            this.$refs.scrollContainer.scrollBy({ left: 300, behavior: 'smooth' });
+        },
+        closecertificateDetails: function () {
+            this.selectedcertificate = null;
+        },
+    },
 });
 ; /* PartiallyEnd: #3632/script.vue */
 var __VLS_ctx = {};
 var __VLS_components;
 var __VLS_directives;
+/** @type {__VLS_StyleScopedClasses['hide-scrollbar']} */ ;
+/** @type {__VLS_StyleScopedClasses['hide-scrollbar']} */ ;
+// CSS variable injection 
+// CSS variable injection end 
 __VLS_asFunctionalElement(__VLS_intrinsicElements.section, __VLS_intrinsicElements.section)(__assign({ id: "certificates" }, { class: "w-full px-4 pb-20 items-start text-left" }));
 __VLS_asFunctionalElement(__VLS_intrinsicElements.h2, __VLS_intrinsicElements.h2)(__assign({ class: "text-3xl text-gray-600 dark:text-gray-200 font-bold my-12" }));
-__VLS_asFunctionalElement(__VLS_intrinsicElements.div, __VLS_intrinsicElements.div)(__assign({ class: "relative" }));
+__VLS_asFunctionalElement(__VLS_intrinsicElements.div, __VLS_intrinsicElements.div)(__assign({ class: "flex items-center justify-center" }));
+__VLS_asFunctionalElement(__VLS_intrinsicElements.button, __VLS_intrinsicElements.button)(__assign(__assign({ onClick: (__VLS_ctx.scrollLeft) }, { 'aria-label': "Scroll left" }), { class: "flex-none bg-white rounded-full p-2 shadow hover:scale-105 transition mr-3" }));
+__VLS_asFunctionalElement(__VLS_intrinsicElements.svg, __VLS_intrinsicElements.svg)(__assign(__assign({ xmlns: "http://www.w3.org/2000/svg" }, { class: "h-5 w-5 text-gray-700" }), { fill: "none", viewBox: "0 0 24 24", stroke: "currentColor" }));
+__VLS_asFunctionalElement(__VLS_intrinsicElements.path)({
+    'stroke-linecap': "round",
+    'stroke-linejoin': "round",
+    'stroke-width': "2",
+    d: "M15 19l-7-7 7-7",
+});
 __VLS_asFunctionalElement(__VLS_intrinsicElements.div, __VLS_intrinsicElements.div)(__assign({ class: "overflow-hidden" }));
-__VLS_asFunctionalElement(__VLS_intrinsicElements.div, __VLS_intrinsicElements.div)(__assign({ ref: "scrollContainer" }, { class: "flex space-x-4 py-4" }));
+__VLS_asFunctionalElement(__VLS_intrinsicElements.div, __VLS_intrinsicElements.div)(__assign({ ref: "scrollContainer" }, { class: "flex overflow-x-auto scroll-smooth space-x-4 py-4 hide-scrollbar" }));
 /** @type {typeof __VLS_ctx.scrollContainer} */ ;
 for (var _i = 0, _a = __VLS_getVForSourceType((__VLS_ctx.certificates.slice(0, 4))); _i < _a.length; _i++) {
     var _b = _a[_i], certificate = _b[0], index = _b[1];
@@ -83,7 +106,17 @@ for (var _i = 0, _a = __VLS_getVForSourceType((__VLS_ctx.certificates.slice(0, 4
     (certificate.title);
     __VLS_asFunctionalElement(__VLS_intrinsicElements.p, __VLS_intrinsicElements.p)(__assign({ class: "text-gray-600" }));
     (certificate.description);
+    __VLS_asFunctionalElement(__VLS_intrinsicElements.div, __VLS_intrinsicElements.div)(__assign({ class: "mt-4" }));
+    __VLS_asFunctionalElement(__VLS_intrinsicElements.a, __VLS_intrinsicElements.a)(__assign({ href: (certificate.link), target: "_blank", rel: "noopener noreferrer" }, { class: "text-blue-400 hover:text-blue-700 hover:cursor-pointer" }));
 }
+__VLS_asFunctionalElement(__VLS_intrinsicElements.button, __VLS_intrinsicElements.button)(__assign(__assign({ onClick: (__VLS_ctx.scrollRight) }, { 'aria-label': "Scroll right" }), { class: "flex-none bg-white rounded-full p-2 shadow hover:scale-105 transition ml-3" }));
+__VLS_asFunctionalElement(__VLS_intrinsicElements.svg, __VLS_intrinsicElements.svg)(__assign(__assign({ xmlns: "http://www.w3.org/2000/svg" }, { class: "h-5 w-5 text-gray-700" }), { fill: "none", viewBox: "0 0 24 24", stroke: "currentColor" }));
+__VLS_asFunctionalElement(__VLS_intrinsicElements.path)({
+    'stroke-linecap': "round",
+    'stroke-linejoin': "round",
+    'stroke-width': "2",
+    d: "M9 5l7 7-7 7",
+});
 __VLS_asFunctionalElement(__VLS_intrinsicElements.div, __VLS_intrinsicElements.div)(__assign({ class: "mt-2 flex justify-end" }));
 var __VLS_0 = {}.RouterLink;
 /** @type {[typeof __VLS_components.RouterLink, typeof __VLS_components.routerLink, typeof __VLS_components.RouterLink, typeof __VLS_components.routerLink, ]} */ ;
@@ -112,11 +145,27 @@ if (__VLS_ctx.selectedcertificate !== null) {
 /** @type {__VLS_StyleScopedClasses['dark:text-gray-200']} */ ;
 /** @type {__VLS_StyleScopedClasses['font-bold']} */ ;
 /** @type {__VLS_StyleScopedClasses['my-12']} */ ;
-/** @type {__VLS_StyleScopedClasses['relative']} */ ;
+/** @type {__VLS_StyleScopedClasses['flex']} */ ;
+/** @type {__VLS_StyleScopedClasses['items-center']} */ ;
+/** @type {__VLS_StyleScopedClasses['justify-center']} */ ;
+/** @type {__VLS_StyleScopedClasses['flex-none']} */ ;
+/** @type {__VLS_StyleScopedClasses['bg-white']} */ ;
+/** @type {__VLS_StyleScopedClasses['rounded-full']} */ ;
+/** @type {__VLS_StyleScopedClasses['p-2']} */ ;
+/** @type {__VLS_StyleScopedClasses['shadow']} */ ;
+/** @type {__VLS_StyleScopedClasses['hover:scale-105']} */ ;
+/** @type {__VLS_StyleScopedClasses['transition']} */ ;
+/** @type {__VLS_StyleScopedClasses['mr-3']} */ ;
+/** @type {__VLS_StyleScopedClasses['h-5']} */ ;
+/** @type {__VLS_StyleScopedClasses['w-5']} */ ;
+/** @type {__VLS_StyleScopedClasses['text-gray-700']} */ ;
 /** @type {__VLS_StyleScopedClasses['overflow-hidden']} */ ;
 /** @type {__VLS_StyleScopedClasses['flex']} */ ;
+/** @type {__VLS_StyleScopedClasses['overflow-x-auto']} */ ;
+/** @type {__VLS_StyleScopedClasses['scroll-smooth']} */ ;
 /** @type {__VLS_StyleScopedClasses['space-x-4']} */ ;
 /** @type {__VLS_StyleScopedClasses['py-4']} */ ;
+/** @type {__VLS_StyleScopedClasses['hide-scrollbar']} */ ;
 /** @type {__VLS_StyleScopedClasses['certificate-item']} */ ;
 /** @type {__VLS_StyleScopedClasses['bg-gray-200']} */ ;
 /** @type {__VLS_StyleScopedClasses['p-6']} */ ;
@@ -131,6 +180,21 @@ if (__VLS_ctx.selectedcertificate !== null) {
 /** @type {__VLS_StyleScopedClasses['font-bold']} */ ;
 /** @type {__VLS_StyleScopedClasses['mb-2']} */ ;
 /** @type {__VLS_StyleScopedClasses['text-gray-600']} */ ;
+/** @type {__VLS_StyleScopedClasses['mt-4']} */ ;
+/** @type {__VLS_StyleScopedClasses['text-blue-400']} */ ;
+/** @type {__VLS_StyleScopedClasses['hover:text-blue-700']} */ ;
+/** @type {__VLS_StyleScopedClasses['hover:cursor-pointer']} */ ;
+/** @type {__VLS_StyleScopedClasses['flex-none']} */ ;
+/** @type {__VLS_StyleScopedClasses['bg-white']} */ ;
+/** @type {__VLS_StyleScopedClasses['rounded-full']} */ ;
+/** @type {__VLS_StyleScopedClasses['p-2']} */ ;
+/** @type {__VLS_StyleScopedClasses['shadow']} */ ;
+/** @type {__VLS_StyleScopedClasses['hover:scale-105']} */ ;
+/** @type {__VLS_StyleScopedClasses['transition']} */ ;
+/** @type {__VLS_StyleScopedClasses['ml-3']} */ ;
+/** @type {__VLS_StyleScopedClasses['h-5']} */ ;
+/** @type {__VLS_StyleScopedClasses['w-5']} */ ;
+/** @type {__VLS_StyleScopedClasses['text-gray-700']} */ ;
 /** @type {__VLS_StyleScopedClasses['mt-2']} */ ;
 /** @type {__VLS_StyleScopedClasses['flex']} */ ;
 /** @type {__VLS_StyleScopedClasses['justify-end']} */ ;

@@ -64,13 +64,14 @@ var __VLS_components;
 var __VLS_directives;
 // CSS variable injection 
 // CSS variable injection end 
+__VLS_asFunctionalElement(__VLS_intrinsicElements.div, __VLS_intrinsicElements.div)(__assign({ class: "app-root w-full flex flex-col justify-between overflow-x-hidden" }));
 /** @type {[typeof Header, ]} */ ;
 // @ts-ignore
 var __VLS_0 = __VLS_asFunctionalComponent(Header_vue_1.default, new Header_vue_1.default({}));
 var __VLS_1 = __VLS_0.apply(void 0, __spreadArray([{}], __VLS_functionalComponentArgsRest(__VLS_0), false));
-__VLS_asFunctionalElement(__VLS_intrinsicElements.section, __VLS_intrinsicElements.section)(__assign({ class: "bg-gradient-to-bl from-blue-100 to-white dark:bg-gradient-to-bl dark:from-blue-300 dark:to-blue-900" }));
-__VLS_asFunctionalElement(__VLS_intrinsicElements.div, __VLS_intrinsicElements.div)(__assign({ class: "font-roboto-flex app-container max-w-5xl" }));
-__VLS_asFunctionalElement(__VLS_intrinsicElements.main, __VLS_intrinsicElements.main)(__assign({ class: "pt-16" }));
+__VLS_asFunctionalElement(__VLS_intrinsicElements.section, __VLS_intrinsicElements.section)(__assign({ class: "flex-1 bg-gradient-to-bl from-gray-50 to-white dark:bg-gradient-to-tl dark:from-gray-200 dark:to-gray-800" }));
+__VLS_asFunctionalElement(__VLS_intrinsicElements.div, __VLS_intrinsicElements.div)(__assign({ class: "font-roboto-flex app-container max-w-5xl mx-auto h-full" }));
+__VLS_asFunctionalElement(__VLS_intrinsicElements.main, __VLS_intrinsicElements.main)(__assign({ class: "pt-16 h-full" }));
 var __VLS_3 = {}.RouterView;
 /** @type {[typeof __VLS_components.RouterView, typeof __VLS_components.routerView, ]} */ ;
 // @ts-ignore
@@ -80,16 +81,26 @@ var __VLS_5 = __VLS_4.apply(void 0, __spreadArray([{}], __VLS_functionalComponen
 // @ts-ignore
 var __VLS_7 = __VLS_asFunctionalComponent(Footer_vue_1.default, new Footer_vue_1.default({}));
 var __VLS_8 = __VLS_7.apply(void 0, __spreadArray([{}], __VLS_functionalComponentArgsRest(__VLS_7), false));
+/** @type {__VLS_StyleScopedClasses['app-root']} */ ;
+/** @type {__VLS_StyleScopedClasses['w-full']} */ ;
+/** @type {__VLS_StyleScopedClasses['flex']} */ ;
+/** @type {__VLS_StyleScopedClasses['flex-col']} */ ;
+/** @type {__VLS_StyleScopedClasses['justify-between']} */ ;
+/** @type {__VLS_StyleScopedClasses['overflow-x-hidden']} */ ;
+/** @type {__VLS_StyleScopedClasses['flex-1']} */ ;
 /** @type {__VLS_StyleScopedClasses['bg-gradient-to-bl']} */ ;
-/** @type {__VLS_StyleScopedClasses['from-blue-100']} */ ;
+/** @type {__VLS_StyleScopedClasses['from-gray-50']} */ ;
 /** @type {__VLS_StyleScopedClasses['to-white']} */ ;
-/** @type {__VLS_StyleScopedClasses['dark:bg-gradient-to-bl']} */ ;
-/** @type {__VLS_StyleScopedClasses['dark:from-blue-300']} */ ;
-/** @type {__VLS_StyleScopedClasses['dark:to-blue-900']} */ ;
+/** @type {__VLS_StyleScopedClasses['dark:bg-gradient-to-tl']} */ ;
+/** @type {__VLS_StyleScopedClasses['dark:from-gray-200']} */ ;
+/** @type {__VLS_StyleScopedClasses['dark:to-gray-800']} */ ;
 /** @type {__VLS_StyleScopedClasses['font-roboto-flex']} */ ;
 /** @type {__VLS_StyleScopedClasses['app-container']} */ ;
 /** @type {__VLS_StyleScopedClasses['max-w-5xl']} */ ;
+/** @type {__VLS_StyleScopedClasses['mx-auto']} */ ;
+/** @type {__VLS_StyleScopedClasses['h-full']} */ ;
 /** @type {__VLS_StyleScopedClasses['pt-16']} */ ;
+/** @type {__VLS_StyleScopedClasses['h-full']} */ ;
 var __VLS_dollars;
 var __VLS_self = (await Promise.resolve().then(function () { return __importStar(require('vue')); })).defineComponent({
     setup: function () {

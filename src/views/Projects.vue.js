@@ -43,47 +43,26 @@ var __importStar = (this && this.__importStar) || (function () {
         return result;
     };
 })();
+var __spreadArray = (this && this.__spreadArray) || function (to, from, pack) {
+    if (pack || arguments.length === 2) for (var i = 0, l = from.length, ar; i < l; i++) {
+        if (ar || !(i in from)) {
+            if (!ar) ar = Array.prototype.slice.call(from, 0, i);
+            ar[i] = from[i];
+        }
+    }
+    return to.concat(ar || Array.prototype.slice.call(from));
+};
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 Object.defineProperty(exports, "__esModule", { value: true });
+var projects_1 = __importDefault(require("@/data/projects"));
 exports.default = (await Promise.resolve().then(function () { return __importStar(require('vue')); })).defineComponent({
     name: 'Projects',
     data: function () {
         return {
             selectedProject: null,
-            projects: [
-                {
-                    title: 'Site Pessoal',
-                    description: 'Nesse projeto, criei um site pessoal para divulgar meus trabalhos na área da música',
-                    fullDescription: 'Essa landing page, criada em Vue JS, com layout totalmente responsivo e com diversas telas integradas no arquivo principal, mostrando a utilização de componentização e outras boas práticas para um código limpo. O site está hospedado no Netlify, e o código-fonte está disponível no GitHub. O site foi criado para divulgar meus trabalhos na área da música, com um design moderno e funcional.',
-                    link: 'https://github.com/joaoluis17/music-portfolio',
-                    linkSite: 'https://john-prado.netlify.app/',
-                },
-                {
-                    title: 'Conversor Universal',
-                    description: 'Esse é um conversor universal que saiu de um projeto anterior, em parceria com o João Fernando (OCorvu).',
-                    fullDescription: 'Criamos o primeiro projeto com o intuito de estudarmos o Front-End. Nele, criamos dois conversores: Conversor de Texto com as seguintes opções: Maiúsculo, Minúsculo, Capitalizar, MaIuScUlO, mInUsCuLo, Inverso, Reverso e Copiar texto. E um conversor de medidas, com as opções: km, hm, dam, m, dm, cm, mm. Eu segui com esse projeto, criando outro repositório do zero, porém, usando este como base. Além desses dois conversores já citados, criei também um conversor de moedas, onde simultaneamente, você pode converter as seguintes moedas: Real "R$"; Peso Argentino "ARS"; Dólar EUA "$"; Dólar Canadense "CAD"; Euro "€"; Libra Esterlina "£"; Franco Suíço "CHF"; Rublo Russo "RUB"; Iene "JP¥"; Renminbi (China) "元/¥"; Won Sul-Coreano "₩" e; Dólar Australiano "AU$" . Esse é um projeto com HTML5, Tailwind CSS e Vanilla JavaScript.',
-                    link: 'https://github.com/ocorvu/conversor.git',
-                    linkSite: 'https://conversor-universal.netlify.app/',
-                },
-                {
-                    title: 'Landing Page - Wicomm',
-                    description: 'Landing Page de uma loja fictícia criada em um projeto de teste técnico.',
-                    fullDescription: 'Projeto desenvolvido como teste técnico para a empresa Wicomm, utilizando ReactJS e Vite, com foco em componentização, pixel perfect e boas práticas de SEO. O layout segue fielmente o Figma fornecido, com ajustes responsivos, porém priorizando a versão desktop. O projeto está disponível em produção no Vercel.',
-                    link: 'https://github.com/joaoluis17/wicomm-teste',
-                    linkSite: 'https://wicomm-teste-bay.vercel.app/',
-                },
-                {
-                    title: 'Calculadora de IMC',
-                    description: 'Calculadora de IMC simples de usar.',
-                    fullDescription: 'Calculadora de IMC feita com HTML/CSS e Python. Um projeto simples e fácil de usar. Para por em prática meus conhecimentos em python',
-                    link: 'https://github.com/joaoluis17/calculator.git',
-                },
-                {
-                    title: 'Helpick',
-                    description: 'Comunidade online para músicos.',
-                    fullDescription: 'A ideia desse site é uma comunidade musical, onde os usuários poderão tirar dúvidas e conhecer outros músicos para melhorar seu networking e criar amizades. Este é meu primeiro projeto Full-Stack em Laravel, Tailwind CSS e MySQL, além de usar AlpineJS e JavaScript para a lógica de algumas mini-funções do site. Tive auxílio do João Fernando (ocorvu) nesse projeto, onde ele me ajudou a criar alguns componentes do fórum. Nele temos um site com alguns painéis (Fórum, Blog e Produtos), além de ter cadastro de usuários e outras funções. Criei também, as landing pages responsivas usando JavaScript e Tailwind CSS.',
-                    link: 'https://github.com/joaoluis17/helpick',
-                },
-            ],
+            projects: projects_1.default,
         };
     },
     methods: {
@@ -124,8 +103,8 @@ var __VLS_directives;
 // CSS variable injection end 
 __VLS_asFunctionalElement(__VLS_intrinsicElements.section, __VLS_intrinsicElements.section)(__assign({ id: "projects" }, { class: "w-full px-4 items-start text-left" }));
 __VLS_asFunctionalElement(__VLS_intrinsicElements.h2, __VLS_intrinsicElements.h2)(__assign({ class: "text-3xl text-gray-600 dark:text-gray-200 font-bold my-12" }));
-__VLS_asFunctionalElement(__VLS_intrinsicElements.div, __VLS_intrinsicElements.div)(__assign({ class: "relative" }));
-__VLS_asFunctionalElement(__VLS_intrinsicElements.button, __VLS_intrinsicElements.button)(__assign(__assign({ onClick: (__VLS_ctx.scrollLeft) }, { 'aria-label': "Scroll left" }), { class: "absolute left-2 top-1/2 transform -translate-y-1/2 z-20 bg-white rounded-full p-2 shadow hover:scale-105 transition" }));
+__VLS_asFunctionalElement(__VLS_intrinsicElements.div, __VLS_intrinsicElements.div)(__assign({ class: "flex items-center justify-center" }));
+__VLS_asFunctionalElement(__VLS_intrinsicElements.button, __VLS_intrinsicElements.button)(__assign(__assign({ onClick: (__VLS_ctx.scrollLeft) }, { 'aria-label': "Scroll left" }), { class: "flex-none bg-white rounded-full p-2 shadow hover:scale-105 transition mr-3" }));
 __VLS_asFunctionalElement(__VLS_intrinsicElements.svg, __VLS_intrinsicElements.svg)(__assign(__assign({ xmlns: "http://www.w3.org/2000/svg" }, { class: "h-5 w-5 text-gray-700" }), { fill: "none", viewBox: "0 0 24 24", stroke: "currentColor" }));
 __VLS_asFunctionalElement(__VLS_intrinsicElements.path)({
     'stroke-linecap': "round",
@@ -133,7 +112,8 @@ __VLS_asFunctionalElement(__VLS_intrinsicElements.path)({
     'stroke-width': "2",
     d: "M15 19l-7-7 7-7",
 });
-__VLS_asFunctionalElement(__VLS_intrinsicElements.div, __VLS_intrinsicElements.div)(__assign({ ref: "scrollContainer" }, { class: "flex overflow-x-auto scroll-smooth space-x-4 py-4 hide-scrollbar" }));
+__VLS_asFunctionalElement(__VLS_intrinsicElements.div, __VLS_intrinsicElements.div)(__assign({ class: "w-full max-w-5xl" }));
+__VLS_asFunctionalElement(__VLS_intrinsicElements.div, __VLS_intrinsicElements.div)(__assign({ ref: "scrollContainer" }, { class: "flex justify-center overflow-x-auto scroll-smooth space-x-4 py-4 hide-scrollbar" }));
 /** @type {typeof __VLS_ctx.scrollContainer} */ ;
 var _loop_1 = function (project, index) {
     __VLS_asFunctionalElement(__VLS_intrinsicElements.div, __VLS_intrinsicElements.div)(__assign({ key: (index) }, { class: "project-item bg-gray-200 p-6 rounded shadow hover:shadow-lg transition-shadow w-56 shrink-0" }));
@@ -150,11 +130,11 @@ var _loop_1 = function (project, index) {
             __VLS_ctx.showProjectDetails(index);
         } }, { class: "mt-4 bg-blue-400 text-white py-2 px-4 rounded hover:bg-blue-700" }));
 };
-for (var _i = 0, _a = __VLS_getVForSourceType((__VLS_ctx.projects)); _i < _a.length; _i++) {
+for (var _i = 0, _a = __VLS_getVForSourceType((__VLS_ctx.projects.slice(0, 4))); _i < _a.length; _i++) {
     var _b = _a[_i], project = _b[0], index = _b[1];
     _loop_1(project, index);
 }
-__VLS_asFunctionalElement(__VLS_intrinsicElements.button, __VLS_intrinsicElements.button)(__assign(__assign({ onClick: (__VLS_ctx.scrollRight) }, { 'aria-label': "Scroll right" }), { class: "absolute right-2 top-1/2 transform -translate-y-1/2 z-20 bg-white rounded-full p-2 shadow hover:scale-105 transition" }));
+__VLS_asFunctionalElement(__VLS_intrinsicElements.button, __VLS_intrinsicElements.button)(__assign(__assign({ onClick: (__VLS_ctx.scrollRight) }, { 'aria-label': "Scroll right" }), { class: "flex-none bg-white rounded-full p-2 shadow hover:scale-105 transition ml-3" }));
 __VLS_asFunctionalElement(__VLS_intrinsicElements.svg, __VLS_intrinsicElements.svg)(__assign(__assign({ xmlns: "http://www.w3.org/2000/svg" }, { class: "h-5 w-5 text-gray-700" }), { fill: "none", viewBox: "0 0 24 24", stroke: "currentColor" }));
 __VLS_asFunctionalElement(__VLS_intrinsicElements.path)({
     'stroke-linecap': "round",
@@ -162,6 +142,14 @@ __VLS_asFunctionalElement(__VLS_intrinsicElements.path)({
     'stroke-width': "2",
     d: "M9 5l7 7-7 7",
 });
+__VLS_asFunctionalElement(__VLS_intrinsicElements.div, __VLS_intrinsicElements.div)(__assign({ class: "mt-2 flex justify-end" }));
+var __VLS_0 = {}.RouterLink;
+/** @type {[typeof __VLS_components.RouterLink, typeof __VLS_components.routerLink, typeof __VLS_components.RouterLink, typeof __VLS_components.routerLink, ]} */ ;
+// @ts-ignore
+var __VLS_1 = __VLS_asFunctionalComponent(__VLS_0, new __VLS_0(__assign({ to: "/projects" }, { class: "bg-blue-400 text-white py-2 px-4 mr-12 rounded hover:bg-blue-700" })));
+var __VLS_2 = __VLS_1.apply(void 0, __spreadArray([__assign({ to: "/projects" }, { class: "bg-blue-400 text-white py-2 px-4 mr-12 rounded hover:bg-blue-700" })], __VLS_functionalComponentArgsRest(__VLS_1), false));
+__VLS_3.slots.default;
+var __VLS_3;
 if (__VLS_ctx.selectedProject !== null) {
     __VLS_asFunctionalElement(__VLS_intrinsicElements.div, __VLS_intrinsicElements.div)(__assign(__assign({ onClick: (__VLS_ctx.closeProjectDetails) }, { ref: "projectDetails" }), { class: "project-details mt-8 p-6 bg-gray-100 rounded shadow-lg" }));
     /** @type {typeof __VLS_ctx.projectDetails} */ ;
@@ -184,23 +172,24 @@ if (__VLS_ctx.selectedProject !== null) {
 /** @type {__VLS_StyleScopedClasses['dark:text-gray-200']} */ ;
 /** @type {__VLS_StyleScopedClasses['font-bold']} */ ;
 /** @type {__VLS_StyleScopedClasses['my-12']} */ ;
-/** @type {__VLS_StyleScopedClasses['relative']} */ ;
-/** @type {__VLS_StyleScopedClasses['absolute']} */ ;
-/** @type {__VLS_StyleScopedClasses['left-2']} */ ;
-/** @type {__VLS_StyleScopedClasses['top-1/2']} */ ;
-/** @type {__VLS_StyleScopedClasses['transform']} */ ;
-/** @type {__VLS_StyleScopedClasses['-translate-y-1/2']} */ ;
-/** @type {__VLS_StyleScopedClasses['z-20']} */ ;
+/** @type {__VLS_StyleScopedClasses['flex']} */ ;
+/** @type {__VLS_StyleScopedClasses['items-center']} */ ;
+/** @type {__VLS_StyleScopedClasses['justify-center']} */ ;
+/** @type {__VLS_StyleScopedClasses['flex-none']} */ ;
 /** @type {__VLS_StyleScopedClasses['bg-white']} */ ;
 /** @type {__VLS_StyleScopedClasses['rounded-full']} */ ;
 /** @type {__VLS_StyleScopedClasses['p-2']} */ ;
 /** @type {__VLS_StyleScopedClasses['shadow']} */ ;
 /** @type {__VLS_StyleScopedClasses['hover:scale-105']} */ ;
 /** @type {__VLS_StyleScopedClasses['transition']} */ ;
+/** @type {__VLS_StyleScopedClasses['mr-3']} */ ;
 /** @type {__VLS_StyleScopedClasses['h-5']} */ ;
 /** @type {__VLS_StyleScopedClasses['w-5']} */ ;
 /** @type {__VLS_StyleScopedClasses['text-gray-700']} */ ;
+/** @type {__VLS_StyleScopedClasses['w-full']} */ ;
+/** @type {__VLS_StyleScopedClasses['max-w-5xl']} */ ;
 /** @type {__VLS_StyleScopedClasses['flex']} */ ;
+/** @type {__VLS_StyleScopedClasses['justify-center']} */ ;
 /** @type {__VLS_StyleScopedClasses['overflow-x-auto']} */ ;
 /** @type {__VLS_StyleScopedClasses['scroll-smooth']} */ ;
 /** @type {__VLS_StyleScopedClasses['space-x-4']} */ ;
@@ -227,21 +216,27 @@ if (__VLS_ctx.selectedProject !== null) {
 /** @type {__VLS_StyleScopedClasses['px-4']} */ ;
 /** @type {__VLS_StyleScopedClasses['rounded']} */ ;
 /** @type {__VLS_StyleScopedClasses['hover:bg-blue-700']} */ ;
-/** @type {__VLS_StyleScopedClasses['absolute']} */ ;
-/** @type {__VLS_StyleScopedClasses['right-2']} */ ;
-/** @type {__VLS_StyleScopedClasses['top-1/2']} */ ;
-/** @type {__VLS_StyleScopedClasses['transform']} */ ;
-/** @type {__VLS_StyleScopedClasses['-translate-y-1/2']} */ ;
-/** @type {__VLS_StyleScopedClasses['z-20']} */ ;
+/** @type {__VLS_StyleScopedClasses['flex-none']} */ ;
 /** @type {__VLS_StyleScopedClasses['bg-white']} */ ;
 /** @type {__VLS_StyleScopedClasses['rounded-full']} */ ;
 /** @type {__VLS_StyleScopedClasses['p-2']} */ ;
 /** @type {__VLS_StyleScopedClasses['shadow']} */ ;
 /** @type {__VLS_StyleScopedClasses['hover:scale-105']} */ ;
 /** @type {__VLS_StyleScopedClasses['transition']} */ ;
+/** @type {__VLS_StyleScopedClasses['ml-3']} */ ;
 /** @type {__VLS_StyleScopedClasses['h-5']} */ ;
 /** @type {__VLS_StyleScopedClasses['w-5']} */ ;
 /** @type {__VLS_StyleScopedClasses['text-gray-700']} */ ;
+/** @type {__VLS_StyleScopedClasses['mt-2']} */ ;
+/** @type {__VLS_StyleScopedClasses['flex']} */ ;
+/** @type {__VLS_StyleScopedClasses['justify-end']} */ ;
+/** @type {__VLS_StyleScopedClasses['bg-blue-400']} */ ;
+/** @type {__VLS_StyleScopedClasses['text-white']} */ ;
+/** @type {__VLS_StyleScopedClasses['py-2']} */ ;
+/** @type {__VLS_StyleScopedClasses['px-4']} */ ;
+/** @type {__VLS_StyleScopedClasses['mr-12']} */ ;
+/** @type {__VLS_StyleScopedClasses['rounded']} */ ;
+/** @type {__VLS_StyleScopedClasses['hover:bg-blue-700']} */ ;
 /** @type {__VLS_StyleScopedClasses['project-details']} */ ;
 /** @type {__VLS_StyleScopedClasses['mt-8']} */ ;
 /** @type {__VLS_StyleScopedClasses['p-6']} */ ;

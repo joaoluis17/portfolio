@@ -43,21 +43,18 @@ var __importStar = (this && this.__importStar) || (function () {
         return result;
     };
 })();
-var __spreadArray = (this && this.__spreadArray) || function (to, from, pack) {
-    if (pack || arguments.length === 2) for (var i = 0, l = from.length, ar; i < l; i++) {
-        if (ar || !(i in from)) {
-            if (!ar) ar = Array.prototype.slice.call(from, 0, i);
-            ar[i] = from[i];
-        }
-    }
-    return to.concat(ar || Array.prototype.slice.call(from));
-};
 Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = require("@vueuse/core");
 exports.default = (await Promise.resolve().then(function () { return __importStar(require('vue')); })).defineComponent({
     data: function () {
         return {
             menuOpen: false,
         };
+    },
+    setup: function () {
+        var isDark = (0, core_1.useDark)();
+        var toggleDark = (0, core_1.useToggle)(isDark);
+        return { isDark: isDark, toggleDark: toggleDark };
     },
     methods: {
         goToSection: function (section) {
@@ -76,7 +73,7 @@ exports.default = (await Promise.resolve().then(function () { return __importSta
 var __VLS_ctx = {};
 var __VLS_components;
 var __VLS_directives;
-__VLS_asFunctionalElement(__VLS_intrinsicElements.header, __VLS_intrinsicElements.header)(__assign({ class: "fixed top-0 left-0 w-full z-50 bg-gray-900 dark:bg-black text-white dark:text-gray-50 p-4" }));
+__VLS_asFunctionalElement(__VLS_intrinsicElements.header, __VLS_intrinsicElements.header)(__assign({ class: "fixed top-0 left-0 w-full z-50 bg-gray-900 dark:bg-black text-white dark:text-gray-50 p-4 overflow-x-hidden" }));
 __VLS_asFunctionalElement(__VLS_intrinsicElements.nav, __VLS_intrinsicElements.nav)(__assign({ class: "max-w-screen-xl mx-auto flex justify-between items-center" }));
 __VLS_asFunctionalElement(__VLS_intrinsicElements.div, __VLS_intrinsicElements.div)(__assign({ class: "text-2xl font-bold" }));
 __VLS_asFunctionalElement(__VLS_intrinsicElements.a, __VLS_intrinsicElements.a)(__assign(__assign({ onClick: function () {
@@ -113,14 +110,7 @@ else {
         d: "M6 18L18 6M6 6l12 12",
     });
 }
-__VLS_asFunctionalElement(__VLS_intrinsicElements.ul, __VLS_intrinsicElements.ul)(__assign(__assign({ onClick: function () {
-        var _a = [];
-        for (var _i = 0; _i < arguments.length; _i++) {
-            _a[_i] = arguments[_i];
-        }
-        var $event = _a[0];
-        __VLS_ctx.menuOpen = false;
-    } }, { class: (__VLS_ctx.menuOpen ? 'block' : 'hidden') }), { class: "absolute z-50 md:relative top-16 md:top-auto left-0 w-full md:w-auto bg-gray-800 md:bg-transparent md:flex flex-col md:flex-row items-center md:space-x-4 p-4 md:p-0" }));
+__VLS_asFunctionalElement(__VLS_intrinsicElements.ul, __VLS_intrinsicElements.ul)(__assign({ class: (__VLS_ctx.menuOpen ? 'block' : 'hidden') }, { class: "fixed z-50 md:relative top-16 md:top-auto left-0 right-0 w-full md:w-auto bg-gray-800 md:bg-transparent md:flex flex-col md:flex-row items-center md:space-x-4 p-4 md:p-0" }));
 __VLS_asFunctionalElement(__VLS_intrinsicElements.li, __VLS_intrinsicElements.li)({});
 __VLS_asFunctionalElement(__VLS_intrinsicElements.a, __VLS_intrinsicElements.a)(__assign(__assign({ onClick: function () {
         var _a = [];
@@ -176,26 +166,40 @@ __VLS_asFunctionalElement(__VLS_intrinsicElements.a, __VLS_intrinsicElements.a)(
         __VLS_ctx.goToSection('certificates');
     } }, { href: "#certificates" }), { class: "block py-2 px-3 hover:text-blue-400" }));
 __VLS_asFunctionalElement(__VLS_intrinsicElements.li, __VLS_intrinsicElements.li)({});
-var __VLS_0 = {}.RouterLink;
-/** @type {[typeof __VLS_components.RouterLink, typeof __VLS_components.routerLink, typeof __VLS_components.RouterLink, typeof __VLS_components.routerLink, ]} */ ;
-// @ts-ignore
-var __VLS_1 = __VLS_asFunctionalComponent(__VLS_0, new __VLS_0(__assign(__assign({ 'onClick': {} }, { to: "/contact" }), { class: "block py-2 px-3 hover:text-blue-400" })));
-var __VLS_2 = __VLS_1.apply(void 0, __spreadArray([__assign(__assign({ 'onClick': {} }, { to: "/contact" }), { class: "block py-2 px-3 hover:text-blue-400" })], __VLS_functionalComponentArgsRest(__VLS_1), false));
-var __VLS_4;
-var __VLS_5;
-var __VLS_6;
-var __VLS_7 = {
-    onClick: function () {
+__VLS_asFunctionalElement(__VLS_intrinsicElements.a, __VLS_intrinsicElements.a)(__assign(__assign({ onClick: function () {
         var _a = [];
         for (var _i = 0; _i < arguments.length; _i++) {
             _a[_i] = arguments[_i];
         }
         var $event = _a[0];
+        __VLS_ctx.goToSection('contact');
+    } }, { href: "#contact" }), { class: "block py-2 px-3 hover:text-blue-400" }));
+__VLS_asFunctionalElement(__VLS_intrinsicElements.li, __VLS_intrinsicElements.li)({});
+__VLS_asFunctionalElement(__VLS_intrinsicElements.button, __VLS_intrinsicElements.button)(__assign({ onClick: function () {
+        var _a = [];
+        for (var _i = 0; _i < arguments.length; _i++) {
+            _a[_i] = arguments[_i];
+        }
+        var $event = _a[0];
+        __VLS_ctx.toggleDark();
         __VLS_ctx.menuOpen = false;
-    }
-};
-__VLS_3.slots.default;
-var __VLS_3;
+    } }, { class: "block py-2 px-3 hover:text-blue-400" }));
+if (!__VLS_ctx.isDark) {
+    __VLS_asFunctionalElement(__VLS_intrinsicElements.svg, __VLS_intrinsicElements.svg)(__assign({ xmlns: "http://www.w3.org/2000/svg", fill: "none", viewBox: "0 0 24 24", 'stroke-width': "1.5", stroke: "currentColor" }, { class: "size-6" }));
+    __VLS_asFunctionalElement(__VLS_intrinsicElements.path)({
+        'stroke-linecap': "round",
+        'stroke-linejoin': "round",
+        d: "M21.752 15.002A9.72 9.72 0 0 1 18 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 0 0 3 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 0 0 9.002-5.998Z",
+    });
+}
+else {
+    __VLS_asFunctionalElement(__VLS_intrinsicElements.svg, __VLS_intrinsicElements.svg)(__assign({ xmlns: "http://www.w3.org/2000/svg", viewBox: "0 0 24 24", fill: "currentColor" }, { class: "size-6" }));
+    __VLS_asFunctionalElement(__VLS_intrinsicElements.path)({
+        'fill-rule': "evenodd",
+        d: "M9.528 1.718a.75.75 0 0 1 .162.819A8.97 8.97 0 0 0 9 6a9 9 0 0 0 9 9 8.97 8.97 0 0 0 3.463-.69.75.75 0 0 1 .981.98 10.503 10.503 0 0 1-9.694 6.46c-5.799 0-10.5-4.7-10.5-10.5 0-4.368 2.667-8.112 6.46-9.694a.75.75 0 0 1 .818.162Z",
+        'clip-rule': "evenodd",
+    });
+}
 /** @type {__VLS_StyleScopedClasses['fixed']} */ ;
 /** @type {__VLS_StyleScopedClasses['top-0']} */ ;
 /** @type {__VLS_StyleScopedClasses['left-0']} */ ;
@@ -206,6 +210,7 @@ var __VLS_3;
 /** @type {__VLS_StyleScopedClasses['text-white']} */ ;
 /** @type {__VLS_StyleScopedClasses['dark:text-gray-50']} */ ;
 /** @type {__VLS_StyleScopedClasses['p-4']} */ ;
+/** @type {__VLS_StyleScopedClasses['overflow-x-hidden']} */ ;
 /** @type {__VLS_StyleScopedClasses['max-w-screen-xl']} */ ;
 /** @type {__VLS_StyleScopedClasses['mx-auto']} */ ;
 /** @type {__VLS_StyleScopedClasses['flex']} */ ;
@@ -222,12 +227,13 @@ var __VLS_3;
 /** @type {__VLS_StyleScopedClasses['h-6']} */ ;
 /** @type {__VLS_StyleScopedClasses['w-6']} */ ;
 /** @type {__VLS_StyleScopedClasses['h-6']} */ ;
-/** @type {__VLS_StyleScopedClasses['absolute']} */ ;
+/** @type {__VLS_StyleScopedClasses['fixed']} */ ;
 /** @type {__VLS_StyleScopedClasses['z-50']} */ ;
 /** @type {__VLS_StyleScopedClasses['md:relative']} */ ;
 /** @type {__VLS_StyleScopedClasses['top-16']} */ ;
 /** @type {__VLS_StyleScopedClasses['md:top-auto']} */ ;
 /** @type {__VLS_StyleScopedClasses['left-0']} */ ;
+/** @type {__VLS_StyleScopedClasses['right-0']} */ ;
 /** @type {__VLS_StyleScopedClasses['w-full']} */ ;
 /** @type {__VLS_StyleScopedClasses['md:w-auto']} */ ;
 /** @type {__VLS_StyleScopedClasses['bg-gray-800']} */ ;
@@ -273,5 +279,11 @@ var __VLS_3;
 /** @type {__VLS_StyleScopedClasses['py-2']} */ ;
 /** @type {__VLS_StyleScopedClasses['px-3']} */ ;
 /** @type {__VLS_StyleScopedClasses['hover:text-blue-400']} */ ;
+/** @type {__VLS_StyleScopedClasses['block']} */ ;
+/** @type {__VLS_StyleScopedClasses['py-2']} */ ;
+/** @type {__VLS_StyleScopedClasses['px-3']} */ ;
+/** @type {__VLS_StyleScopedClasses['hover:text-blue-400']} */ ;
+/** @type {__VLS_StyleScopedClasses['size-6']} */ ;
+/** @type {__VLS_StyleScopedClasses['size-6']} */ ;
 var __VLS_dollars;
 var __VLS_self;
