@@ -39,21 +39,21 @@
         <div class="flex gap-4 mt-4">
           <button
             @click="toggleCategory('dev')"
-            class="px-4 py-2 bg-green-300 text-green-900 rounded-full shadow-sm"
+            class="category-button px-4 py-2 bg-green-300 text-green-900 rounded-full shadow-sm"
           >
             Desenvolvimento
           </button>
 
           <button
             @click="toggleCategory('gestao')"
-            class="px-4 py-2 bg-blue-300 text-blue-900 rounded-full shadow-sm"
+            class="category-button px-4 py-2 bg-blue-300 text-blue-900 rounded-full shadow-sm"
           >
             Gestão
           </button>
 
           <button
             @click="toggleCategory('soft')"
-            class="px-4 py-2 bg-slate-300 text-slate-900 rounded-full shadow-sm"
+            class="category-button px-4 py-2 bg-slate-300 text-slate-900 rounded-full shadow-sm"
           >
             Soft Skills
           </button>
@@ -68,7 +68,7 @@
               :key="skill.icon"
               class="badge basis-1/6 w-fit flex justify-center items-center gap-2 px-4 py-2 bg-green-200 text-green-700 rounded-full shadow-sm"
             >
-              <img :src="skill.icon" class="w-5 h-5">
+              <img :src="skill.icon" class="shrink-0" :class="skill.iconClass || 'w-5 h-5'">
               <span class="whitespace-nowrap">{{ skill.name }}</span>
             </label>
           </div>
@@ -81,7 +81,7 @@
               :key="skill.icon"
               class="badge basis-1/6 w-fit flex justify-center items-center gap-2 px-4 py-2 bg-blue-200 text-blue-700 rounded-full shadow-sm"
             >
-              <img :src="skill.icon" class="w-5 h-5">
+              <img :src="skill.icon" class="shrink-0" :class="skill.iconClass || 'w-5 h-5'">
               <span class="whitespace-nowrap">{{ skill.name }}</span>
             </label>
           </div>
@@ -93,7 +93,7 @@
               :key="skill.icon"
               class="badge basis-1/4 flex justify-center items-center gap-2 px-4 py-2 bg-slate-200 text-slate-700 rounded-full shadow-sm"
             >
-              <img :src="skill.icon" class="w-5 h-5">
+              <img :src="skill.icon" class="shrink-0" :class="skill.iconClass || 'w-5 h-5'">
               <span class="whitespace-nowrap">{{ skill.name }}</span>
             </label>
           </div>
@@ -104,6 +104,7 @@
 
   <About />
   <Projects />
+  <Management />
 
   <section id="historico-experiencias" class="flex flex-col lg:flex-row gap-8 items-start">
     <div class="w-full lg:w-1/2">
@@ -126,6 +127,7 @@
 import BackToUpButton from '../components/BackToUpButton.vue';
 import About from './About.vue';
 import Projects from './Projects.vue';
+import Management from './Management.vue';
 import Resume from './Resume.vue';
 import History from './History.vue';
 import Certificates from './Certificates.vue';
@@ -156,6 +158,7 @@ export default {
   components: {
     About,
     Projects,
+    Management,
     Resume,
     History,
     Certificates,
@@ -174,6 +177,33 @@ html {
 
 .avatar-background {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.category-button {
+  transform: scale(1);
+  transform-origin: center;
+  transition:
+    transform 0.65s ease,
+    box-shadow 0.65s ease,
+    filter 0.65s ease;
+  will-change: transform;
+}
+
+.category-button:hover {
+  transform: scale(1.12);
+  box-shadow: 0 12px 24px rgba(15, 23, 42, 0.16);
+  filter: saturate(1.05);
+}
+
+.category-button:focus-visible {
+  transform: scale(1.12);
+  outline: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .category-button {
+    transition: none;
+  }
 }
 
 /* .badge {

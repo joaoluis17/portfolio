@@ -1,5 +1,14 @@
 export default [
       {
+        title: 'METIS Framework',
+        description: 'Framework de gestão de projetos e times, voltado para equipes de pequeno e médio porte e times de sustentação.',
+        fullDescription: 'O METIS Framework é um framework autoral de gestão adaptativa criado para equipes pequenas, médias e times de sustentação que atuam em ambientes com alta variabilidade de demandas. Seu objetivo é organizar prioridades, melhorar o fluxo de trabalho, aumentar a previsibilidade das entregas e reduzir gargalos operacionais sem gerar burocracia excessiva. Inspirado em metodologias como Scrum e Kanban, o METIS propõe uma abordagem mais flexível e contextual, composta por metodologias próprias como o AFS (Adaptive Flow System), focado em fluxo contínuo, e o PRP (Priority Response Protocol), voltado para cenários críticos e demandas urgentes. A Documentação foi feita com VitePress e VueJS e está em sua primeira versão. O projeto foi desenvolvido a partir de experiências reais em operações de tecnologia e possui documentação pública completa e código-fonte disponível no GitHub.',
+        language: 'JavaScript',
+        framework: ['VitePress', 'Vue'],
+        link: 'https://github.com/metis-framework/metis',
+        linkSite: 'https://metis-framework.netlify.app/'
+      },
+      {
         title: 'Rancheiro',
         description: 'Um app feito em React Native para ajudar os donos de fazendas a organizar e controlar o gerenciamento de animais e outras funções.',
         fullDescription: 'Esse é um projeto que criei junto com o meu sócio Geovane Alberto, visando ajudar os fazendeiros a organizar e gerenciar os animais e outras funções relacionadas à fazenda. O app foi desenvolvido utilizando React Native, com um design moderno e intuitivo, visando facilitar a navegação e o uso do aplicativo. O código-fonte do projeto está disponível no GitHub, e o app estará disponível para download na Play Store em breve.',
@@ -26,7 +35,7 @@ export default [
         description: 'Nesse projeto, criei um site pessoal para divulgar meus trabalhos na área da música',
         fullDescription: 'Essa landing page, criada em Vue JS, com layout totalmente responsivo e com diversas telas integradas no arquivo principal, mostrando a utilização de componentização e outras boas práticas para um código limpo. O site está hospedado no Netlify, e o código-fonte está disponível no GitHub. O site foi criado para divulgar meus trabalhos na área da música, com um design moderno e funcional.',
         language: 'JavaScript',
-        framework: 'Vue.js',
+        framework: 'Vue',
         link: 'https://github.com/joaoluis17/music-portfolio',
         linkSite: 'https://john-prado.netlify.app/',
       },
@@ -35,7 +44,7 @@ export default [
         description: 'Esse é um conversor universal que saiu de um projeto anterior, em parceria com o João Fernando (OCorvu).',
         fullDescription: 'Criamos o primeiro projeto com o intuito de estudarmos o Front-End. Nele, criamos dois conversores: Conversor de Texto com as seguintes opções: Maiúsculo, Minúsculo, Capitalizar, MaIuScUlO, mInUsCuLo, Inverso, Reverso e Copiar texto. E um conversor de medidas, com as opções: km, hm, dam, m, dm, cm, mm. Eu segui com esse projeto, criando outro repositório do zero, porém, usando este como base. Além desses dois conversores já citados, criei também um conversor de moedas, onde simultaneamente, você pode converter as seguintes moedas: Real "R$"; Peso Argentino "ARS"; Dólar EUA "$"; Dólar Canadense "CAD"; Euro "€"; Libra Esterlina "£"; Franco Suíço "CHF"; Rublo Russo "RUB"; Iene "JP¥"; Renminbi (China) "元/¥"; Won Sul-Coreano "₩" e; Dólar Australiano "AU$" . Esse é um projeto que inicialmente foi desenvolvido com HTML5, Tailwind CSS e Vanilla JavaScript, com algumas atualizações, migrei ele para ReactJS, Vite e TypeScript, fazendo o uso de componentização, hooks e outras boas práticas para um código limpo e organizado. O projeto está disponível em produção no Netlify, e o código-fonte do projeto inicial está disponível no GitHub.',
         language: 'JavaScript',
-        framework: 'ReactJS',
+        framework: 'React',
         link: 'https://github.com/ocorvu/conversor.git',
         linkSite: 'https://conversor-universal.netlify.app/',
       },
@@ -44,7 +53,7 @@ export default [
         description: 'Landing Page de uma loja fictícia criada em um projeto de teste técnico.',
         fullDescription: 'Projeto desenvolvido como teste técnico para a empresa Wicomm, utilizando ReactJS e Vite, com foco em componentização, pixel perfect e boas práticas de SEO. O layout segue fielmente o Figma fornecido, com ajustes responsivos, porém priorizando a versão desktop. O projeto está disponível em produção no Vercel.',
         language: 'JavaScript',
-        framework: 'ReactJS',
+        framework: 'React',
         link: 'https://github.com/joaoluis17/wicomm-teste',
         linkSite: 'https://wicomm-teste-bay.vercel.app/',
       },
@@ -68,7 +77,7 @@ export default [
         description: 'Página de cadastro de usuário para um teste técnico da empresa Mercado Bitcoin.',
         fullDescription: 'Esse foi um projeto de um sistema de cadastro feito com VueJS e CSS, criado para um teste técnico da empresa Mercado Bitcoin. O layout é inspirado na imagem enviada previamente, ajustes responsivos para garantir uma boa experiência em diferentes dispositivos. Esse foi o primeiro teste prático para uma vaga que fiz, onde pude colocar em prática meus conhecimentos em VueJS, além de aprender a usar o Vite para criar o projeto do zero. O código-fonte do projeto está disponível no GitHub.',
         language: 'JavaScript',
-        framework: 'Vue.js',
+        framework: 'Vue',
         link: 'https://github.com/joaoluis17/teste-md',
       },
 

@@ -19,7 +19,9 @@ import Header from "./components/Header.vue";
 </script>
 
 <style>
-:global(html, body, #app) {
+html,
+body,
+#app {
   min-height: 100%;
   overflow-x: hidden; /* <-- adicione isso */
   width: 100%;
