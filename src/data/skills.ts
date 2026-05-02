@@ -14,6 +14,7 @@ export const devSkills = [
   { name: 'Filament PHP', icon: '/icons/filament-icon.svg' },
   { name: 'Python', icon: '/icons/python-icon.svg' },
   { name: 'MySQL', icon: '/icons/mysql-icon.svg' },
+  { name: 'PostgreSQL', icon: '/icons/postgresql-icon.svg' },
   { name: 'WordPress', icon: '/icons/wordpress-icon.svg' },
   { name: 'HubSpot', icon: '/icons/hubspot-icon.svg' },
   { name: 'Rd Station', icon: '/icons/rd-station-icon.svg' }
@@ -24,6 +25,7 @@ export const gestaoSkills = [
   { name: 'Kanban', icon: '/icons/kanban-icon.svg' },
   { name: 'Lean', icon: '/icons/lean-icon.svg' },
   { name: 'OKR', icon: '/icons/okr-icon.svg' },
+  { name: 'Metis', icon: '/icons/metis-icon.svg', iconClass: 'w-10 h-10 -mx-1 -my-1' },
   { name: 'GitHub', icon: '/icons/github-icon.svg' },
   { name: 'ClickUp', icon: '/icons/clickup-icon.svg' },
   { name: 'Miro', icon: '/icons/miro-icon.svg' },

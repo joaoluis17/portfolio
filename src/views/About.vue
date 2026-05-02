@@ -5,7 +5,7 @@
             Desenvolvedor Full-Stack com experiência na criação de aplicações escaláveis e responsivas. Atuo com foco especial nas camadas de interface, utilizando tecnologias como VueJS, JavaScript, Tailwind CSS, Laravel e PHP para proporcionar uma excelente experiência ao usuário.
         </p>
         <p class="text-lg text-gray-600 dark:text-gray-200">
-            Gestor de Projetos com foco em metodologias ágeis, como Scrum e Kanban. Organizo e direciono equipes para entregas eficientes, priorizando a qualidade do produto e a satisfação do cliente.
+            Gestor de Projetos com foco em metodologias ágeis, como Scrum e Kanban e criador do METIS Framework, uma metodologia voltada a equipes de pequeno e médio porte e times de sustentação. Organizo e os direciono para entregas eficientes, priorizando a qualidade do produto e a satisfação do cliente.
         </p>
 
         <p class="text-lg text-gray-600 dark:text-gray-200 my-4">Para conhecer mais sobre a minha carreira, visite o meu perfil no LinkedIn!</p>

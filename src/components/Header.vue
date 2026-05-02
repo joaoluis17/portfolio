@@ -23,6 +23,9 @@
         <li>
           <a href="#projects" @click="goToSection('projects')" class="block py-2 px-3 hover:text-blue-400">Projetos</a>
         </li>
+        <li>
+          <a href="#management" @click="goToSection('management')" class="block py-2 px-3 hover:text-blue-400">Gestão</a>
+        </li>
 
         <!-- MOBILE ONLY: Histórico -->
         <li class="block md:hidden">

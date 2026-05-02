@@ -1,12 +1,7 @@
 {
-  "compilerOptions": {
-    "types": ["vue", "node"],
-    "moduleResolution": "node",
-    "allowJs": true,
-    "noImplicitAny": false,
-    "skipLibCheck": true,
-    "esModuleInterop": true,
-    "jsx": "preserve"
-  },
-  "include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.vue"]
+  "files": [],
+  "references": [
+    { "path": "./tsconfig.app.json" },
+    { "path": "./tsconfig.node.json" }
+  ]
 }

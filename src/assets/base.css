@@ -100,6 +100,8 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-:global(html, body, #app) {
+html,
+body,
+#app {
   min-height: 100%;
 }
