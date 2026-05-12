@@ -15,8 +15,8 @@
         </button>
 
         <!-- Lista de Projetos com Scroll (barra escondida) -->
-        <div class="w-full max-w-5xl">
-          <div ref="scrollContainer" class="flex justify-center overflow-x-auto scroll-smooth space-x-4 py-4 hide-scrollbar">
+        <div class="overflow-hidden">
+          <div ref="scrollContainer" class="flex overflow-x-auto scroll-smooth space-x-4 py-4 hide-scrollbar">
             <div
                 v-for="(project, index) in projects.slice(0, 4)"
                 :key="index"

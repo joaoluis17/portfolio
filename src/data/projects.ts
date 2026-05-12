@@ -17,6 +17,14 @@ export default [
         link: 'https://github.com/joaoluis17/rancheiro',
       },
       {
+        title: 'EduPlanner',
+        description: 'Projeto de PI da UNIVESP, um sistema de gestão escolar para ajudar os professores a organizar suas aulas e atividades.',
+        fullDescription: 'O EduPlanner é um projeto integrador da UNIVESP, destinado a criar um sistema de gestão escolar que auxilie os professores na organização de suas aulas e atividades. O sistema foi desenvolvido com o objetivo de melhorar a eficiência no gerenciamento acadêmico, auxiliando os professores que têm dificuldades com ferramentas online, criando um webApp focado em criar um plano de aula. O projeto está sendo desenvolvido com Laravel e Vue, além de utilizar PostgreSQL no banco de dados e Bootstrap na estilização. Ele está em fase inicial, sendo feito primeiro um protótipo que futuramente estará no ar gratuitamente.',
+        language: ['PHP', 'JavaScript'],
+        framework: ['Laravel', 'Vue'],
+        link: 'https://github.com/joaoluis17/eduplanner',
+      },
+      {
         title: 'Script de automação de envio de e-mails',
         description: 'Um script em Python para automatizar o envio de e-mails com base em dados de um arquivo CSV.',
         fullDescription: 'Esse é um projeto que criei para automatizar o envio de e-mails, utilizando Python e as bibliotecas pandas e smtplib. O script lê os dados de um arquivo CSV ou XLSX e envia e-mails personalizados para cada destinatário, usando a coluna de CNPJ para reconhecer o cliente e a coluna de email para enviar o e-mail, além de criar um arquivo csv com a base de dados a partir de outra aba do arquivo principal, que contém as informações necessárias. O código-fonte do projeto está disponível no GitHub.',

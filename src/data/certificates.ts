@@ -36,10 +36,22 @@ export default [
     link: 'https://acrobat.adobe.com/id/urn:aaid:sc:VA6C2:3c586453-bc59-4f57-b795-f7a9f9ee9a73?viewer%21megaVerb=group-discover',
   },
   {
+    title: 'Design Thinking: criando soluções inovadoras com foco no usuário',
+    description: 'Curso com certificação de 20 horas em Design Thinking pelo SENAC.',
+    fullDescription: 'Curso focado em fundamentos do Design Thinking, onde aprendi a aplicar essa metodologia para criar soluções inovadoras com foco no usuário.',
+    link: 'https://cursos-orango.senac.br/pluginfile.php/1/tool_certificate/issues/1778603299/2879653545JA.pdf',
+  },
+  {
     title: ' Gestão da Estratégia com BSC - Fundamentos ',
     description: 'Curso com certificação de 20 horas em Fundamentos de Gestão de Estratégia com BSC pelo ENAP.',
     fullDescription: 'Curso focado em gestão de estratégia com BSC, onde aprendi a criar e implementar um Balanced Scorecard para alinhar as atividades da organização com sua visão e estratégia.',
     link: 'https://acrobat.adobe.com/id/urn:aaid:sc:VA6C2:e4345e9b-b34f-4a17-80d2-1fcee469bc4e',
+  },
+  {
+    title: 'Escrita criativa e storytelling',
+    description: 'Curso com certificação de 12 horas em Escrita criativa e storytelling pelo SENAC.',
+    fullDescription: 'Curso focado em desenvolvimento de escrita criativa, onde aprendi a criar narrativas envolventes e a contar histórias de forma eficaz para transmitir mensagens e conectar com o público usando a técnica do storytelling.',
+    link: 'https://cursos-orango.senac.br/pluginfile.php/1/tool_certificate/issues/1778110118/8787644804JA.pdf',
   },
   {
     title: 'Soft Skills: como mandar bem no trabalho e na vida',
