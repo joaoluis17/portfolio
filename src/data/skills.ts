@@ -24,18 +24,20 @@ export const gestaoSkills = [
   { name: 'Scrum', icon: '/icons/scrum-icon.svg' },
   { name: 'Kanban', icon: '/icons/kanban-icon.svg' },
   { name: 'Lean', icon: '/icons/lean-icon.svg' },
+  { name: 'Yellow Belt', icon: '/icons/yellow-belt-icon.svg' },
   { name: 'OKR', icon: '/icons/okr-icon.svg' },
   { name: 'Metis', icon: '/icons/metis-icon.svg', iconClass: 'w-10 h-10 -mx-1 -my-1' },
   { name: 'GitHub', icon: '/icons/github-icon.svg' },
   { name: 'ClickUp', icon: '/icons/clickup-icon.svg' },
   { name: 'Miro', icon: '/icons/miro-icon.svg' },
   { name: 'Trello', icon: '/icons/trello-icon.svg' },
+  { name: 'Salesforce', icon: '/icons/salesforce-icon.svg' },
   { name: 'Excel', icon: '/icons/excel-icon.svg' }
 ]
 
 export const softSkills = [
   { name: 'Gestão Ágil', icon: '/icons/gestao-icon.svg' },
-  { name: 'Adaptação', icon: '/icons/adaptation-icon.svg' },
+  { name: 'Adaptabilidade', icon: '/icons/adaptation-icon.svg' },
   { name: 'Comunicação Eficaz', icon: '/icons/communication-icon.svg' },
   { name: 'Resolução de Problemas', icon: '/icons/problems-icon.svg' },
   { name: 'Pensamento Crítico', icon: '/icons/think-icon.svg' },

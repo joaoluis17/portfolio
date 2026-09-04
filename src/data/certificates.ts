@@ -24,6 +24,12 @@ export default [
     link: 'https://acrobat.adobe.com/id/urn:aaid:sc:VA6C2:5751b4ff-730c-43d2-8d11-64e361d76bc9',
   },
   {
+    title: 'Lean Seis Sigma Yellow Belt',
+    description: 'Curso com certificação de 24 horas pela FM2S.',
+    fullDescription: 'Curso voltado para a aplicação de metodologias Lean e Six Sigma Yellow Belt.',
+    link: 'https://ead.fm2s.com.br/verify/13c9ad4900711350f1c4326d8fde46fc55c934d9',
+  },
+  {
     title: 'Design para iniciantes: criação e distribuição multimídia',
     description: 'Curso com certificação de 24 horas em Design pelo SENAC.',
     fullDescription: 'Curso introdutório sobre design, onde aprendi os princípios básicos de criação e distribuição de conteúdo multimídia.',

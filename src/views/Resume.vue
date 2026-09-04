@@ -53,6 +53,17 @@ export default {
 
             jobs: [
                 {
+                    title: 'Expert em Interação Bilingue',
+                    period: '06/2026 - presente',
+                    details: [
+                        'Atendimento ao cliente com foco na resolução de problemas via SAC',
+                        'Utilização do Salesforce como ferramente de atendimento e registro de interações com clientes',
+                        'Elaboração e atualização de planilhas e documentações para padronização de processos e registro de atendimentos',
+                        'Apoio aos colegas de equipe na orientação sobre processos, procedimentos e boas práticas de atendimento',
+                        'Análise de processos com foco em melhoria nos fluxos operacionais, contribuindo para maior eficiência da equipe'
+                    ]
+                },
+                {
                     title: 'Desenvolvedor Web Full-Stack',
                     period: '10/2025 - 03/2026',
                     details: [
@@ -79,29 +90,28 @@ export default {
                     title: 'Expert em Interação',
                     period: '02/2021 - 04/2021',
                     details: [
-                        'Atendimento ao cliente (Shopee)',
-                        'Resolução de problemas via SAC',
-                        'Preenchimento de planilhas e roteiros operacionais'
+                        'Atendimento ao cliente com foco na resolução de problemas via SAC',
+                        'Registro de informações, atualização de planilhas e documentação de processos operacionais.',
+                        'Apoio aos colegas de equipe na orientação sobre processos, procedimentos e boas práticas de atendimento'
                     ]
                 },
                 {
                     title: 'Auxiliar Administrativo',
                     period: '01/2016 - 06/2016',
                     details: [
-                        'Atendimento ao cliente e alunos',
-                        'Venda de cursos',
-                        'Prospecção de clientes',
-                        'Controle de planilhas',
-                        'Recepção de pagamentos'
+                        'Atendimento e suporte a alunos e clientes',
+                        'Comercialização de cursos e prospecção de novos alunos',
+                        'Organização de cadastros, controle de informações e atualização de planilhas',
+                        'Apoio às rotinas administrativas e ao relacionamento com clientes'
                     ]
                 },
                 {
                     title: 'Profissional de Eventos Autônomo',
                     period: '05/2015 - 02/2020',
                     details: [
-                        'Organização e coordenação de eventos',
-                        'Atendimento ao cliente',
-                        'Atuação em múltiplos projetos simultâneos'
+                        'Organização e coordenação de eventos em diversos segmentos',
+                        'Atendimento focado na resolução de problemas e na satisfação do cliente',
+                        'Atuação em múltiplos projetos simultâneos, auxiliando em todas  as as etapas do processo de produção de eventos',
                     ]
                 }
             ]
